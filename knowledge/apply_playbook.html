@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apply Playbook — End-to-End Job Search SOP — Noorman Job Search</title>
+<meta name="description" content="Apply Playbook — End-to-End Job Search SOP — auto-generated from aplicator repo">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<nav class="navbar">
+  <a class="navbar-brand" href="../index.html">🧑‍💻 Noorman Job Search</a>
+  <input type="text" class="navbar-search" id="searchInput" placeholder="Search pages... (e.g. 'ajaib', 'motivation', 'ATS')" autocomplete="off">
+  <div class="navbar-search-results" id="searchResults"></div>
+</nav>
+<div class="container">
+
+<div class="breadcrumb">
+  <a href="../index.html">🏠 Home</a>
+  <span class="breadcrumb-sep">/</span>
+  <span>Knowledge</span>
+  <span class="breadcrumb-sep">/</span>
+  <span>Apply Playbook — End-to-End Job Search SOP</span>
+</div>
+
+
+<div style="margin-bottom: 16px; padding: 12px 14px; background: var(--surface-2); border-radius: 8px; font-size: 12px; color: var(--text-muted);">
+  <strong style="color: var(--accent);">Apply Playbook — End-to-End Job Search SOP</strong><br>
+  Source: <code>knowledge/apply_playbook.md</code> · Size: 7.9 KB · Modified: Nov 10, 2026 04:33
+</div>
+<div class="markdown-body"><h1 id="apply-playbook-end-to-end-job-search-sop">Apply Playbook — End-to-End Job Search SOP</h1>
+<p>A repeatable workflow for each job application. Goal: maximize signal per application, minimize wasted effort.</p>
+<hr />
+<h2 id="phase-0-setup-one-time-already-done">Phase 0: Setup (one-time, already done)</h2>
+<ul>
+<li>[x] Folder structure created under <code>noormanyulizarp@gmail.com/</code></li>
+<li>[x] 4 role-targeted CVs generated (Backend, AI, QA, SDET)</li>
+<li>[x] 4 cover letter templates ready</li>
+<li>[x] 4 LinkedIn summaries ready</li>
+<li>[x] Apply tracker script installed (<code>scripts/apply_tracker.py</code>)</li>
+<li>[x] MCP server ready (<code>mcp_server/server.py</code>) — see <code>mcp_server/README.md</code> for install</li>
+<li>[x] Skill <code>noorman-jobsearch</code> ready for assistant context loading</li>
+</ul>
+<h3 id="two-ways-to-run-the-workflow">Two ways to run the workflow</h3>
+<p><strong>Option A — CLI scripts</strong> (this assistant or terminal):</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>scripts/jd_parser.py<span class="w"> </span>--file<span class="w"> </span>jd.txt
+python3<span class="w"> </span>scripts/tailor_cv.py<span class="w"> </span>--jd-file<span class="w"> </span>jd.txt<span class="w"> </span>--role<span class="w"> </span>sdet
+python3<span class="w"> </span>scripts/apply_tracker.py<span class="w"> </span>add<span class="w"> </span>--company<span class="w"> </span><span class="s2">&quot;X&quot;</span><span class="w"> </span>--role<span class="w"> </span><span class="s2">&quot;SDET&quot;</span><span class="w"> </span>--platform<span class="w"> </span>greenhouse<span class="w"> </span>--link<span class="w"> </span><span class="s2">&quot;...&quot;</span>
+</code></pre></div>
+
+<p><strong>Option B — MCP server</strong> (Claude Desktop / Cursor / Cline / Continue):
+Connect the MCP server (see <code>mcp_server/README.md</code>), then ask your AI client in natural language:</p>
+<blockquote>
+<p>"Parse this JD: [paste]. Then tailor my CV for the recommended role."
+"Add this application to my tracker: Gojek SDET, Greenhouse, https://..."</p>
+</blockquote>
+<p>The MCP server wraps the same logic — same outputs, different interface.
+Use Option A when chatting with this assistant (Z.ai).
+Use Option B when working in Claude Desktop / Cursor / etc.</p>
+<hr />
+<h2 id="phase-1-discover-per-opportunity">Phase 1: Discover (per opportunity)</h2>
+<h3 id="sources-to-monitor">Sources to monitor</h3>
+<ul>
+<li><strong>LinkedIn</strong> — job feed + Easy Apply filter</li>
+<li><strong>Greenhouse</strong> / <strong>Lever</strong> direct company pages (often not posted on LinkedIn)</li>
+<li><strong>Company career pages</strong> — bookmark target companies (see <code>companies_target.md</code>)</li>
+<li><strong>Referrals</strong> — your strongest lever; ask your network BEFORE applying cold</li>
+<li><strong>Communities</strong> — Indonesia tech Discord/Telegram groups, r/cscareerquestions</li>
+</ul>
+<h3 id="decision-should-i-apply">Decision: should I apply?</h3>
+<p>Filter out before applying:
+- [ ] Salary range visible and matches your floor?
+- [ ] Years of experience required ≤ your years? (or within 2 years gap)
+- [ ] Stack matches ≥ 60% of your skills?
+- [ ] Location / remote OK for you?
+- [ ] Company stage = a place you'd actually work? (not just desperate apply)</p>
+<p>If ≥3 boxes ticked → apply. If &lt;3 → skip, don't waste cycles.</p>
+<hr />
+<h2 id="phase-2-tailor-per-opportunity-10-15-min">Phase 2: Tailor (per opportunity, ~10-15 min)</h2>
+<h3 id="step-by-step">Step-by-step</h3>
+<ol>
+<li><strong>Save the JD</strong>: copy JD text → save to <code>knowledge/jds/&lt;company&gt;_&lt;role&gt;.txt</code></li>
+<li><strong>Parse it</strong>: <code>python3 scripts/jd_parser.py --file knowledge/jds/&lt;company&gt;_&lt;role&gt;.txt</code></li>
+<li><strong>Plan tailoring</strong>: <code>python3 scripts/tailor_cv.py --file knowledge/jds/&lt;company&gt;_&lt;role&gt;.txt --role sdet</code></li>
+<li><strong>Pick the right CV variant</strong>: based on the parser output (Backend/AI/QA/SDET)</li>
+<li><strong>Edit the CV</strong> (10 min max): swap 2-3 bullets to match JD keywords, update Profile Summary if needed</li>
+<li><strong>Save as</strong>: <code>CV/&lt;Role&gt;/CV_Noorman_&lt;Role&gt;_&lt;Company&gt;.docx</code> (variant for this specific app)</li>
+<li><strong>Personalize cover letter</strong>: copy <code>CoverLetter/&lt;Role&gt;/CL_Template_&lt;Role&gt;.docx</code> → fill in:</li>
+<li><code>[Date]</code>, <code>[Hiring Manager]</code>, <code>[Company Name]</code>, <code>[specific reason]</code></li>
+<li>Save as: <code>CL_&lt;Company&gt;_&lt;Role&gt;.docx</code></li>
+<li><strong>Export both to PDF</strong>: <code>soffice --headless --convert-to pdf file.docx</code></li>
+</ol>
+<h3 id="when-not-to-tailor">When NOT to tailor</h3>
+<ul>
+<li>Easy Apply with no JD-specific required fields → use the role-appropriate CV as-is</li>
+<li>Volume-based application rounds (you're short on time) → use base CV, batch apply</li>
+</ul>
+<hr />
+<h2 id="phase-3-submit">Phase 3: Submit</h2>
+<h3 id="per-platform-workflow">Per platform workflow</h3>
+<p><strong>LinkedIn Easy Apply</strong> (see <code>hacking_ways/linkedin_easy_apply.md</code>):
+- Use Easy Apply filter
+- Pre-fill answers: years of experience, work authorization, salary expectation
+- Attach CV + cover letter (if allowed)
+- Track in <code>apply_tracker.py add --platform linkedin</code></p>
+<p><strong>Greenhouse</strong> (see <code>hacking_ways/greenhouse_tips.md</code>):
+- Manual form, repeat across companies
+- Pre-fill with browser autofill / extension (Bitwarden, Autofill)
+- Usually requires a few custom questions — answer once, save to <code>knowledge/answers/</code></p>
+<p><strong>Lever</strong> (see <code>hacking_ways/lever_tips.md</code>):
+- Simplest flow — usually just CV + 1-2 questions
+- Often auto-acknowledges with confirmation email</p>
+<p><strong>Company site / Workday</strong> (see <code>hacking_ways/workday_tips.md</code>):
+- Most painful; pre-fill where possible
+- Often asks for the same info as your CV (work history) → keep a plain-text version ready</p>
+<p><strong>Referral</strong>:
+- Message your referrer BEFORE submitting
+- Share: role title, link, your tailored CV
+- They submit on their end → flag in tracker as <code>--platform referral</code></p>
+<h3 id="always-do-after-submit">Always do after submit</h3>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>scripts/apply_tracker.py<span class="w"> </span>add<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--company<span class="w"> </span><span class="s2">&quot;Gojek&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--role<span class="w"> </span><span class="s2">&quot;SDET&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--platform<span class="w"> </span>greenhouse<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--link<span class="w"> </span><span class="s2">&quot;https://boards.greenhouse.io/gojek/jobs/12345&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--notes<span class="w"> </span><span class="s2">&quot;Applied via referral from @john.doe&quot;</span>
+</code></pre></div>
+
+<hr />
+<h2 id="phase-4-follow-up">Phase 4: Follow-up</h2>
+<h3 id="schedule">Schedule</h3>
+<ul>
+<li><strong>Day 0</strong>: Apply</li>
+<li><strong>Day 7</strong>: If no response → gentle follow-up email (if you have recruiter contact) OR LinkedIn message</li>
+<li><strong>Day 14</strong>: If still nothing → mark as <code>ghosted</code> in tracker, move on</li>
+<li><strong>Day 30</strong>: Re-engagement check — sometimes companies re-open roles</li>
+</ul>
+<h3 id="follow-up-message-template">Follow-up message template</h3>
+<div class="highlight"><pre><span></span><code><span class="nl">Subject</span><span class="p">:</span><span class="w"> </span><span class="n">Following</span><span class="w"> </span><span class="n">up</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">my</span><span class="w"> </span><span class="n">application</span><span class="w"> </span><span class="err">—</span><span class="w"> </span><span class="o">&lt;</span><span class="k">Role</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="o">&lt;</span><span class="n">Company</span><span class="o">&gt;</span>
+
+<span class="n">Hi</span><span class="w"> </span><span class="o">[</span><span class="n">Recruiter</span><span class="o">]</span><span class="p">,</span>
+
+<span class="n">I</span><span class="w"> </span><span class="n">applied</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="o">&lt;</span><span class="k">Role</span><span class="o">&gt;</span><span class="w"> </span><span class="k">position</span><span class="w"> </span><span class="k">at</span><span class="w"> </span><span class="o">&lt;</span><span class="n">Company</span><span class="o">&gt;</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="o">&lt;</span><span class="nc">date</span><span class="o">&gt;</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">wanted</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">follow</span><span class="w"> </span><span class="n">up</span><span class="p">.</span>
+<span class="n">I</span><span class="s1">&#39;m still very interested — my background in &lt;1-line relevant skill&gt; lines up well with the</span>
+<span class="s1">role, and I&#39;</span><span class="n">d</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">glad</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">walk</span><span class="w"> </span><span class="n">through</span><span class="w"> </span><span class="ow">any</span><span class="w"> </span><span class="n">specifics</span><span class="p">.</span>
+
+<span class="n">Please</span><span class="w"> </span><span class="n">let</span><span class="w"> </span><span class="n">me</span><span class="w"> </span><span class="n">know</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">there</span><span class="err">&#39;</span><span class="n">s</span><span class="w"> </span><span class="ow">any</span><span class="w"> </span><span class="k">update</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="n">additional</span><span class="w"> </span><span class="n">info</span><span class="w"> </span><span class="n">I</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">provide</span><span class="p">.</span>
+
+<span class="n">Best</span><span class="p">,</span>
+<span class="n">Noorman</span>
+<span class="n">noormanyulizarp</span><span class="nv">@gmail</span><span class="p">.</span><span class="n">com</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="o">+</span><span class="mi">62</span><span class="w"> </span><span class="mi">896</span><span class="w"> </span><span class="mi">3411</span><span class="w"> </span><span class="mi">2503</span>
+</code></pre></div>
+
+<h3 id="track-follow-ups">Track follow-ups</h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># See what&#39;s overdue</span>
+python3<span class="w"> </span>scripts/apply_tracker.py<span class="w"> </span>stats
+
+<span class="c1"># Update status when you hear back</span>
+python3<span class="w"> </span>scripts/apply_tracker.py<span class="w"> </span>update<span class="w"> </span>--id<span class="w"> </span><span class="m">3</span><span class="w"> </span>--status<span class="w"> </span>interview<span class="w"> </span>--notes<span class="w"> </span><span class="s2">&quot;HR call scheduled&quot;</span>
+</code></pre></div>
+
+<hr />
+<h2 id="phase-5-interview-prep">Phase 5: Interview Prep</h2>
+<p>Once you get an interview:</p>
+<ol>
+<li><strong>Read the JD again</strong> — highlight the 3 must-have skills they'll definitely ask about</li>
+<li><strong>Pull relevant experience bullets</strong> from your CV — prepare STAR-format stories</li>
+<li><strong>Research the company</strong>: recent news, tech blog, engineering team on LinkedIn</li>
+<li><strong>Mock-interview yourself</strong> or with a friend: behavioral + technical</li>
+<li><strong>Prepare 2-3 questions</strong> to ask them (signal: you're evaluating them too)</li>
+</ol>
+<h3 id="star-format-situation-task-action-result">STAR format (Situation, Task, Action, Result)</h3>
+<p>For each bullet on your CV, be able to expand into a 90-second STAR answer:</p>
+<blockquote>
+<p><strong>S</strong>: "At GoPay, the Crypto QA function was unstaffed."
+<strong>T</strong>: "I needed to build the entire function from zero in 11 months for CFX/Bappebti certification."
+<strong>A</strong>: "I established quality standards, wrote automation processes, owned ArgoCD-based release pipelines."
+<strong>R</strong>: "GoPay became one of only seven licensed crypto operators in Indonesia, delivered in 11 months vs multi-year industry norm."</p>
+</blockquote>
+<hr />
+<h2 id="phase-6-offer-negotiation">Phase 6: Offer &amp; Negotiation</h2>
+<p>When you get an offer:</p>
+<ol>
+<li><strong>Don't accept immediately</strong> — say "thank you, I'll review and get back to you in X days"</li>
+<li><strong>Compare with market</strong>: Glassdoor, Levels.fyi, Indonesian tech salary surveys</li>
+<li><strong>Negotiate</strong>: total comp (base, bonus, equity, signing bonus), benefits, PTO, remote flexibility</li>
+<li><strong>Once accepted</strong>: update tracker <code>--status offer</code> then <code>--status withdrawn</code> for other active apps</li>
+</ol>
+<hr />
+<h2 id="weekly-cadence">Weekly cadence</h2>
+<ul>
+<li><strong>Mon</strong>: Review tracker <code>stats</code> — what's due for follow-up this week?</li>
+<li><strong>Tue-Thu</strong>: Apply to 3-5 high-quality roles</li>
+<li><strong>Fri</strong>: Update tracker, prepare for any upcoming interviews next week</li>
+</ul>
+<h2 id="monthly-cadence">Monthly cadence</h2>
+<ul>
+<li>Review <code>companies_target.md</code> — any new targets to add?</li>
+<li>Review your CVs — anything to refresh based on new skills / projects?</li>
+<li>Review your cover letters — any reusable answers worth saving?</li>
+</ul>
+<hr />
+<h2 id="anti-patterns-to-avoid">Anti-patterns to avoid</h2>
+<ul>
+<li>❌ Applying to 50 roles per day with the same CV (ATS picks up duplicates, low quality)</li>
+<li>❌ Skipping the JD parse step (you miss keyword matches)</li>
+<li>❌ Forgetting to track applications (you lose follow-up timing)</li>
+<li>❌ Ghosting recruiters who reach out (always respond, even to decline)</li>
+<li>❌ Not prepping for interviews because "you have many applications out"</li>
+<li>❌ Accepting the first offer without negotiation</li>
+</ul></div>
+</div>
+<footer>
+  <p>Static site auto-generated from <code>noormanyulizarp/aplicator</code> repo · Last updated: 2026-11-10T07:11:44.163034</p>
+  <p style="margin-top: 8px;">
+    <a href="../index.html">🏠 Home</a> ·
+    <a href="https://github.com/noormanyulizarp/aplicator" target="_blank">📦 Source (private)</a>
+  </p>
+</footer>
+<script src="../assets/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,757 @@
+{
+  "generated_at": "2026-11-10T04:50:02.111076",
+  "profile": {
+    "name": "Noorman Yulizar Prabowo",
+    "email": "noormanyulizarp@gmail.com",
+    "phone": "+62 896 3411 2503",
+    "linkedin": "linkedin.com/in/noormanyulizarp",
+    "current_role": "Software Engineer in Test @ GoTo Financial (GoPay)",
+    "target_roles": [
+      "Backend Engineer",
+      "AI Engineer",
+      "QA Engineer",
+      "SDET"
+    ],
+    "experiences": [],
+    "skills": {},
+    "summary": ""
+  },
+  "applications": [
+    {
+      "id": "1",
+      "company": "Lokki Henkil\u00f6st\u00f6palvelut Oy",
+      "role": "QA Engineer",
+      "platform": "company_site",
+      "link": "https://lokki.likeit.fi/jsp/duuni/responsiveapplication/ResponsiveApplication.jsp?id=0&register=1&advertId=27038535",
+      "applied_date": "2026-11-09",
+      "status": "applied",
+      "follow_up_date": "2026-11-16",
+      "notes": "Banking sector client project \u2014 mobile/web UI modernization. Ref 27038535. Contact: Kimmo K\u00e4rs\u00e4m\u00e4 (kimmo.karsama@lokki.fi, +358 50 412 7500). Eligibility concern: JD states Finland residency required. Deadline 9.11.2026 17:00 EET."
+    },
+    {
+      "id": "2",
+      "company": "Hitachi eBworx",
+      "role": "QA Analyst",
+      "platform": "company_site",
+      "link": "https://www.hitachi-ebworx.com/careers/experienced-professional/quality-assurance-analyst",
+      "applied_date": "2026-11-09",
+      "status": "applied",
+      "follow_up_date": "2026-11-16",
+      "notes": "Malaysia location. 4+ yrs QA exp required (Noorman has 10). Financial industry preferred. JD emphasizes: test plans, traceability matrix, JIRA defect mgmt, team leadership, SQL, test audit & stakeholder reporting. Strong fit. Subject to Malaysia work visa sponsorship."
+    },
+    {
+      "id": "3",
+      "company": "TEKsystems Tokyo",
+      "role": "Mobile QA Tester",
+      "platform": "email",
+      "link": "https://www.linkedin.com/posts/ellen-page-tek-tokyo/",
+      "applied_date": "2026-11-09",
+      "status": "drafting",
+      "follow_up_date": "2026-11-16",
+      "notes": "Recruiter: Ellen Page (ellen.page@teksystems.com). Tokyo, Japan. MUST reside in Japan + valid work visa. Noorman based in Jakarta \u2014 eligibility concern. Materials: CV_Noorman_MobileQA_TEKsystems.pdf + CL_TEKsystems_MobileQA.pdf + Email_TEKsystems_MultipleQARoles.pdf"
+    },
+    {
+      "id": "4",
+      "company": "TEKsystems Tokyo",
+      "role": "Automation QA Engineer (Python)",
+      "platform": "email",
+      "link": "https://www.linkedin.com/posts/ellen-page-tek-tokyo/",
+      "applied_date": "2026-11-09",
+      "status": "drafting",
+      "follow_up_date": "2026-11-16",
+      "notes": "Recruiter: Ellen Page. Tokyo, Japan. MUST reside in Japan + valid work visa. Materials: CV_Noorman_PythonAutomation_TEKsystems.pdf + CL_TEKsystems_PythonAutomation.pdf"
+    },
+    {
+      "id": "5",
+      "company": "TEKsystems Tokyo",
+      "role": "Automation QA Engineer (Selenium/Playwright)",
+      "platform": "email",
+      "link": "https://www.linkedin.com/posts/ellen-page-tek-tokyo/",
+      "applied_date": "2026-11-09",
+      "status": "drafting",
+      "follow_up_date": "2026-11-16",
+      "notes": "Recruiter: Ellen Page. Tokyo, Japan. MUST reside in Japan + valid work visa. Materials: CV_Noorman_SeleniumPlaywright_TEKsystems.pdf + CL_TEKsystems_SeleniumPlaywright.pdf"
+    },
+    {
+      "id": "6",
+      "company": "Shine",
+      "role": "QA Analyst",
+      "platform": "company_site",
+      "link": "https://www.shine.co/careers",
+      "applied_date": "2026-11-09",
+      "status": "drafting",
+      "follow_up_date": "2026-11-16",
+      "notes": "Porto, Portugal. Fintech for SMBs (450K+ businesses across EU). Modern stack (Stripe, Cloudflare). Motivation question answered. Research saved to Profile/research/."
+    },
+    {
+      "id": "7",
+      "company": "DNA.inc",
+      "role": "Senior Quality Engineer",
+      "platform": "company_site",
+      "link": "https://careers.dna.inc/o/senior-quality-engineer/c/new?source=LinkedIn+Basic+Jobs",
+      "applied_date": "2026-11-09",
+      "status": "drafting",
+      "follow_up_date": "2026-11-16",
+      "notes": "Europe remote or hybrid (Amsterdam/Madrid/Valencia). Digital consultancy for streaming/media/sports/automotive \u2014 clients include Disney+, ESPN+, Eurosport, SiriusXM. STRONGEST FIT: TV platforms (Vidio device farm), streaming (Vidio 45M+ MAU), native mobile (GoPay 30M+), Python (primary), AI QA tooling (RAG/MCP), software dev background. Comp: 62,400 EUR mid-point (Madrid)."
+    },
+    {
+      "id": "8",
+      "company": "Ajaib",
+      "role": "SDET",
+      "platform": "referral",
+      "link": "https://www.linkedin.com/company/ajaib-id",
+      "applied_date": "2026-11-10",
+      "status": "drafting",
+      "follow_up_date": "2026-11-17",
+      "notes": "Inbound recruiter outreach by Maria Odelia Meidaxia (People Partner, Ajaib). Indonesia's leading digital investment platform. Multiple SDET openings. STRONG FIT: GoPay Crypto QA (0M, CFX/Bappebti) + Bank Indonesia QRIS. Reply drafted (3 options). CV recommendation: use CV_Noorman_SDET.pdf (not original \u2014 has unfilled placeholders)."
+    },
+    {
+      "id": "9",
+      "company": "Bonapolia (client: Baltic Amadeus)",
+      "role": "QA Automation Engineer",
+      "platform": "company_site",
+      "link": "https://jobs.bonapolia.com/jobs/8629865-qa-automation-engineer",
+      "applied_date": "2026-11-10",
+      "status": "drafting",
+      "follow_up_date": "2026-11-17",
+      "notes": "Baltic states (Latvia/Lithuania/Estonia) fully remote. Banking client Baltic Amadeus. Java + Selenide + TestNG + REST-assured + mobile iOS/Android + CI/CD + cloud testing platforms. B2B contract with Bonapolia (Lisbon). Duration until 2027-06-30. STRONG FIT: GoPay Java/TestNG/RestAssured + Bank Indonesia QRIS + Jenius digital bank + Vidio device farm (LambdaTest/BrowserStack equivalent). Recruiter: Tatiana Kom. Form requires: B2B eligibility (Yes), city (Jakarta), English (Fluent), locations (all 3), CV (required), cover letter (REQUIRED)."
+    }
+  ],
+  "cv_inventory": [
+    {
+      "type": "master_cv",
+      "role": "Master",
+      "label": "Master CV (comprehensive)",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/Profile/Master_CV.docx",
+      "size": 40559,
+      "modified_at": "2026-11-10T04:49:58.931235"
+    },
+    {
+      "type": "master_cv",
+      "role": "Master",
+      "label": "Master CV (comprehensive)",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/Profile/Master_CV.pdf",
+      "size": 65574,
+      "modified_at": "2026-11-10T04:49:58.931235"
+    },
+    {
+      "type": "cv",
+      "role": "BackendEngineer",
+      "label": "Backend Engineer",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CV/BackendEngineer/CV_Noorman_BackendEngineer.docx",
+      "size": 40126,
+      "modified_at": "2026-11-10T04:49:58.926296"
+    },
+    {
+      "type": "cv",
+      "role": "BackendEngineer",
+      "label": "Backend Engineer",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CV/BackendEngineer/CV_Noorman_BackendEngineer.pdf",
+      "size": 64366,
+      "modified_at": "2026-11-10T04:49:58.926533"
+    },
+    {
+      "type": "cover_letter",
+      "role": "BackendEngineer",
+      "label": "Cover Letter \u2014 Backend Engineer (template)",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/BackendEngineer/CL_Template_BackendEngineer.docx",
+      "size": 37934,
+      "modified_at": "2026-11-10T04:49:58.928889"
+    },
+    {
+      "type": "cover_letter",
+      "role": "BackendEngineer",
+      "label": "Cover Letter \u2014 Backend Engineer (template)",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/BackendEngineer/CL_Template_BackendEngineer.pdf",
+      "size": 38301,
+      "modified_at": "2026-11-10T04:49:58.929056"
+    },
+    {
+      "type": "summary",
+      "role": "BackendEngineer",
+      "label": "LinkedIn Summary \u2014 Backend Engineer",
+      "format": "md",
+      "path": "download/noormanyulizarp@gmail.com/Summary/BackendEngineer/LinkedIn_Summary_BackendEngineer.md",
+      "size": 1285,
+      "modified_at": "2026-11-10T04:49:58.932297"
+    },
+    {
+      "type": "cv",
+      "role": "AiEngineer",
+      "label": "AI Engineer",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CV/AiEngineer/CV_Noorman_AiEngineer.docx",
+      "size": 39764,
+      "modified_at": "2026-11-10T04:49:58.926070"
+    },
+    {
+      "type": "cv",
+      "role": "AiEngineer",
+      "label": "AI Engineer",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CV/AiEngineer/CV_Noorman_AiEngineer.pdf",
+      "size": 62995,
+      "modified_at": "2026-11-10T04:49:58.926296"
+    },
+    {
+      "type": "cover_letter",
+      "role": "AiEngineer",
+      "label": "Cover Letter \u2014 AI Engineer (template)",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/AiEngineer/CL_Template_AiEngineer.docx",
+      "size": 37933,
+      "modified_at": "2026-11-10T04:49:58.928811"
+    },
+    {
+      "type": "cover_letter",
+      "role": "AiEngineer",
+      "label": "Cover Letter \u2014 AI Engineer (template)",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/AiEngineer/CL_Template_AiEngineer.pdf",
+      "size": 37419,
+      "modified_at": "2026-11-10T04:49:58.928889"
+    },
+    {
+      "type": "summary",
+      "role": "AiEngineer",
+      "label": "LinkedIn Summary \u2014 AI Engineer",
+      "format": "md",
+      "path": "download/noormanyulizarp@gmail.com/Summary/AiEngineer/LinkedIn_Summary_AiEngineer.md",
+      "size": 1302,
+      "modified_at": "2026-11-10T04:49:58.932297"
+    },
+    {
+      "type": "cv",
+      "role": "QA",
+      "label": "QA Engineer",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_MobileQA_TEKsystems.docx",
+      "size": 39933,
+      "modified_at": "2026-11-10T04:49:58.926533"
+    },
+    {
+      "type": "cv",
+      "role": "QA",
+      "label": "QA Engineer",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_MobileQA_TEKsystems.pdf",
+      "size": 63097,
+      "modified_at": "2026-11-10T04:49:58.926779"
+    },
+    {
+      "type": "cv",
+      "role": "QA",
+      "label": "QA Engineer",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_PythonAutomation_TEKsystems.docx",
+      "size": 39286,
+      "modified_at": "2026-11-10T04:49:58.926779"
+    },
+    {
+      "type": "cv",
+      "role": "QA",
+      "label": "QA Engineer",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_PythonAutomation_TEKsystems.pdf",
+      "size": 59154,
+      "modified_at": "2026-11-10T04:49:58.926779"
+    },
+    {
+      "type": "cv",
+      "role": "QA",
+      "label": "QA Engineer",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_QA.docx",
+      "size": 40314,
+      "modified_at": "2026-11-10T04:49:58.926779"
+    },
+    {
+      "type": "cv",
+      "role": "QA",
+      "label": "QA Engineer",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_QA.pdf",
+      "size": 65296,
+      "modified_at": "2026-11-10T04:49:58.926779"
+    },
+    {
+      "type": "cv",
+      "role": "QA",
+      "label": "QA Engineer",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_QA_HitachiEbworx.docx",
+      "size": 40687,
+      "modified_at": "2026-11-10T04:49:58.926779"
+    },
+    {
+      "type": "cv",
+      "role": "QA",
+      "label": "QA Engineer",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_QA_HitachiEbworx.pdf",
+      "size": 66690,
+      "modified_at": "2026-11-10T04:49:58.926779"
+    },
+    {
+      "type": "cv",
+      "role": "QA",
+      "label": "QA Engineer (Lokki variant)",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_QA_Lokki.docx",
+      "size": 40176,
+      "modified_at": "2026-11-10T04:49:58.926779"
+    },
+    {
+      "type": "cv",
+      "role": "QA",
+      "label": "QA Engineer (Lokki variant)",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_QA_Lokki.pdf",
+      "size": 64071,
+      "modified_at": "2026-11-10T04:49:58.927235"
+    },
+    {
+      "type": "cv",
+      "role": "QA",
+      "label": "QA Engineer",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_SeleniumPlaywright_TEKsystems.docx",
+      "size": 39209,
+      "modified_at": "2026-11-10T04:49:58.927235"
+    },
+    {
+      "type": "cv",
+      "role": "QA",
+      "label": "QA Engineer",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_SeleniumPlaywright_TEKsystems.pdf",
+      "size": 58500,
+      "modified_at": "2026-11-10T04:49:58.927235"
+    },
+    {
+      "type": "cover_letter",
+      "role": "QA",
+      "label": "Cover Letter \u2014 QA Engineer (template)",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/Answer_Shine_MotivationQuestion.docx",
+      "size": 39734,
+      "modified_at": "2026-11-10T04:49:58.929056"
+    },
+    {
+      "type": "cover_letter",
+      "role": "QA",
+      "label": "Cover Letter \u2014 QA Engineer (template)",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/Answer_Shine_MotivationQuestion.pdf",
+      "size": 82273,
+      "modified_at": "2026-11-10T04:49:58.929237"
+    },
+    {
+      "type": "cover_letter",
+      "role": "QA",
+      "label": "Cover Letter \u2014 QA Engineer (template)",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_HitachiEbworx_QAAnalyst.docx",
+      "size": 38616,
+      "modified_at": "2026-11-10T04:49:58.929237"
+    },
+    {
+      "type": "cover_letter",
+      "role": "QA",
+      "label": "Cover Letter \u2014 QA Engineer (template)",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_HitachiEbworx_QAAnalyst.pdf",
+      "size": 41706,
+      "modified_at": "2026-11-10T04:49:58.929237"
+    },
+    {
+      "type": "cover_letter",
+      "role": "QA",
+      "label": "Cover Letter \u2014 QA Engineer (Lokki)",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_Lokki_QAEngineer.docx",
+      "size": 38291,
+      "modified_at": "2026-11-10T04:49:58.929237"
+    },
+    {
+      "type": "cover_letter",
+      "role": "QA",
+      "label": "Cover Letter \u2014 QA Engineer (Lokki)",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_Lokki_QAEngineer.pdf",
+      "size": 43267,
+      "modified_at": "2026-11-10T04:49:58.929237"
+    },
+    {
+      "type": "cover_letter",
+      "role": "QA",
+      "label": "Cover Letter \u2014 QA Engineer (template)",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_TEKsystems_MobileQA.docx",
+      "size": 38187,
+      "modified_at": "2026-11-10T04:49:58.929237"
+    },
+    {
+      "type": "cover_letter",
+      "role": "QA",
+      "label": "Cover Letter \u2014 QA Engineer (template)",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_TEKsystems_MobileQA.pdf",
+      "size": 37088,
+      "modified_at": "2026-11-10T04:49:58.929237"
+    },
+    {
+      "type": "cover_letter",
+      "role": "QA",
+      "label": "Cover Letter \u2014 QA Engineer (template)",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_TEKsystems_PythonAutomation.docx",
+      "size": 38207,
+      "modified_at": "2026-11-10T04:49:58.929237"
+    },
+    {
+      "type": "cover_letter",
+      "role": "QA",
+      "label": "Cover Letter \u2014 QA Engineer (template)",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_TEKsystems_PythonAutomation.pdf",
+      "size": 36620,
+      "modified_at": "2026-11-10T04:49:58.929237"
+    },
+    {
+      "type": "cover_letter",
+      "role": "QA",
+      "label": "Cover Letter \u2014 QA Engineer (template)",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_TEKsystems_SeleniumPlaywright.docx",
+      "size": 38142,
+      "modified_at": "2026-11-10T04:49:58.929237"
+    },
+    {
+      "type": "cover_letter",
+      "role": "QA",
+      "label": "Cover Letter \u2014 QA Engineer (template)",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_TEKsystems_SeleniumPlaywright.pdf",
+      "size": 37038,
+      "modified_at": "2026-11-10T04:49:58.929237"
+    },
+    {
+      "type": "cover_letter",
+      "role": "QA",
+      "label": "Cover Letter \u2014 QA Engineer (template)",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_Template_QA.docx",
+      "size": 37882,
+      "modified_at": "2026-11-10T04:49:58.929237"
+    },
+    {
+      "type": "cover_letter",
+      "role": "QA",
+      "label": "Cover Letter \u2014 QA Engineer (template)",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_Template_QA.pdf",
+      "size": 38258,
+      "modified_at": "2026-11-10T04:49:58.929237"
+    },
+    {
+      "type": "cover_letter",
+      "role": "QA",
+      "label": "Cover Letter \u2014 QA Engineer (template)",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/Email_HitachiEbworx_QAAnalyst.docx",
+      "size": 38887,
+      "modified_at": "2026-11-10T04:49:58.929237"
+    },
+    {
+      "type": "cover_letter",
+      "role": "QA",
+      "label": "Cover Letter \u2014 QA Engineer (template)",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/Email_HitachiEbworx_QAAnalyst.pdf",
+      "size": 53900,
+      "modified_at": "2026-11-10T04:49:58.929237"
+    },
+    {
+      "type": "cover_letter",
+      "role": "QA",
+      "label": "Cover Letter \u2014 QA Engineer (template)",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/Email_TEKsystems_MultipleQARoles.docx",
+      "size": 38686,
+      "modified_at": "2026-11-10T04:49:58.929237"
+    },
+    {
+      "type": "cover_letter",
+      "role": "QA",
+      "label": "Cover Letter \u2014 QA Engineer (template)",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/Email_TEKsystems_MultipleQARoles.pdf",
+      "size": 54283,
+      "modified_at": "2026-11-10T04:49:58.929237"
+    },
+    {
+      "type": "qa_answers",
+      "role": "QA",
+      "label": "Lokki QA \u2014 5 Mandatory Question Answers",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/Lokki_QA_Mandatory_Questions.docx",
+      "size": 38780,
+      "modified_at": "2026-11-10T04:49:58.929237"
+    },
+    {
+      "type": "qa_answers",
+      "role": "QA",
+      "label": "Lokki QA \u2014 5 Mandatory Question Answers",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/Lokki_QA_Mandatory_Questions.pdf",
+      "size": 48040,
+      "modified_at": "2026-11-10T04:49:58.930235"
+    },
+    {
+      "type": "summary",
+      "role": "QA",
+      "label": "LinkedIn Summary \u2014 QA Engineer",
+      "format": "md",
+      "path": "download/noormanyulizarp@gmail.com/Summary/QA/LinkedIn_Summary_QA.md",
+      "size": 1505,
+      "modified_at": "2026-11-10T04:49:58.932297"
+    },
+    {
+      "type": "cv",
+      "role": "SDET",
+      "label": "SDET",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CV/SDET/CV_Noorman_SDET.docx",
+      "size": 39786,
+      "modified_at": "2026-11-10T04:49:58.927235"
+    },
+    {
+      "type": "cv",
+      "role": "SDET",
+      "label": "SDET",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CV/SDET/CV_Noorman_SDET.pdf",
+      "size": 62001,
+      "modified_at": "2026-11-10T04:49:58.928133"
+    },
+    {
+      "type": "cv",
+      "role": "SDET",
+      "label": "SDET",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CV/SDET/CV_Noorman_SDET_Bonapolia.docx",
+      "size": 40481,
+      "modified_at": "2026-11-10T04:49:58.928133"
+    },
+    {
+      "type": "cv",
+      "role": "SDET",
+      "label": "SDET",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CV/SDET/CV_Noorman_SDET_Bonapolia.pdf",
+      "size": 65768,
+      "modified_at": "2026-11-10T04:49:58.928133"
+    },
+    {
+      "type": "cv",
+      "role": "SDET",
+      "label": "SDET",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CV/SDET/CV_Noorman_SDET_DNAInc.docx",
+      "size": 40445,
+      "modified_at": "2026-11-10T04:49:58.928133"
+    },
+    {
+      "type": "cv",
+      "role": "SDET",
+      "label": "SDET",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CV/SDET/CV_Noorman_SDET_DNAInc.pdf",
+      "size": 66405,
+      "modified_at": "2026-11-10T04:49:58.928133"
+    },
+    {
+      "type": "cover_letter",
+      "role": "SDET",
+      "label": "Cover Letter \u2014 SDET (template)",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/SDET/CL_Bonapolia_QAAutomationEngineer.docx",
+      "size": 38782,
+      "modified_at": "2026-11-10T04:49:58.930235"
+    },
+    {
+      "type": "cover_letter",
+      "role": "SDET",
+      "label": "Cover Letter \u2014 SDET (template)",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/SDET/CL_Bonapolia_QAAutomationEngineer.pdf",
+      "size": 42793,
+      "modified_at": "2026-11-10T04:49:58.930980"
+    },
+    {
+      "type": "cover_letter",
+      "role": "SDET",
+      "label": "Cover Letter \u2014 SDET (template)",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/SDET/CL_DNAInc_SeniorQualityEngineer.docx",
+      "size": 38613,
+      "modified_at": "2026-11-10T04:49:58.930980"
+    },
+    {
+      "type": "cover_letter",
+      "role": "SDET",
+      "label": "Cover Letter \u2014 SDET (template)",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/SDET/CL_DNAInc_SeniorQualityEngineer.pdf",
+      "size": 41003,
+      "modified_at": "2026-11-10T04:49:58.930980"
+    },
+    {
+      "type": "cover_letter",
+      "role": "SDET",
+      "label": "Cover Letter \u2014 SDET (template)",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/SDET/CL_Template_SDET.docx",
+      "size": 37890,
+      "modified_at": "2026-11-10T04:49:58.930980"
+    },
+    {
+      "type": "cover_letter",
+      "role": "SDET",
+      "label": "Cover Letter \u2014 SDET (template)",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/SDET/CL_Template_SDET.pdf",
+      "size": 38866,
+      "modified_at": "2026-11-10T04:49:58.930980"
+    },
+    {
+      "type": "cover_letter",
+      "role": "SDET",
+      "label": "Cover Letter \u2014 SDET (template)",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/SDET/Email_DNAInc_SeniorQualityEngineer.docx",
+      "size": 38754,
+      "modified_at": "2026-11-10T04:49:58.930980"
+    },
+    {
+      "type": "cover_letter",
+      "role": "SDET",
+      "label": "Cover Letter \u2014 SDET (template)",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/SDET/Email_DNAInc_SeniorQualityEngineer.pdf",
+      "size": 53243,
+      "modified_at": "2026-11-10T04:49:58.930980"
+    },
+    {
+      "type": "cover_letter",
+      "role": "SDET",
+      "label": "Cover Letter \u2014 SDET (template)",
+      "format": "docx",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/SDET/FormAnswers_Bonapolia_QAAutomationEngineer.docx",
+      "size": 38384,
+      "modified_at": "2026-11-10T04:49:58.930980"
+    },
+    {
+      "type": "cover_letter",
+      "role": "SDET",
+      "label": "Cover Letter \u2014 SDET (template)",
+      "format": "pdf",
+      "path": "download/noormanyulizarp@gmail.com/CoverLetter/SDET/FormAnswers_Bonapolia_QAAutomationEngineer.pdf",
+      "size": 63831,
+      "modified_at": "2026-11-10T04:49:58.930980"
+    },
+    {
+      "type": "summary",
+      "role": "SDET",
+      "label": "LinkedIn Summary \u2014 SDET",
+      "format": "md",
+      "path": "download/noormanyulizarp@gmail.com/Summary/SDET/LinkedIn_Summary_SDET.md",
+      "size": 1863,
+      "modified_at": "2026-11-10T04:49:58.932297"
+    }
+  ],
+  "saved_jds": [
+    {
+      "company": "Bonapolia",
+      "role": "QAAutomationEngineer",
+      "date": "2026-11-10",
+      "path": "knowledge/jds/Bonapolia_QAAutomationEngineer_2026-11-10.txt",
+      "size": 2379
+    },
+    {
+      "company": "HitachiEbworx",
+      "role": "QAAnalyst",
+      "date": "2026-11-09",
+      "path": "knowledge/jds/HitachiEbworx_QAAnalyst_2026-11-09.txt",
+      "size": 1867
+    },
+    {
+      "company": "Lokki",
+      "role": "QAEngineer",
+      "date": "2026-11-09",
+      "path": "knowledge/jds/Lokki_QAEngineer_2026-11-09.txt",
+      "size": 2706
+    },
+    {
+      "company": "TEKsystemsTokyo",
+      "role": "QA",
+      "date": "2026-11-09",
+      "path": "knowledge/jds/TEKsystemsTokyo_QA_2026-11-09.txt",
+      "size": 1115
+    }
+  ],
+  "knowledge_topics": [
+    {
+      "title": "ATS Keywords \u2014 Per Role",
+      "path": "knowledge/ATS_keywords.md",
+      "size": 4368
+    },
+    {
+      "title": "Apply Playbook \u2014 End-to-End Job Search SOP",
+      "path": "knowledge/apply_playbook.md",
+      "size": 8136
+    },
+    {
+      "title": "Target Companies",
+      "path": "knowledge/companies_target.md",
+      "size": 3512
+    },
+    {
+      "title": "Greenhouse Apply \u2014 Workflow & Tips",
+      "path": "knowledge/hacking_ways/greenhouse_tips.md",
+      "size": 4452
+    },
+    {
+      "title": "Lever Apply \u2014 Workflow & Tips",
+      "path": "knowledge/hacking_ways/lever_tips.md",
+      "size": 2253
+    },
+    {
+      "title": "LinkedIn Easy Apply \u2014 Workflow & Tips",
+      "path": "knowledge/hacking_ways/linkedin_easy_apply.md",
+      "size": 3821
+    },
+    {
+      "title": "Referral Strategy \u2014 Your Strongest Apply Lever",
+      "path": "knowledge/hacking_ways/referral_strategy.md",
+      "size": 3623
+    },
+    {
+      "title": "Workday / Company Site Apply \u2014 Workflow & Tips",
+      "path": "knowledge/hacking_ways/workday_tips.md",
+      "size": 3100
+    }
+  ],
+  "repo_info": {
+    "last_commit": "3ce89e3c0a5597207b625e307353d34aa09a2211|2026-11-10 04:49:49 +0000|Add Bonapolia QA Automation Engineer application (banking/Baltic states)",
+    "branch": "main",
+    "remote_url": "https://github.com/noormanyulizarp/aplicator"
+  }
+}

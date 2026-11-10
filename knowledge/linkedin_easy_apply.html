@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LinkedIn Easy Apply — Workflow & Tips — Noorman Job Search</title>
+<meta name="description" content="LinkedIn Easy Apply — Workflow & Tips — auto-generated from aplicator repo">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<nav class="navbar">
+  <a class="navbar-brand" href="../index.html">🧑‍💻 Noorman Job Search</a>
+  <input type="text" class="navbar-search" id="searchInput" placeholder="Search pages... (e.g. 'ajaib', 'motivation', 'ATS')" autocomplete="off">
+  <div class="navbar-search-results" id="searchResults"></div>
+</nav>
+<div class="container">
+
+<div class="breadcrumb">
+  <a href="../index.html">🏠 Home</a>
+  <span class="breadcrumb-sep">/</span>
+  <span>Knowledge</span>
+  <span class="breadcrumb-sep">/</span>
+  <span>LinkedIn Easy Apply — Workflow & Tips</span>
+</div>
+
+
+<div style="margin-bottom: 16px; padding: 12px 14px; background: var(--surface-2); border-radius: 8px; font-size: 12px; color: var(--text-muted);">
+  <strong style="color: var(--accent);">LinkedIn Easy Apply — Workflow & Tips</strong><br>
+  Source: <code>knowledge/hacking_ways/linkedin_easy_apply.md</code> · Size: 3.7 KB · Modified: Nov 10, 2026 04:33
+</div>
+<div class="markdown-body"><h1 id="linkedin-easy-apply-workflow-tips">LinkedIn Easy Apply — Workflow &amp; Tips</h1>
+<h2 id="what-is-easy-apply">What is Easy Apply?</h2>
+<p>LinkedIn Easy Apply lets you apply with 1-3 clicks using a pre-saved profile + CV. Lower friction, but also lower signal — recruiters see these as lower quality than direct Greenhouse/Lever applications.</p>
+<h2 id="when-to-use-easy-apply">When to use Easy Apply</h2>
+<ul>
+<li>✅ Quick volume applications when you have a tailored CV ready</li>
+<li>✅ Companies you don't have a referral to (otherwise go referral route)</li>
+<li>✅ Exploring market / testing CV response rates</li>
+</ul>
+<h2 id="when-not-to-use-easy-apply">When NOT to use Easy Apply</h2>
+<ul>
+<li>❌ For Tier 1 dream companies — apply directly via their site or referral</li>
+<li>❌ When the JD specifically asks for a cover letter / portfolio link</li>
+<li>❌ When the form asks questions your profile can't auto-fill</li>
+</ul>
+<h2 id="setup-one-time">Setup (one-time)</h2>
+<h3 id="1-profile-completeness">1. Profile completeness</h3>
+<p>LinkedIn weights Easy Apply results by profile completeness. Fill in:
+- [ ] Headline (use your role-targeted tagline, e.g. "Senior SDET | Test Infrastructure @ GoPay | Ex-Ruangguru, Vidio")
+- [ ] About section (paste from <code>Summary/&lt;Role&gt;/LinkedIn_Summary_&lt;Role&gt;.md</code>)
+- [ ] Work experience — fill ALL 10 years
+- [ ] Skills section — add 30+ (matches ATS keyword list)
+- [ ] Featured section — pin a project / GitHub / article
+- [ ] Open to work — set to "Recruiters only" (not the green frame)</p>
+<h3 id="2-cv-upload">2. CV upload</h3>
+<ul>
+<li>Upload 4 CV variants (Backend, AI, QA, SDET) to LinkedIn</li>
+<li>Set the most relevant one as default for the role you're targeting this week</li>
+<li><strong>Tip</strong>: rename files like <code>CV_Noorman_SDET_GoPay.pdf</code> — recruiters see the filename</li>
+</ul>
+<h3 id="3-easy-apply-pre-fill">3. Easy Apply pre-fill</h3>
+<p>When you click Easy Apply for the first time, LinkedIn asks:
+- Years of experience → fill in 10
+- Work authorization → Yes (Indonesia citizen, no sponsorship needed for ID roles)
+- Willing to relocate → Yes / No depending on your preference
+- Salary expectation → set realistic range (research Glassdoor first)</p>
+<p>Save these — they pre-fill future Easy Apply apps.</p>
+<h2 id="easy-apply-workflow">Easy Apply workflow</h2>
+<h3 id="per-app-target-60-seconds">Per-app (target: 60 seconds)</h3>
+<ol>
+<li>Open JD — read the <strong>first 3 lines</strong> of "Requirements"</li>
+<li>Decide: backend / AI / QA / SDET CV?</li>
+<li>Click "Easy Apply"</li>
+<li>Verify the right CV is attached (swap if needed)</li>
+<li>Answer any custom questions (pre-fill if asked before)</li>
+<li>Click submit</li>
+<li><strong>Copy the JD URL</strong> — paste into <code>apply_tracker.py add --link</code></li>
+</ol>
+<h3 id="custom-question-pre-fill">Custom question pre-fill</h3>
+<p>LinkedIn saves your last answer. Common questions to expect:
+- "How many years of experience with [skill]?" → answer conservatively (round down)
+- "Are you authorized to work in [country]?" → Yes
+- "Will you now or in the future require sponsorship?" → No (for Indonesia roles)
+- "What's your expected salary?" → research first; for ID tech roles, typical range:
+  - Senior SDET: IDR 25-45M/month
+  - Senior Backend: IDR 30-50M/month
+  - Senior AI Engineer: IDR 35-60M/month</p>
+<h2 id="hidden-gotchas">Hidden gotchas</h2>
+<ul>
+<li><strong>Don't apply to 100+ in a day</strong> — LinkedIn may flag as spam and limit your account</li>
+<li><strong>Easy Apply responses go to the same ATS as direct applications</strong> — quality &gt; quantity</li>
+<li><strong>Some "Easy Apply" buttons route to company site anyway</strong> — check the form before submitting</li>
+<li><strong>Update your default CV when you tailor it</strong> — or you'll apply with the wrong variant</li>
+</ul>
+<h2 id="tools-to-make-easy-apply-faster">Tools to make Easy Apply faster</h2>
+<ul>
+<li><strong>LinkedIn Premium</strong>: not strictly needed for Easy Apply, but InMail credits help for recruiter outreach</li>
+<li><strong>Browser extension: SimplifyJobs / LazyApply</strong>: auto-fills beyond LinkedIn (use with caution)</li>
+<li><strong>Bookmark your search URLs</strong>: <code>https://www.linkedin.com/jobs/search/?f_AL=true&amp;keywords=sdet&amp;location=Indonesia&amp;f_WT=2</code> (Easy Apply filter = <code>f_AL=true</code>)</li>
+</ul>
+<h2 id="tracking">Tracking</h2>
+<p>After every Easy Apply session:</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>scripts/apply_tracker.py<span class="w"> </span>add<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--company<span class="w"> </span><span class="s2">&quot;Company&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--role<span class="w"> </span><span class="s2">&quot;SDET&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--platform<span class="w"> </span>linkedin<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--link<span class="w"> </span><span class="s2">&quot;https://linkedin.com/jobs/view/XXXX&quot;</span>
+</code></pre></div></div>
+</div>
+<footer>
+  <p>Static site auto-generated from <code>noormanyulizarp/aplicator</code> repo · Last updated: 2026-11-10T07:11:44.163034</p>
+  <p style="margin-top: 8px;">
+    <a href="../index.html">🏠 Home</a> ·
+    <a href="https://github.com/noormanyulizarp/aplicator" target="_blank">📦 Source (private)</a>
+  </p>
+</footer>
+<script src="../assets/search.js"></script>
+</body>
+</html>

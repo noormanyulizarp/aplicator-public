@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lever Apply — Workflow & Tips — Noorman Job Search</title>
+<meta name="description" content="Lever Apply — Workflow & Tips — auto-generated from aplicator repo">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<nav class="navbar">
+  <a class="navbar-brand" href="../index.html">🧑‍💻 Noorman Job Search</a>
+  <input type="text" class="navbar-search" id="searchInput" placeholder="Search pages... (e.g. 'ajaib', 'motivation', 'ATS')" autocomplete="off">
+  <div class="navbar-search-results" id="searchResults"></div>
+</nav>
+<div class="container">
+
+<div class="breadcrumb">
+  <a href="../index.html">🏠 Home</a>
+  <span class="breadcrumb-sep">/</span>
+  <span>Knowledge</span>
+  <span class="breadcrumb-sep">/</span>
+  <span>Lever Apply — Workflow & Tips</span>
+</div>
+
+
+<div style="margin-bottom: 16px; padding: 12px 14px; background: var(--surface-2); border-radius: 8px; font-size: 12px; color: var(--text-muted);">
+  <strong style="color: var(--accent);">Lever Apply — Workflow & Tips</strong><br>
+  Source: <code>knowledge/hacking_ways/lever_tips.md</code> · Size: 2.2 KB · Modified: Nov 10, 2026 04:33
+</div>
+<div class="markdown-body"><h1 id="lever-apply-workflow-tips">Lever Apply — Workflow &amp; Tips</h1>
+<p>Lever is the second most common ATS in tech (used by Notion, Ramp, Plaid, etc.). Simpler than Greenhouse — usually just CV + 1-2 questions.</p>
+<h2 id="why-lever-is-great">Why Lever is great</h2>
+<ul>
+<li>✅ Fastest apply flow of any ATS (often &lt;2 min)</li>
+<li>✅ Almost always auto-acknowledges with confirmation email</li>
+<li>✅ Often has a single form across all roles at the company</li>
+<li>✅ Mobile-friendly — you can apply on the go</li>
+</ul>
+<h2 id="lever-workflow">Lever workflow</h2>
+<h3 id="step-by-step-target-2-min-per-app">Step-by-step (target: 2 min per app)</h3>
+<ol>
+<li>Open the role on the company's Lever page (often <code>jobs.lever.co/&lt;company&gt;</code>)</li>
+<li>Click "Apply for this job"</li>
+<li><strong>Personal info</strong>: name, email, phone — autofill from browser</li>
+<li><strong>CV upload</strong>: drag your tailored PDF</li>
+<li><strong>Optional: cover letter</strong> — paste from <code>CL_Template_&lt;Role&gt;.docx</code></li>
+<li><strong>Custom questions</strong> (if any): usually 1-2 — salary expectation, work authorization</li>
+<li><strong>Links</strong>: paste LinkedIn + GitHub + portfolio</li>
+<li><strong>Submit</strong></li>
+</ol>
+<h2 id="lever-specific-tips">Lever-specific tips</h2>
+<ul>
+<li><strong>"My Applications" page</strong>: <code>jobs.lever.co/me/applications</code> — track all your Lever apps in one place</li>
+<li><strong>Status feedback is faster</strong> than Greenhouse — usually within 2-5 days</li>
+<li><strong>Email confirmation always comes</strong> — if you don't get one in 5 min, check spam or re-submit</li>
+<li><strong>Custom questions are minimal</strong> — Lever's philosophy is "let the CV speak"</li>
+<li><strong>Many Lever companies don't require cover letters</strong> — submit anyway if Tier 1</li>
+</ul>
+<h2 id="when-lever-asks-custom-questions">When Lever asks custom questions</h2>
+<p>Common patterns:
+- "Are you legally authorized to work in [country]?" → Yes/No
+- "Will you now or in the future require visa sponsorship?" → Yes/No
+- "What's your expected salary?" → range in local currency
+- "How did you hear about this role?" → referral name if any</p>
+<h2 id="gotchas">Gotchas</h2>
+<ul>
+<li>❌ Lever's "My Applications" page sometimes doesn't sync statuses — keep your own tracker</li>
+<li>❌ Some companies add a screening question with a hidden "right answer" (e.g. "What HTTP status code means...") — answer carefully</li>
+<li>❌ If you apply twice to the same company in 30 days, the second usually overwrites the first (not always — varies)</li>
+</ul>
+<h2 id="tracking">Tracking</h2>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>scripts/apply_tracker.py<span class="w"> </span>add<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--company<span class="w"> </span><span class="s2">&quot;Notion&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--role<span class="w"> </span><span class="s2">&quot;AI Engineer&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--platform<span class="w"> </span>lever<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--link<span class="w"> </span><span class="s2">&quot;https://jobs.lever.co/notion/XXXX&quot;</span>
+</code></pre></div></div>
+</div>
+<footer>
+  <p>Static site auto-generated from <code>noormanyulizarp/aplicator</code> repo · Last updated: 2026-11-10T07:11:44.163034</p>
+  <p style="margin-top: 8px;">
+    <a href="../index.html">🏠 Home</a> ·
+    <a href="https://github.com/noormanyulizarp/aplicator" target="_blank">📦 Source (private)</a>
+  </p>
+</footer>
+<script src="../assets/search.js"></script>
+</body>
+</html>
