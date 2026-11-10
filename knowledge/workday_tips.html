@@ -26,7 +26,7 @@
 
 <div style="margin-bottom: 16px; padding: 12px 14px; background: var(--surface-2); border-radius: 8px; font-size: 12px; color: var(--text-muted);">
   <strong style="color: var(--accent);">Workday / Company Site Apply — Workflow & Tips</strong><br>
-  Source: <code>knowledge/hacking_ways/workday_tips.md</code> · Size: 3.0 KB · Modified: Nov 10, 2026 07:14
+  Source: <code>knowledge/hacking_ways/workday_tips.md</code> · Size: 3.0 KB · Modified: Nov 10, 2026 14:04
 </div>
 <div class="markdown-body"><h1 id="workday-company-site-apply-workflow-tips">Workday / Company Site Apply — Workflow &amp; Tips</h1>
 <p>Workday is the most painful ATS in tech (used by many large enterprises — banks, telcos, Fortune 500). Plan 15-30 min per application.</p>
@@ -46,28 +46,28 @@
 <h2 id="setup-before-applying">Setup before applying</h2>
 <h3 id="1-create-a-plain-text-work-history-file">1. Create a plain-text work history file</h3>
 <p>Save as <code>knowledge/work_history.txt</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="o">===</span><span class="w"> </span><span class="k">GoTo</span><span class="w"> </span><span class="nl">Financial</span><span class="w"> </span><span class="ss">(</span><span class="nv">GoPay</span><span class="ss">)</span><span class="w"> </span><span class="o">===</span>
-<span class="nv">Title</span>:<span class="w"> </span><span class="nv">Software</span><span class="w"> </span><span class="nv">Engineer</span><span class="w"> </span><span class="nv">in</span><span class="w"> </span><span class="nv">Test</span>
-<span class="nv">Period</span>:<span class="w"> </span><span class="nv">Jan</span><span class="w"> </span><span class="mi">2023</span><span class="w"> </span>—<span class="w"> </span><span class="nv">Present</span>
-<span class="nv">Location</span>:<span class="w"> </span><span class="nv">Jakarta</span>,<span class="w"> </span><span class="nv">Indonesia</span>
-<span class="nv">Salary</span>:<span class="w"> </span>[<span class="nv">leave</span><span class="w"> </span><span class="nv">blank</span><span class="w"> </span><span class="nv">or</span><span class="w"> </span><span class="s2">&quot;competitive&quot;</span>]
-<span class="nv">Manager</span>:<span class="w"> </span>[<span class="nv">Name</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nv">you</span><span class="w"> </span><span class="nv">want</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="nv">share</span>]
-<span class="nv">Reason</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nv">leaving</span>:<span class="w"> </span><span class="nv">N</span><span class="o">/</span><span class="nv">A</span><span class="w"> </span><span class="ss">(</span><span class="nv">current</span><span class="ss">)</span>
-<span class="nv">Duties</span>:
-<span class="o">-</span><span class="w"> </span>[<span class="nv">bullets</span><span class="w"> </span><span class="nv">from</span><span class="w"> </span><span class="nv">your</span><span class="w"> </span><span class="nv">CV</span>]
+<pre class="highlight"><code>=== GoTo Financial (GoPay) ===
+Title: Software Engineer in Test
+Period: Jan 2023 — Present
+Location: Jakarta, Indonesia
+Salary: [leave blank or &quot;competitive&quot;]
+Manager: [Name if you want to share]
+Reason for leaving: N/A (current)
+Duties:
+- [bullets from your CV]
 
-<span class="o">===</span><span class="w"> </span><span class="nv">Ruangguru</span><span class="w"> </span><span class="o">===</span>
-...<span class="w"> </span><span class="nv">etc</span>.
-</code></pre></div>
+=== Ruangguru ===
+... etc.
+</code></pre>
 
 <p>Workday will ask for this — having it pre-written saves 5+ minutes per app.</p>
 <h3 id="2-education-file">2. Education file</h3>
-<div class="highlight"><pre><span></span><code>=== Jenderal Soedirman University ===
+<pre class="highlight"><code>=== Jenderal Soedirman University ===
 Degree: Bachelor of Software Engineering
 Period: 2012 — 2016
 GPA: 3.51
 Location: Purwokerto, Indonesia
-</code></pre></div>
+</code></pre>
 
 <h3 id="3-references">3. References</h3>
 <p>Some Workday apps ask for 2-3 references upfront. Prepare:
@@ -102,16 +102,16 @@ Location: Purwokerto, Indonesia
 - Referral (your strongest lever for Workday-using companies)</p>
 <p>→ Use the alternative. Workday is rarely worth the time unless it's a Tier 1 company.</p>
 <h2 id="tracking">Tracking</h2>
-<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>scripts/apply_tracker.py<span class="w"> </span>add<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--company<span class="w"> </span><span class="s2">&quot;Bank Mandiri&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--role<span class="w"> </span><span class="s2">&quot;QA Engineer&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--platform<span class="w"> </span>workday<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--link<span class="w"> </span><span class="s2">&quot;https://...&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--notes<span class="w"> </span><span class="s2">&quot;15 min application; account: noorman@...&quot;</span>
-</code></pre></div></div>
+<pre class="highlight"><code class="language-bash">python3 scripts/apply_tracker.py add \
+  --company &quot;Bank Mandiri&quot; \
+  --role &quot;QA Engineer&quot; \
+  --platform workday \
+  --link &quot;https://...&quot; \
+  --notes &quot;15 min application; account: noorman@...&quot;
+</code></pre></div>
 </div>
 <footer>
-  <p>Static site auto-generated from <code>noormanyulizarp/aplicator</code> repo · Last updated: 2026-11-10T14:03:44.723458</p>
+  <p>Static site auto-generated from <code>noormanyulizarp/aplicator</code> repo · Last updated: 2026-11-10T14:04:07.080761</p>
   <p style="margin-top: 8px;">
     <a href="../index.html">🏠 Home</a> ·
     <a href="https://github.com/noormanyulizarp/aplicator" target="_blank">📦 Source (private)</a>

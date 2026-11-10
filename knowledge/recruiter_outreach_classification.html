@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recruiter Outreach Classification System — Noorman Job Search</title>
+<meta name="description" content="Recruiter Outreach Classification System — auto-generated from aplicator repo">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<nav class="navbar">
+  <a class="navbar-brand" href="../index.html">🧑‍💻 Noorman Job Search</a>
+  <input type="text" class="navbar-search" id="searchInput" placeholder="Search pages... (e.g. 'ajaib', 'motivation', 'ATS')" autocomplete="off">
+  <div class="navbar-search-results" id="searchResults"></div>
+</nav>
+<div class="container">
+
+<div class="breadcrumb">
+  <a href="../index.html">🏠 Home</a>
+  <span class="breadcrumb-sep">/</span>
+  <span>Knowledge</span>
+  <span class="breadcrumb-sep">/</span>
+  <span>Recruiter Outreach Classification System</span>
+</div>
+
+
+<div style="margin-bottom: 16px; padding: 12px 14px; background: var(--surface-2); border-radius: 8px; font-size: 12px; color: var(--text-muted);">
+  <strong style="color: var(--accent);">Recruiter Outreach Classification System</strong><br>
+  Source: <code>knowledge/recruiter_outreach_classification.md</code> · Size: 6.9 KB · Modified: Nov 10, 2026 14:11
+</div>
+<div class="markdown-body"><h1 id="recruiter-outreach-classification-system">Recruiter Outreach Classification System</h1>
+<blockquote>
+<p><strong>Purpose:</strong> Standardize how we evaluate and respond to inbound recruiter approaches.
+Each outreach gets classified across 8 dimensions, scored 1-5 each, then mapped to a response strategy.</p>
+</blockquote>
+<hr />
+<h2 id="classification-dimensions">📊 Classification Dimensions</h2>
+<h3 id="1-recruiter-type-1-5">1. Recruiter Type (1-5)</h3>
+<table>
+<thead>
+<tr>
+<th>Score</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td><strong>Founder/C-level directly</strong></td>
+<td>CEO/CTO/VP personally reaches out — highest signal</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>In-house recruiter</strong></td>
+<td>Works at the company directly — full context, fast decisions</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Headhunter/Independent</strong></td>
+<td>Specialized independent recruiter — vetted but middleman</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Agency recruiter (large)</strong></td>
+<td>Big staffing agency (Robert Half, Hays, etc.) — volume-based</td>
+</tr>
+<tr>
+<td>1</td>
+<td><strong>Unknown/Cold outreach</strong></td>
+<td>LinkedIn connection request with brief message — least vetted</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-opportunity-detail-level-1-5">2. Opportunity Detail Level (1-5)</h3>
+<table>
+<thead>
+<tr>
+<th>Score</th>
+<th>Level</th>
+<th>What's provided</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td><strong>Detailed</strong></td>
+<td>Full JD + company name + comp range + tech stack + team size</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Moderate</strong></td>
+<td>Role title + company name + brief description</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Minimal</strong></td>
+<td>Role title + brief project/client description</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Vague</strong></td>
+<td>Just "would you be open to hearing more?" with minimal context</td>
+</tr>
+<tr>
+<td>1</td>
+<td><strong>Spam-like</strong></td>
+<td>Generic template, no personalization</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-seniority-match-1-5">3. Seniority Match (1-5)</h3>
+<table>
+<thead>
+<tr>
+<th>Score</th>
+<th>Match</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td><strong>Exact match</strong></td>
+<td>Senior SDET (Noorman: 10 yrs, former Test Lead)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Stretch up</strong></td>
+<td>Staff/Principal SDET (growth opportunity)</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Adjacent level</strong></td>
+<td>QA Lead → IC SDET (lateral move)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Stretch down</strong></td>
+<td>Mid SDET (might be under-level)</td>
+</tr>
+<tr>
+<td>1</td>
+<td><strong>Mismatch</strong></td>
+<td>Junior role, or totally different track (e.g. PM role)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-domain-fit-1-5">4. Domain Fit (1-5)</h3>
+<table>
+<thead>
+<tr>
+<th>Score</th>
+<th>Match</th>
+<th>Noorman's domain vs client domain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td><strong>Direct match</strong></td>
+<td>Fintech/banking/crypto (GoPay, Bank Indonesia, Jenius) or streaming (Vidio)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Strong adjacent</strong></td>
+<td>E-commerce, SaaS, regulated industry, mobile-first consumer apps</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Tangential</strong></td>
+<td>MLM/direct selling, EdTech, gaming — transferable skills</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Weak adjacent</strong></td>
+<td>Healthcare, automotive, B2B enterprise — partial transfer</td>
+</tr>
+<tr>
+<td>1</td>
+<td><strong>Unrelated</strong></td>
+<td>Bio-tech, hardware, government, defense — minimal transfer</td>
+</tr>
+</tbody>
+</table>
+<h3 id="5-work-mode-1-5">5. Work Mode (1-5)</h3>
+<table>
+<thead>
+<tr>
+<th>Score</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td><strong>Remote-first</strong></td>
+<td>Fully remote, timezone flexibility</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Hybrid (Indonesia)</strong></td>
+<td>Hybrid with Jakarta office (or near)</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Hybrid (specific city)</strong></td>
+<td>Hybrid in specific foreign city (relocation needed)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>On-site (Indonesia)</strong></td>
+<td>On-site in Jakarta (commute OK)</td>
+</tr>
+<tr>
+<td>1</td>
+<td><strong>On-site (foreign)</strong></td>
+<td>On-site in foreign country (heavy relocation)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="6-locationvisa-feasibility-1-5">6. Location/Visa Feasibility (1-5)</h3>
+<table>
+<thead>
+<tr>
+<th>Score</th>
+<th>Situation</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td><strong>Indonesia-based</strong></td>
+<td>No visa needed, Noorman in Jakarta</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Visa-sponsored</strong></td>
+<td>Company sponsors visa (Spain Digital Nomad, NL HSM, etc.)</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Contractor-friendly</strong></td>
+<td>B2B model, work from anywhere (Bonapolia pattern)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Visa-required (hard)</strong></td>
+<td>Must already have right to work (Japan residency, Finland residency)</td>
+</tr>
+<tr>
+<td>1</td>
+<td><strong>Unknown/Unclear</strong></td>
+<td>Need to ask, may be blocker</td>
+</tr>
+</tbody>
+</table>
+<h3 id="7-compensation-tier-1-5">7. Compensation Tier (1-5)</h3>
+<table>
+<thead>
+<tr>
+<th>Score</th>
+<th>Tier</th>
+<th>Range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td><strong>US/Global remote</strong></td>
+<td>USD 80-150K/year (top tier)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>EU/UK/Singapore</strong></td>
+<td>EUR/GBP 50-80K/year, or SGD 7-12K/month</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Regional SEA</strong></td>
+<td>USD 4-8K/month</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Indonesia market (unicorn)</strong></td>
+<td>IDR 35-65M/month</td>
+</tr>
+<tr>
+<td>1</td>
+<td><strong>Indonesia market (mid)</strong></td>
+<td>IDR 20-35M/month</td>
+</tr>
+<tr>
+<td>*</td>
+<td><strong>Unknown</strong></td>
+<td>Need to ask — score 3 (neutral)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="8-urgencytime-to-response-1-5">8. Urgency/Time-to-Response (1-5)</h3>
+<table>
+<thead>
+<tr>
+<th>Score</th>
+<th>Urgency</th>
+<th>Signal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td><strong>Same-day response expected</strong></td>
+<td>"Available for call tomorrow"</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Within 24-48 hours</strong></td>
+<td>Standard recruiter follow-up</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Standard (within week)</strong></td>
+<td>No specific timeline mentioned</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Slow burn</strong></td>
+<td>"Keeping you in mind for future"</td>
+</tr>
+<tr>
+<td>1</td>
+<td><strong>No urgency</strong></td>
+<td>Generic cold outreach</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="response-strategy-matrix">🎯 Response Strategy Matrix</h2>
+<p><strong>Total score = sum of all 8 dimensions (max 40)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Total Score</th>
+<th>Strategy</th>
+<th>Reply Template</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>32-40</strong></td>
+<td><strong>A. Strong fit + clear info</strong></td>
+<td>Reply YES immediately + send CV + propose 3 time slots for call</td>
+</tr>
+<tr>
+<td><strong>24-31</strong></td>
+<td><strong>B. Strong fit + minimal info</strong></td>
+<td>Reply YES + ask 2-3 clarifying questions + propose call (send CV after answers)</td>
+</tr>
+<tr>
+<td><strong>16-23</strong></td>
+<td><strong>C. Worth exploring</strong></td>
+<td>Reply YES + ask clarifying questions BEFORE sending CV</td>
+</tr>
+<tr>
+<td><strong>8-15</strong></td>
+<td><strong>D. Weak fit</strong></td>
+<td>Reply politely asking for more info, don't commit</td>
+</tr>
+<tr>
+<td><strong>&lt;8</strong></td>
+<td><strong>E. Decline</strong></td>
+<td>Polite decline + keep door open for future</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="standard-clarifying-questions-use-for-strategy-bc">📋 Standard Clarifying Questions (use for Strategy B/C)</h2>
+<p>When info is minimal, ask these (pick 2-3 most relevant):</p>
+<ol>
+<li><strong>Company name</strong> — "Could you share the company name so I can research them?"</li>
+<li><strong>Full JD</strong> — "Is there a full job description you could share?"</li>
+<li><strong>Compensation range</strong> — "What's the typical compensation range for this role?"</li>
+<li><strong>Visa/work authorization</strong> — "Does this role require existing work authorization, or is visa sponsorship available?"</li>
+<li><strong>Timezone expectations</strong> — "What timezone overlap is expected for the remote role?"</li>
+<li><strong>Team size</strong> — "How large is the QA team I'd be joining/leading?"</li>
+<li><strong>Tech stack</strong> — "What's the primary tech stack for test automation?"</li>
+<li><strong>Start date</strong> — "What's the expected start date?"</li>
+</ol>
+<hr />
+<h2 id="file-organization">📁 File Organization</h2>
+<p>Each recruiter outreach gets:</p>
+<div class="highlight"><pre><span></span><code><span class="n">download</span><span class="o">/</span><span class="n">noormanyulizarp</span><span class="err">@</span><span class="n">gmail</span><span class="o">.</span><span class="n">com</span><span class="o">/</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">Profile</span><span class="o">/</span><span class="n">research</span><span class="o">/</span>
+<span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="o">&lt;</span><span class="n">recruiter_name</span><span class="o">&gt;</span><span class="n">_outreach_classification</span><span class="o">.</span><span class="n">md</span><span class="w">   </span><span class="err">←</span><span class="w"> </span><span class="n">Classification</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">analysis</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">general</span><span class="o">/</span><span class="n">emails</span><span class="o">/</span>
+<span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="n">Email_</span><span class="o">&lt;</span><span class="n">RecruiterName</span><span class="o">&gt;</span><span class="n">_RecruiterReply</span><span class="o">.</span><span class="p">{</span><span class="n">docx</span><span class="p">,</span><span class="n">pdf</span><span class="p">}</span><span class="w">  </span><span class="err">←</span><span class="w"> </span><span class="n">Reply</span><span class="w"> </span><span class="n">draft</span><span class="w"> </span><span class="p">(</span><span class="mi">3</span><span class="w"> </span><span class="n">options</span><span class="p">)</span>
+<span class="err">└──</span><span class="w"> </span><span class="p">(</span><span class="n">CV</span><span class="o">/</span><span class="n">CL</span><span class="w"> </span><span class="n">only</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">sending</span><span class="w"> </span><span class="err">—</span><span class="w"> </span><span class="n">depends</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="n">strategy</span><span class="p">)</span>
+
+<span class="n">knowledge</span><span class="o">/</span><span class="n">apply_tracker</span><span class="o">.</span><span class="n">csv</span><span class="w">  </span><span class="err">←</span><span class="w"> </span><span class="n">Add</span><span class="w"> </span><span class="n">entry</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="n">status</span><span class="o">=</span><span class="n">drafting</span>
+</code></pre></div>
+
+<hr />
+<h2 id="workflow">🔄 Workflow</h2>
+<ol>
+<li><strong>Receive outreach</strong> → save raw message to <code>Profile/research/&lt;recruiter&gt;_outreach_classification.md</code></li>
+<li><strong>Research recruiter</strong> (if LinkedIn profile provided, try WebFetch; if name only, WebSearch)</li>
+<li><strong>Classify</strong> across 8 dimensions → calculate total score</li>
+<li><strong>Determine response strategy</strong> (A/B/C/D/E)</li>
+<li><strong>Generate reply draft</strong> with 3 options based on strategy</li>
+<li><strong>Add to tracker</strong> with platform=referral, status=drafting</li>
+<li><strong>Commit + push</strong> (auto-sync to public site reports)</li>
+</ol>
+<hr />
+<h2 id="historical-classification-log">📊 Historical Classification Log</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Recruiter</th>
+<th>Company</th>
+<th>Role</th>
+<th>Score</th>
+<th>Strategy</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Maria Odelia Meidaxia</td>
+<td>Ajaib</td>
+<td>SDET</td>
+<td>35/40</td>
+<td>A (strong fit)</td>
+<td>Reply sent</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Glenn</td>
+<td>Unknown (Brand Ambassador super app)</td>
+<td>Senior SDET (Remote)</td>
+<td>24/40</td>
+<td>B (strong fit, minimal info)</td>
+<td>Drafting reply</td>
+</tr>
+<tr>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+</tr>
+</tbody>
+</table>
+<p><em>(Future outreaches will be added here as they come in)</em></p></div>
+</div>
+<footer>
+  <p>Static site auto-generated from <code>noormanyulizarp/aplicator</code> repo · Last updated: 2026-11-10T14:12:02.676604</p>
+  <p style="margin-top: 8px;">
+    <a href="../index.html">🏠 Home</a> ·
+    <a href="https://github.com/noormanyulizarp/aplicator" target="_blank">📦 Source (private)</a>
+  </p>
+</footer>
+<script src="../assets/search.js"></script>
+</body>
+</html>
