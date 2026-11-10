@@ -26,7 +26,11 @@
 
 <div style="margin-bottom: 16px; padding: 12px 14px; background: var(--surface-2); border-radius: 8px; font-size: 12px; color: var(--text-muted);">
   <strong style="color: var(--accent);">Referral Strategy — Your Strongest Apply Lever</strong><br>
+<<<<<<< HEAD
+  Source: <code>knowledge/hacking_ways/referral_strategy.md</code> · Size: 3.5 KB · Modified: Nov 10, 2026 07:14
+=======
   Source: <code>knowledge/hacking_ways/referral_strategy.md</code> · Size: 3.5 KB · Modified: Nov 10, 2026 04:33
+>>>>>>> 1422744 (Multi-page static site + 3 deployment options (Cloudflare + Vercel + GitHub Pages mirror))
 </div>
 <div class="markdown-body"><h1 id="referral-strategy-your-strongest-apply-lever">Referral Strategy — Your Strongest Apply Lever</h1>
 <p>A referral increases your interview chance by 5-10x compared to cold application. Most engineers underuse this.</p>
@@ -60,6 +64,47 @@
 </ul>
 <h2 id="how-to-ask-for-a-referral">How to ask for a referral</h2>
 <h3 id="template-close-colleague">Template — close colleague</h3>
+<<<<<<< HEAD
+<pre class="highlight"><code>Hi [Name]! 👋
+
+Saw that [Company] is hiring for [Role] — looks like a strong match for me given my
+[1-sentence relevant skill/background].
+
+Would you be open to referring me? Totally fine if not — no pressure either way.
+
+JD link: [URL]
+My CV: [Google Drive link or attached]
+
+Either way, let's catch up soon — coffee on me next time!
+Noorman
+</code></pre>
+
+<h3 id="template-linkedin-2nd-degree-mutual-intro">Template — LinkedIn 2nd-degree (mutual intro)</h3>
+<pre class="highlight"><code>Hi [Mutual Connection],
+
+Hope you're well! I noticed you're connected with [Name] at [Company]. I'm exploring
+[Role] opportunities there — my background is [1-line]. Would you feel comfortable
+introducing me? Totally fine if you'd rather not.
+
+Either way, thanks for keeping in touch!
+Noorman
+</code></pre>
+
+<h3 id="template-cold-linkedin-dm-to-engineer-at-target-company">Template — cold LinkedIn DM to engineer at target company</h3>
+<pre class="highlight"><code>Hi [Name],
+
+I came across your profile via [mutual connection / shared group / company's eng blog].
+I'm a Senior SDET at GoPay with 10 years across fintech/edtech — saw [Company] is hiring
+for [Role] and it looks like a strong match.
+
+Would you be open to a brief chat (15 min) about what the team is like? No pressure to
+refer — I'd value the perspective either way.
+
+Thanks for your time,
+Noorman
+noormanyulizarp@gmail.com
+</code></pre>
+=======
 <div class="highlight"><pre><span></span><code><span class="n">Hi</span><span class="w"> </span><span class="o">[</span><span class="n">Name</span><span class="o">]</span><span class="err">!</span><span class="w"> </span><span class="err">👋</span>
 
 <span class="n">Saw</span><span class="w"> </span><span class="n">that</span><span class="w"> </span><span class="o">[</span><span class="n">Company</span><span class="o">]</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">hiring</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="o">[</span><span class="n">Role</span><span class="o">]</span><span class="w"> </span><span class="err">—</span><span class="w"> </span><span class="n">looks</span><span class="w"> </span><span class="ow">like</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">strong</span><span class="w"> </span><span class="k">match</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">me</span><span class="w"> </span><span class="n">given</span><span class="w"> </span><span class="n">my</span>
@@ -99,6 +144,7 @@
 <span class="n">Noorman</span>
 <span class="n">noormanyulizarp</span><span class="nv">@gmail</span><span class="p">.</span><span class="n">com</span>
 </code></pre></div>
+>>>>>>> 1422744 (Multi-page static site + 3 deployment options (Cloudflare + Vercel + GitHub Pages mirror))
 
 <h2 id="etiquette">Etiquette</h2>
 <ul>
@@ -118,6 +164,15 @@
 </ul>
 <h2 id="tracking-referrals">Tracking referrals</h2>
 <p>In <code>apply_tracker.py add</code>:</p>
+<<<<<<< HEAD
+<pre class="highlight"><code class="language-bash">python3 scripts/apply_tracker.py add \
+  --company &quot;Stripe&quot; \
+  --role &quot;Backend Engineer&quot; \
+  --platform referral \
+  --link &quot;https://...&quot; \
+  --notes &quot;Referred by @jane.doe (ex-Ruangguru teammate, connected 2024-01-15)&quot;
+</code></pre>
+=======
 <div class="highlight"><pre><span></span><code>python3<span class="w"> </span>scripts/apply_tracker.py<span class="w"> </span>add<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>--company<span class="w"> </span><span class="s2">&quot;Stripe&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>--role<span class="w"> </span><span class="s2">&quot;Backend Engineer&quot;</span><span class="w"> </span><span class="se">\</span>
@@ -125,6 +180,7 @@
 <span class="w">  </span>--link<span class="w"> </span><span class="s2">&quot;https://...&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>--notes<span class="w"> </span><span class="s2">&quot;Referred by @jane.doe (ex-Ruangguru teammate, connected 2024-01-15)&quot;</span>
 </code></pre></div>
+>>>>>>> 1422744 (Multi-page static site + 3 deployment options (Cloudflare + Vercel + GitHub Pages mirror))
 
 <h2 id="referral-pipeline-long-term-play">Referral pipeline — long-term play</h2>
 <p>Build your referral network BEFORE you need it:</p>
@@ -135,7 +191,11 @@
 </ul></div>
 </div>
 <footer>
+<<<<<<< HEAD
+  <p>Static site auto-generated from <code>noormanyulizarp/aplicator</code> repo · Last updated: 2026-11-10T07:15:02.151982</p>
+=======
   <p>Static site auto-generated from <code>noormanyulizarp/aplicator</code> repo · Last updated: 2026-11-10T07:11:44.163034</p>
+>>>>>>> 1422744 (Multi-page static site + 3 deployment options (Cloudflare + Vercel + GitHub Pages mirror))
   <p style="margin-top: 8px;">
     <a href="../index.html">🏠 Home</a> ·
     <a href="https://github.com/noormanyulizarp/aplicator" target="_blank">📦 Source (private)</a>

@@ -26,7 +26,11 @@
 
 <div style="margin-bottom: 16px; padding: 12px 14px; background: var(--surface-2); border-radius: 8px; font-size: 12px; color: var(--text-muted);">
   <strong style="color: var(--accent);">Apply Playbook — End-to-End Job Search SOP</strong><br>
+<<<<<<< HEAD
+  Source: <code>knowledge/apply_playbook.md</code> · Size: 7.9 KB · Modified: Nov 10, 2026 07:14
+=======
   Source: <code>knowledge/apply_playbook.md</code> · Size: 7.9 KB · Modified: Nov 10, 2026 04:33
+>>>>>>> 1422744 (Multi-page static site + 3 deployment options (Cloudflare + Vercel + GitHub Pages mirror))
 </div>
 <div class="markdown-body"><h1 id="apply-playbook-end-to-end-job-search-sop">Apply Playbook — End-to-End Job Search SOP</h1>
 <p>A repeatable workflow for each job application. Goal: maximize signal per application, minimize wasted effort.</p>
@@ -43,10 +47,17 @@
 </ul>
 <h3 id="two-ways-to-run-the-workflow">Two ways to run the workflow</h3>
 <p><strong>Option A — CLI scripts</strong> (this assistant or terminal):</p>
+<<<<<<< HEAD
+<pre class="highlight"><code class="language-bash">python3 scripts/jd_parser.py --file jd.txt
+python3 scripts/tailor_cv.py --jd-file jd.txt --role sdet
+python3 scripts/apply_tracker.py add --company &quot;X&quot; --role &quot;SDET&quot; --platform greenhouse --link &quot;...&quot;
+</code></pre>
+=======
 <div class="highlight"><pre><span></span><code>python3<span class="w"> </span>scripts/jd_parser.py<span class="w"> </span>--file<span class="w"> </span>jd.txt
 python3<span class="w"> </span>scripts/tailor_cv.py<span class="w"> </span>--jd-file<span class="w"> </span>jd.txt<span class="w"> </span>--role<span class="w"> </span>sdet
 python3<span class="w"> </span>scripts/apply_tracker.py<span class="w"> </span>add<span class="w"> </span>--company<span class="w"> </span><span class="s2">&quot;X&quot;</span><span class="w"> </span>--role<span class="w"> </span><span class="s2">&quot;SDET&quot;</span><span class="w"> </span>--platform<span class="w"> </span>greenhouse<span class="w"> </span>--link<span class="w"> </span><span class="s2">&quot;...&quot;</span>
 </code></pre></div>
+>>>>>>> 1422744 (Multi-page static site + 3 deployment options (Cloudflare + Vercel + GitHub Pages mirror))
 
 <p><strong>Option B — MCP server</strong> (Claude Desktop / Cursor / Cline / Continue):
 Connect the MCP server (see <code>mcp_server/README.md</code>), then ask your AI client in natural language:</p>
@@ -118,6 +129,15 @@ Use Option B when working in Claude Desktop / Cursor / etc.</p>
 - Share: role title, link, your tailored CV
 - They submit on their end → flag in tracker as <code>--platform referral</code></p>
 <h3 id="always-do-after-submit">Always do after submit</h3>
+<<<<<<< HEAD
+<pre class="highlight"><code class="language-bash">python3 scripts/apply_tracker.py add \
+  --company &quot;Gojek&quot; \
+  --role &quot;SDET&quot; \
+  --platform greenhouse \
+  --link &quot;https://boards.greenhouse.io/gojek/jobs/12345&quot; \
+  --notes &quot;Applied via referral from @john.doe&quot;
+</code></pre>
+=======
 <div class="highlight"><pre><span></span><code>python3<span class="w"> </span>scripts/apply_tracker.py<span class="w"> </span>add<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>--company<span class="w"> </span><span class="s2">&quot;Gojek&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>--role<span class="w"> </span><span class="s2">&quot;SDET&quot;</span><span class="w"> </span><span class="se">\</span>
@@ -125,6 +145,7 @@ Use Option B when working in Claude Desktop / Cursor / etc.</p>
 <span class="w">  </span>--link<span class="w"> </span><span class="s2">&quot;https://boards.greenhouse.io/gojek/jobs/12345&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>--notes<span class="w"> </span><span class="s2">&quot;Applied via referral from @john.doe&quot;</span>
 </code></pre></div>
+>>>>>>> 1422744 (Multi-page static site + 3 deployment options (Cloudflare + Vercel + GitHub Pages mirror))
 
 <hr />
 <h2 id="phase-4-follow-up">Phase 4: Follow-up</h2>
@@ -136,6 +157,30 @@ Use Option B when working in Claude Desktop / Cursor / etc.</p>
 <li><strong>Day 30</strong>: Re-engagement check — sometimes companies re-open roles</li>
 </ul>
 <h3 id="follow-up-message-template">Follow-up message template</h3>
+<<<<<<< HEAD
+<pre class="highlight"><code>Subject: Following up on my application — &lt;Role&gt;, &lt;Company&gt;
+
+Hi [Recruiter],
+
+I applied for the &lt;Role&gt; position at &lt;Company&gt; on &lt;date&gt; and wanted to follow up.
+I'm still very interested — my background in &lt;1-line relevant skill&gt; lines up well with the
+role, and I'd be glad to walk through any specifics.
+
+Please let me know if there's any update or additional info I can provide.
+
+Best,
+Noorman
+noormanyulizarp@gmail.com | +62 896 3411 2503
+</code></pre>
+
+<h3 id="track-follow-ups">Track follow-ups</h3>
+<pre class="highlight"><code class="language-bash"># See what's overdue
+python3 scripts/apply_tracker.py stats
+
+# Update status when you hear back
+python3 scripts/apply_tracker.py update --id 3 --status interview --notes &quot;HR call scheduled&quot;
+</code></pre>
+=======
 <div class="highlight"><pre><span></span><code><span class="nl">Subject</span><span class="p">:</span><span class="w"> </span><span class="n">Following</span><span class="w"> </span><span class="n">up</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">my</span><span class="w"> </span><span class="n">application</span><span class="w"> </span><span class="err">—</span><span class="w"> </span><span class="o">&lt;</span><span class="k">Role</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="o">&lt;</span><span class="n">Company</span><span class="o">&gt;</span>
 
 <span class="n">Hi</span><span class="w"> </span><span class="o">[</span><span class="n">Recruiter</span><span class="o">]</span><span class="p">,</span>
@@ -158,6 +203,7 @@ python3<span class="w"> </span>scripts/apply_tracker.py<span class="w"> </span>s
 <span class="c1"># Update status when you hear back</span>
 python3<span class="w"> </span>scripts/apply_tracker.py<span class="w"> </span>update<span class="w"> </span>--id<span class="w"> </span><span class="m">3</span><span class="w"> </span>--status<span class="w"> </span>interview<span class="w"> </span>--notes<span class="w"> </span><span class="s2">&quot;HR call scheduled&quot;</span>
 </code></pre></div>
+>>>>>>> 1422744 (Multi-page static site + 3 deployment options (Cloudflare + Vercel + GitHub Pages mirror))
 
 <hr />
 <h2 id="phase-5-interview-prep">Phase 5: Interview Prep</h2>
@@ -211,7 +257,11 @@ python3<span class="w"> </span>scripts/apply_tracker.py<span class="w"> </span>u
 </ul></div>
 </div>
 <footer>
+<<<<<<< HEAD
+  <p>Static site auto-generated from <code>noormanyulizarp/aplicator</code> repo · Last updated: 2026-11-10T07:15:02.151982</p>
+=======
   <p>Static site auto-generated from <code>noormanyulizarp/aplicator</code> repo · Last updated: 2026-11-10T07:11:44.163034</p>
+>>>>>>> 1422744 (Multi-page static site + 3 deployment options (Cloudflare + Vercel + GitHub Pages mirror))
   <p style="margin-top: 8px;">
     <a href="../index.html">🏠 Home</a> ·
     <a href="https://github.com/noormanyulizarp/aplicator" target="_blank">📦 Source (private)</a>
