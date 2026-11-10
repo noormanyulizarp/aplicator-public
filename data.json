@@ -1,20 +1,98 @@
 {
-  "generated_at": "2026-11-10T07:15:02.151982",
+  "generated_at": "2026-11-10T14:03:44.723458",
   "profile": {
     "name": "Noorman Yulizar Prabowo",
     "email": "noormanyulizarp@gmail.com",
     "phone": "+62 896 3411 2503",
     "linkedin": "linkedin.com/in/noormanyulizarp",
-    "current_role": "Software Engineer in Test @ GoTo Financial (GoPay)",
+    "education": {
+      "school": "Jenderal Soedirman University",
+      "degree": "Bachelor of Software Engineering",
+      "gpa": "3.51",
+      "years": "2012-2016"
+    },
     "target_roles": [
       "Backend Engineer",
       "AI Engineer",
       "QA Engineer",
       "SDET"
     ],
-    "experiences": [],
-    "skills": {},
-    "summary": ""
+    "current_role": "Software Engineer in Test @ GoTo Financial (GoPay)",
+    "years_experience": 10,
+    "summary": "Software engineer with 10 years of building and operating test infrastructure across regulated fintech, edtech, and streaming platforms. Hands-on with Python (FastAPI), Node.js, Java, Kubernetes, Docker, and applied AI/LLM engineering (RAG pipelines, custom MCP servers, multi-agent orchestration, vector databases).",
+    "experiences": [
+      {
+        "company": "GoTo Financial (GoPay)",
+        "role": "Software Engineer in Test",
+        "period": "Jan 2023 \u2014 Present",
+        "domain": "Fintech"
+      },
+      {
+        "company": "Ruangguru",
+        "role": "Software Engineer in Test",
+        "period": "Oct 2021 \u2014 Jan 2023",
+        "domain": "EdTech"
+      },
+      {
+        "company": "Vidio.com",
+        "role": "Test Engineer Team Lead",
+        "period": "Dec 2018 \u2014 Oct 2021",
+        "domain": "Streaming Media"
+      },
+      {
+        "company": "Bank Indonesia",
+        "role": "Quality Assurance",
+        "period": "Aug 2018 \u2014 Dec 2018",
+        "domain": "Central Bank"
+      },
+      {
+        "company": "Jenius (SMBC Bank)",
+        "role": "FullStack Developer",
+        "period": "Jan 2018 \u2014 Apr 2018",
+        "domain": "Digital Banking"
+      },
+      {
+        "company": "Docotel",
+        "role": "FullStack Developer",
+        "period": "Oct 2016 \u2014 Jan 2018",
+        "domain": "Software House"
+      },
+      {
+        "company": "Jendral Software",
+        "role": "FullStack Developer",
+        "period": "Jun 2014 \u2014 Jan 2018",
+        "domain": "Software House"
+      }
+    ],
+    "skills": {
+      "automation": "Robot Framework, Playwright, Cypress, Cucumber, XCUI, RestAssured, Appium, Selenium",
+      "performance": "Gatling, Locust, FastAPI-based load suites",
+      "languages": "Python, JavaScript, TypeScript, Java, Groovy, SQL, PSQL, Scala",
+      "ci_cd": "Gradle, Maven, gRPC, XPath, OpenShift, Jenkins, AWS, ArgoCD",
+      "web_db": "React.js, Vue.js, Remix.js, Prisma DB, React Native, MySQL",
+      "ai_llm": "RAG pipelines, Custom MCP servers, Multi-agent orchestration, Vector DBs (Chroma, Qdrant), Ollama/MLX"
+    },
+    "files": {
+      "master_cv": "Profile/Master_CV.{docx,pdf}",
+      "role_cvs": {
+        "BackendEngineer": "CV/BackendEngineer/CV_Noorman_BackendEngineer.{docx,pdf}",
+        "AiEngineer": "CV/AiEngineer/CV_Noorman_AiEngineer.{docx,pdf}",
+        "QA": "CV/QA/CV_Noorman_QA.{docx,pdf}",
+        "SDET": "CV/SDET/CV_Noorman_SDET.{docx,pdf}"
+      },
+      "cover_letters": {
+        "BackendEngineer": "CoverLetter/BackendEngineer/CL_Template_BackendEngineer.{docx,pdf}",
+        "AiEngineer": "CoverLetter/AiEngineer/CL_Template_AiEngineer.{docx,pdf}",
+        "QA": "CoverLetter/QA/CL_Template_QA.{docx,pdf}",
+        "SDET": "CoverLetter/SDET/CL_Template_SDET.{docx,pdf}"
+      },
+      "summaries": {
+        "BackendEngineer": "Summary/BackendEngineer/LinkedIn_Summary_BackendEngineer.md",
+        "AiEngineer": "Summary/AiEngineer/LinkedIn_Summary_AiEngineer.md",
+        "QA": "Summary/QA/LinkedIn_Summary_QA.md",
+        "SDET": "Summary/SDET/LinkedIn_Summary_SDET.md"
+      }
+    }
   },
   "applications": [
     {
@@ -125,7 +203,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/Profile/Master_CV.docx",
       "size": 40559,
-      "modified_at": "2026-11-10T07:14:58.529573"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "master_cv",
@@ -134,7 +212,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/Profile/Master_CV.pdf",
       "size": 65574,
-      "modified_at": "2026-11-10T07:14:58.530744"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cv",
@@ -143,7 +221,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CV/BackendEngineer/CV_Noorman_BackendEngineer.docx",
       "size": 40126,
-      "modified_at": "2026-11-10T07:14:58.523431"
+      "modified_at": "2026-11-10T07:14:46"
     },
     {
       "type": "cv",
@@ -152,7 +230,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CV/BackendEngineer/CV_Noorman_BackendEngineer.pdf",
       "size": 64366,
-      "modified_at": "2026-11-10T07:14:58.523742"
+      "modified_at": "2026-11-10T07:14:46"
     },
     {
       "type": "cover_letter",
@@ -161,7 +239,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/BackendEngineer/CL_Template_BackendEngineer.docx",
       "size": 37934,
-      "modified_at": "2026-11-10T07:14:58.526813"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cover_letter",
@@ -170,7 +248,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/BackendEngineer/CL_Template_BackendEngineer.pdf",
       "size": 38301,
-      "modified_at": "2026-11-10T07:14:58.527031"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "summary",
@@ -179,7 +257,7 @@
       "format": "md",
       "path": "download/noormanyulizarp@gmail.com/Summary/BackendEngineer/LinkedIn_Summary_BackendEngineer.md",
       "size": 1285,
-      "modified_at": "2026-11-10T07:14:58.531302"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cv",
@@ -188,7 +266,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CV/AiEngineer/CV_Noorman_AiEngineer.docx",
       "size": 39764,
-      "modified_at": "2026-11-10T07:14:58.523148"
+      "modified_at": "2026-11-10T07:14:46"
     },
     {
       "type": "cv",
@@ -197,7 +275,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CV/AiEngineer/CV_Noorman_AiEngineer.pdf",
       "size": 62995,
-      "modified_at": "2026-11-10T07:14:58.523431"
+      "modified_at": "2026-11-10T07:14:46"
     },
     {
       "type": "cover_letter",
@@ -206,7 +284,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/AiEngineer/CL_Template_AiEngineer.docx",
       "size": 37933,
-      "modified_at": "2026-11-10T07:14:58.526707"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cover_letter",
@@ -215,7 +293,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/AiEngineer/CL_Template_AiEngineer.pdf",
       "size": 37419,
-      "modified_at": "2026-11-10T07:14:58.526813"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "summary",
@@ -224,7 +302,7 @@
       "format": "md",
       "path": "download/noormanyulizarp@gmail.com/Summary/AiEngineer/LinkedIn_Summary_AiEngineer.md",
       "size": 1302,
-      "modified_at": "2026-11-10T07:14:58.531302"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cv",
@@ -233,7 +311,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_MobileQA_TEKsystems.docx",
       "size": 39933,
-      "modified_at": "2026-11-10T07:14:58.523742"
+      "modified_at": "2026-11-10T07:14:46"
     },
     {
       "type": "cv",
@@ -242,7 +320,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_MobileQA_TEKsystems.pdf",
       "size": 63097,
-      "modified_at": "2026-11-10T07:14:58.524083"
+      "modified_at": "2026-11-10T07:14:46"
     },
     {
       "type": "cv",
@@ -251,7 +329,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_PythonAutomation_TEKsystems.docx",
       "size": 39286,
-      "modified_at": "2026-11-10T07:14:58.524083"
+      "modified_at": "2026-11-10T07:14:46"
     },
     {
       "type": "cv",
@@ -260,7 +338,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_PythonAutomation_TEKsystems.pdf",
       "size": 59154,
-      "modified_at": "2026-11-10T07:14:58.524083"
+      "modified_at": "2026-11-10T07:14:46"
     },
     {
       "type": "cv",
@@ -269,7 +347,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_QA.docx",
       "size": 40314,
-      "modified_at": "2026-11-10T07:14:58.524083"
+      "modified_at": "2026-11-10T07:14:46"
     },
     {
       "type": "cv",
@@ -278,7 +356,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_QA.pdf",
       "size": 65296,
-      "modified_at": "2026-11-10T07:14:58.524438"
+      "modified_at": "2026-11-10T07:14:46"
     },
     {
       "type": "cv",
@@ -287,7 +365,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_QA_HitachiEbworx.docx",
       "size": 40687,
-      "modified_at": "2026-11-10T07:14:58.524438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cv",
@@ -296,7 +374,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_QA_HitachiEbworx.pdf",
       "size": 66690,
-      "modified_at": "2026-11-10T07:14:58.524438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cv",
@@ -305,7 +383,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_QA_Lokki.docx",
       "size": 40176,
-      "modified_at": "2026-11-10T07:14:58.524438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cv",
@@ -314,7 +392,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_QA_Lokki.pdf",
       "size": 64071,
-      "modified_at": "2026-11-10T07:14:58.524438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cv",
@@ -323,7 +401,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_SeleniumPlaywright_TEKsystems.docx",
       "size": 39209,
-      "modified_at": "2026-11-10T07:14:58.524438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cv",
@@ -332,7 +410,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_SeleniumPlaywright_TEKsystems.pdf",
       "size": 58500,
-      "modified_at": "2026-11-10T07:14:58.524438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "answer",
@@ -341,7 +419,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/Answer_Shine_MotivationQuestion.docx",
       "size": 39734,
-      "modified_at": "2026-11-10T07:14:58.527031"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "answer",
@@ -350,7 +428,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/Answer_Shine_MotivationQuestion.pdf",
       "size": 82273,
-      "modified_at": "2026-11-10T07:14:58.527267"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cover_letter",
@@ -359,7 +437,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_HitachiEbworx_QAAnalyst.docx",
       "size": 38616,
-      "modified_at": "2026-11-10T07:14:58.527267"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cover_letter",
@@ -368,7 +446,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_HitachiEbworx_QAAnalyst.pdf",
       "size": 41706,
-      "modified_at": "2026-11-10T07:14:58.527438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cover_letter",
@@ -377,7 +455,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_Lokki_QAEngineer.docx",
       "size": 38291,
-      "modified_at": "2026-11-10T07:14:58.527438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cover_letter",
@@ -386,7 +464,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_Lokki_QAEngineer.pdf",
       "size": 43267,
-      "modified_at": "2026-11-10T07:14:58.527438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cover_letter",
@@ -395,7 +473,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_TEKsystems_MobileQA.docx",
       "size": 38187,
-      "modified_at": "2026-11-10T07:14:58.527438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cover_letter",
@@ -404,7 +482,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_TEKsystems_MobileQA.pdf",
       "size": 37088,
-      "modified_at": "2026-11-10T07:14:58.527438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cover_letter",
@@ -413,7 +491,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_TEKsystems_PythonAutomation.docx",
       "size": 38207,
-      "modified_at": "2026-11-10T07:14:58.527438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cover_letter",
@@ -422,7 +500,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_TEKsystems_PythonAutomation.pdf",
       "size": 36620,
-      "modified_at": "2026-11-10T07:14:58.527438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cover_letter",
@@ -431,7 +509,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_TEKsystems_SeleniumPlaywright.docx",
       "size": 38142,
-      "modified_at": "2026-11-10T07:14:58.527438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cover_letter",
@@ -440,7 +518,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_TEKsystems_SeleniumPlaywright.pdf",
       "size": 37038,
-      "modified_at": "2026-11-10T07:14:58.527438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cover_letter",
@@ -449,7 +527,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_Template_QA.docx",
       "size": 37882,
-      "modified_at": "2026-11-10T07:14:58.527438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cover_letter",
@@ -458,7 +536,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_Template_QA.pdf",
       "size": 38258,
-      "modified_at": "2026-11-10T07:14:58.527438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "email",
@@ -467,7 +545,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/Email_HitachiEbworx_QAAnalyst.docx",
       "size": 38887,
-      "modified_at": "2026-11-10T07:14:58.527438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "email",
@@ -476,7 +554,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/Email_HitachiEbworx_QAAnalyst.pdf",
       "size": 53900,
-      "modified_at": "2026-11-10T07:14:58.528438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "email",
@@ -485,7 +563,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/Email_TEKsystems_MultipleQARoles.docx",
       "size": 38686,
-      "modified_at": "2026-11-10T07:14:58.528438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "email",
@@ -494,7 +572,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/Email_TEKsystems_MultipleQARoles.pdf",
       "size": 54283,
-      "modified_at": "2026-11-10T07:14:58.528438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "qa_answers",
@@ -503,7 +581,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/Lokki_QA_Mandatory_Questions.docx",
       "size": 38780,
-      "modified_at": "2026-11-10T07:14:58.528438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "qa_answers",
@@ -512,7 +590,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/QA/Lokki_QA_Mandatory_Questions.pdf",
       "size": 48040,
-      "modified_at": "2026-11-10T07:14:58.528438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "summary",
@@ -521,7 +599,7 @@
       "format": "md",
       "path": "download/noormanyulizarp@gmail.com/Summary/QA/LinkedIn_Summary_QA.md",
       "size": 1505,
-      "modified_at": "2026-11-10T07:14:58.531302"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cv",
@@ -530,7 +608,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CV/SDET/CV_Noorman_SDET.docx",
       "size": 39786,
-      "modified_at": "2026-11-10T07:14:58.525438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cv",
@@ -539,7 +617,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CV/SDET/CV_Noorman_SDET.pdf",
       "size": 62001,
-      "modified_at": "2026-11-10T07:14:58.525438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cv",
@@ -548,7 +626,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CV/SDET/CV_Noorman_SDET_Bonapolia.docx",
       "size": 40481,
-      "modified_at": "2026-11-10T07:14:58.525438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cv",
@@ -557,7 +635,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CV/SDET/CV_Noorman_SDET_Bonapolia.pdf",
       "size": 65768,
-      "modified_at": "2026-11-10T07:14:58.525438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cv",
@@ -566,7 +644,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CV/SDET/CV_Noorman_SDET_DNAInc.docx",
       "size": 40445,
-      "modified_at": "2026-11-10T07:14:58.525438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cv",
@@ -575,7 +653,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CV/SDET/CV_Noorman_SDET_DNAInc.pdf",
       "size": 66405,
-      "modified_at": "2026-11-10T07:14:58.525438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cover_letter",
@@ -584,7 +662,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/SDET/CL_Bonapolia_QAAutomationEngineer.docx",
       "size": 38782,
-      "modified_at": "2026-11-10T07:14:58.528438"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cover_letter",
@@ -593,7 +671,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/SDET/CL_Bonapolia_QAAutomationEngineer.pdf",
       "size": 42793,
-      "modified_at": "2026-11-10T07:14:58.529573"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cover_letter",
@@ -602,7 +680,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/SDET/CL_DNAInc_SeniorQualityEngineer.docx",
       "size": 38613,
-      "modified_at": "2026-11-10T07:14:58.529573"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cover_letter",
@@ -611,7 +689,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/SDET/CL_DNAInc_SeniorQualityEngineer.pdf",
       "size": 41003,
-      "modified_at": "2026-11-10T07:14:58.529573"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cover_letter",
@@ -620,7 +698,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/SDET/CL_Template_SDET.docx",
       "size": 37890,
-      "modified_at": "2026-11-10T07:14:58.529573"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "cover_letter",
@@ -629,7 +707,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/SDET/CL_Template_SDET.pdf",
       "size": 38866,
-      "modified_at": "2026-11-10T07:14:58.529573"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "email",
@@ -638,7 +716,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/SDET/Email_DNAInc_SeniorQualityEngineer.docx",
       "size": 38754,
-      "modified_at": "2026-11-10T07:14:58.529573"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "email",
@@ -647,7 +725,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/SDET/Email_DNAInc_SeniorQualityEngineer.pdf",
       "size": 53243,
-      "modified_at": "2026-11-10T07:14:58.529573"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "form_answers",
@@ -656,7 +734,7 @@
       "format": "docx",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/SDET/FormAnswers_Bonapolia_QAAutomationEngineer.docx",
       "size": 38384,
-      "modified_at": "2026-11-10T07:14:58.529573"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "form_answers",
@@ -665,7 +743,7 @@
       "format": "pdf",
       "path": "download/noormanyulizarp@gmail.com/CoverLetter/SDET/FormAnswers_Bonapolia_QAAutomationEngineer.pdf",
       "size": 63831,
-      "modified_at": "2026-11-10T07:14:58.529573"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "type": "summary",
@@ -674,7 +752,7 @@
       "format": "md",
       "path": "download/noormanyulizarp@gmail.com/Summary/SDET/LinkedIn_Summary_SDET.md",
       "size": 1863,
-      "modified_at": "2026-11-10T07:14:58.531302"
+      "modified_at": "2026-11-10T07:14:47"
     }
   ],
   "md_files": [
@@ -685,7 +763,7 @@
       "source_path": "download/noormanyulizarp@gmail.com/Profile/research/ajaib_research.md",
       "content": "# Ajaib \u2014 Company Research\n\n**Researched:** 2026-11-10\n**Source:** https://ajaib.co.id/tentang-kami + LinkedIn + Web search\n\n## What is Ajaib?\n\nAjaib is Indonesia's leading digital investment platform \u2014 multi-asset retail investment app. Founded in 2019, Ajaib is Southeast Asia's first fintech investment unicorn and Indonesia's first fully online stock brokerage.\n\n## Products & Assets Supported\n- Stocks (Indonesian + US)\n- Crypto (via Ajaib Kripto \u2014 buy BTC, trade perpetual futures)\n- Mutual funds\n- Bonds\n- US stocks\n- Futures\n\n## Why This Is a STRONG FIT for Noorman\n| Noorman's Strength | Ajaib's Need |\n|--------------------|--------------|\n| GoPay Crypto QA ($10M, CFX + Bappebti licensed) | Ajaib Kripto \u2014 direct crypto exchange experience |\n| GoPay financial features (30M+ users) | Multi-asset retail investment platform \u2014 same scale |\n| Bank Indonesia QRIS pilot UAT | Indonesian fintech compliance context |\n| Jenius digital bank engineering | Indonesian fintech product engineering |\n| 10 years SDET experience | Multiple SDET openings (SDET, Senior SDET, QA Manager) |\n| Ruangguru Playwright platform (50+ engineers) | \"Build cutting-edge automation frameworks\" |\n| Vidio Test Engineer Team Lead (mentoring) | \"Mentor SDETs to deliver zero-defect\" |\n\n## SDET Role at Ajaib\n- Multiple openings: SDET, Senior SDET, QA Manager\n- Work mode: Remote or hybrid\n- Location: Indonesia\n\n## Recruiter: Maria Odelia Meidaxia\n- Title: People Partner at Ajaib\n- Asks: (1) Confirm interest, (2) Share updated CV, (3) Availability for quick discussion tomorrow\n\n## Salary Context\n- Senior SDET di Indonesian fintech unicorn: typically IDR 35-65M/month\n- Ajaib sebagai unicorn \u2192 likely higher end\n",
       "size": 1709,
-      "modified_at": "2026-11-10T07:14:58.530744"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "category": "research",
@@ -694,7 +772,7 @@
       "source_path": "download/noormanyulizarp@gmail.com/Profile/research/bonapolia_research.md",
       "content": "# Bonapolia + Baltic Amadeus \u2014 Company Research\n\n**Researched:** 2026-11-10\n**Source:** https://jobs.bonapolia.com + Web search (Bonapolia, Baltic Amadeus)\n\n---\n\n## About Bonapolia (the contracting party)\n\n- **Type:** Family-owned IT staff augmentation team\n- **HQ:** Lisbon, Portugal\n- **Founded:** 2023\n- **Team:** Small (by design), fully distributed\n- **Track record:** 50+ engineers placed since 2023, ~10 clients across 6 countries\n- **Hourly rate:** $50 - $99/hr (per Clutch)\n- **Mission:** Help product companies and IT consultancies across Europe and the US extend engineering capacity with senior specialists\n\n### What Bonapolia offers contractors (B2B model)\n\n- **Contract:** B2B service contract with Bonapolia (one contract, one monthly invoice)\n- **Rate:** Negotiated per candidate seniority and client budget\n- **Payment:** Monthly invoice, paid on the same schedule the client pays Bonapolia (usually 30 days)\n- **Legal framework:** Contract written under YOUR country's law\n- **Bonapolia handles:** MSA, NDA, invoicing, client-side paperwork\n\n### Why this matters for Noorman\n\n- B2B model = Noorman can be based in Jakarta and contract with Bonapolia (Lisbon) for the Baltic Amadeus engagement\n- \"Contract written under your country's law\" = potentially under Indonesian law (PT/perseorangan) OR Noorman could register a EU entity\n- Bonapolia handles MSA + NDA + invoicing = low administrative friction\n\n---\n\n## About Baltic Amadeus (the actual client)\n\n- **Type:** Technology partner / IT consultancy\n- **HQ:** Vilnius, Lithuania\n- **Founded:** Late 1980s (Lithuania's first private IT company)\n- **Team:** 300+ IT professionals\n- **Specialties:** Mobile banking, cyber security, custom software, mobile app development, IT consulting\n- **Banking expertise:** Builds business-critical software for banks, fintech companies, and financial institutions\n- **Services:** IT strategy consulting, mobile banking, technology consulting, penetration testing\n\n### Why Baltic Amadeus fits Noorman\n\n| Noorman's Experience | Baltic Amadeus's Need |\n|----------------------|----------------------|\n| GoPay Crypto QA ($10M product, CFX/Bappebti) | Mobile banking apps |\n| Bank Indonesia QRIS national pilot UAT | Bank-to-bank transfer infrastructure |\n| Jenius digital bank React.js engineering | Mobile banking frontend experience |\n| 10 years across fintech + banking | Mid-senior QA automation role for banking client |\n\n---\n\n## QA Automation Engineer Role \u2014 Match Analysis\n\n### JD Requirements vs Noorman's Profile\n\n| Requirement | Noorman Match | Strength |\n|------------|---------------|----------|\n| Java proficiency | \u2705 Daily at GoPay | \ud83d\udfe2 STRONG |\n| Selenide | \u26a0\ufe0f Uses Selenium directly (Selenide is wrapper) | \ud83d\udfe1 EASY TRANSITION |\n| TestNG | \u2705 Daily at GoPay | \ud83d\udfe2 STRONG |\n| REST-assured | \u2705 Daily at GoPay | \ud83d\udfe2 STRONG |\n| Postman | \u26a0\ufe0f Familiar, uses RestAssured primarily | \ud83d\udfe1 EASY |\n| GitLab CI | \u26a0\ufe0f Uses Jenkins + GitHub Actions (similar concept) | \ud83d\udfe1 EASY TRANSITION |\n| LambdaTest/BrowserStack/Sauce Labs | \u26a0\ufe0f Built own device farm at Vidio (same concept) | \ud83d\udfe1 EASY |\n| Manual + automated testing | \u2705\u2705\u2705 10 years | \ud83d\udfe2 STRONGEST |\n| Jira | \u2705 Daily | \ud83d\udfe2 STRONG |\n| Mobile testing iOS/Android | \u2705\u2705 GoPay 30M+ + Vidio 45M+ MAU | \ud83d\udfe2 STRONGEST |\n| Banking domain | \u2705\u2705\u2705 GoPay + Bank Indonesia + Jenius | \ud83d\udfe2 PERFECT MATCH |\n| English (very good) | \u2705 Fluent (10 years in tech) | \ud83d\udfe2 STRONG |\n\n### Key Strategic Notes\n\n1. **Banking + Java + Mobile** = perfect trifecta match\n2. **Selenide gap is minor** \u2014 it's a Selenium wrapper, Noorman can pick it up in <1 week given his Selenium expertise\n3. **Cloud testing platforms gap is minor** \u2014 Noorman built his OWN device farm at Vidio (more impressive than using BrowserStack), so he deeply understands the use case\n4. **B2B contractor setup** \u2014 Noorman needs to confirm B2B eligibility in Indonesia (PT perorangan or freelancer status)\n\n---\n\n## B2B Contractor Eligibility \u2014 Indonesia Context\n\n### What \"B2B contractor\" means in Indonesia\n\nTo work as a B2B contractor for Bonapolia (a Portuguese company) from Indonesia, Noorman would need:\n\n1. **NPWP** (Indonesian tax ID) \u2014 already required for any formal income\n2. **Business entity OR freelancer status:**\n   - **PT Perorangan** (individual limited company) \u2014 easiest, ~1 week to register via OSS system, costs ~500K IDR\n   - **CV** (commanditaire vennootschap) \u2014 partnership, more complex\n   - **Freelancer status (non-formal)** \u2014 possible but less ideal for international contracts\n3. **Tax treaty awareness:** Indonesia-Portugal tax treaty exists (signed 2018) \u2014 may reduce withholding tax\n\n### Recommended approach for Noorman\n\n- Form **PT Perorangan** (simplest) \u2014 register via Online Single Submission (OSS)\n- Use this entity to invoice Bonapolia monthly\n- Open a USD business bank account (e.g. via Wise, Aspire, or local bank USD account) for receiving EUR payments\n- Bonapolia handles the MSA + NDA paperwork\n\n### Estimated timeline to be B2B-ready\n\n- 1-2 weeks to form PT Perorangan (if not already done)\n- 1 week to open business bank account\n- **Total: ~2-3 weeks** to be fully operational as B2B contractor\n\n### Alternative: Bonapolia accepts contractors from other jurisdictions\n\n- \"Contract written under your country's law\" suggests flexibility\n- Noorman could potentially keep Indonesian PT perorangan and contract directly\n- Bonapolia's \"small on purpose\" model suggests personalized onboarding\n\n---\n\n## Compensation Context\n\n- **Bonapolia rate range:** $50-$99/hr (per Clutch data)\n- **Mid-senior QA with banking experience:** likely $60-$80/hr range\n- **Baltic states local rate for QA Automation Engineer (mid):** \u20ac2,500-4,500/month\n- **For Noorman (10 yrs experience, rare banking + Java + mobile):** could push toward upper end\n- **B2B contractor = self-employed tax treatment in Indonesia**\n\n---\n\n## Why This Opportunity Is Notable\n\n- **Banking domain** \u2014 direct match dengan GoPay + Bank Indonesia + Jenius experience\n- **B2B contract** \u2014 flexible, can work from Jakarta (no relocation)\n- **Baltic states timezone** \u2014 EET/EEST (UTC+2/+3), only 4-5 hours ahead of WIB, manageable\n- **Long duration** \u2014 until June 30, 2027 (~7 months), with possible extension\n- **Mid seniority** \u2014 fits Noorman's level without over-reaching for senior role\n- **Bonapolia handles paperwork** \u2014 low administrative overhead\n\n---\n\n## Application Strategy\n\n1. **CV:** Tailored SDET CV emphasizing Java, TestNG, REST-assured, mobile testing, banking domain\n2. **Cover letter:** Required by form \u2014 must address B2B eligibility, banking experience, mobile + automation balance\n3. **Form answers:**\n   - B2B eligibility: Yes (with note about PT Perorangan setup)\n   - Current city: Jakarta, Indonesia\n   - English level: Fluent\n   - Location preference: All 3 Baltic states (or \"open to all\" since remote)\n4. **Contact:** Tatiana Kom, Talent Acquisition Partner\n\n## Notes for Application\n\n- Cover letter is REQUIRED (not optional) \u2014 must be well-crafted\n- Form asks specifically \"Are you eligible to work as a B2B contractor (self-employed) in the country of your current residence?\" \u2014 need to confirm yes\n- Form asks English level honestly \u2014 Bonapolia explicitly warns \"Be honest \u2014 client calls happen every week\"\n",
       "size": 7336,
-      "modified_at": "2026-11-10T07:14:58.531053"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "category": "research",
@@ -703,7 +781,7 @@
       "source_path": "download/noormanyulizarp@gmail.com/Profile/research/cv_review_issues.md",
       "content": "# CV Review \u2014 Original PDF (noormanyulizarp@gmail.com.pdf)\n\n**Date reviewed:** 2026-11-10\n**Purpose:** Pre-submission review before sending to Ajaib (SDET role)\n**File reviewed:** upload/noormanyulizarp@gmail.com.pdf\n\n## CRITICAL Issues (MUST FIX before sending)\n\n### 1. Unfilled placeholder text (Indonesian) \u2014 MOST EMBARRASSING\n- \"delivering optimized backend performance... across [jumlah client project kalau ada]\"\n- \"delivering seamless user interfaces across [jumlah project/client]\"\nThese are Indonesian placeholder hints never filled in. A recruiter will see them as unprofessional.\n\n### 2. Chronological order broken\nBank Indonesia (Aug-Dec 2018) is placed LAST after Jendral (Jun 2014-Jan 2018). Should be between Jenius (Jan-Apr 2018) and Vidio (Dec 2018+).\n\n### 3. Date overlap that looks suspicious\nJendral Software (Jun 2014 - Jan 2018) overlaps with Docotel (Oct 2016 - Jan 2018) for ~15 months.\n\n### 4. Last bullet has no company context\n\"Partnered with DevOps to lead test infrastructure migration during AWS-to-GCP cloud migration\" \u2014 appears AFTER Bank Indonesia section with no company header.\n\n## Minor Issues\n\n### 5. Inconsistent period at end of bullets\nSome bullets end with period (.), some don't.\n\n### 6. Bank Indonesia header format inconsistent\nReads: \"Bank Indonesia (Central bank of Indonesia) Quality Assurance, August - December 2018\"\n\n### 7. Job title mismatch\nCurrent: \"SOFTWARE ENGINEER IN TEST / QA ENGINEER\"\nTarget: SDET at Ajaib\nSuggestion: \"SOFTWARE DEVELOPMENT ENGINEER IN TEST (SDET) / QA ENGINEER\"\n\n## Recommendation: USE THE EXISTING SDET CV VARIANT\n\nDon't send this PDF. Instead, send:\ndownload/noormanyulizarp@gmail.com/CV/SDET/CV_Noorman_SDET.pdf\n\nWhy:\n- Already SDET-titled (matches Ajaib's role)\n- All bullets already end with periods (consistent)\n- Already chronologically ordered correctly\n- No placeholder text\n- ATS-friendly for SDET-specific filtering\n",
       "size": 1910,
-      "modified_at": "2026-11-10T07:14:58.531053"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "category": "research",
@@ -712,7 +790,7 @@
       "source_path": "download/noormanyulizarp@gmail.com/Profile/research/dnainc_research.md",
       "content": "# DNA.inc \u2014 Company Research\n\n**Researched:** 2026-11-09\n**Source:** https://www.dna.inc + https://careers.dna.inc/o/senior-quality-engineer\n\n## What is DNA.inc?\n\nDigital consultancy that helps clients envision, build, and launch large-scale software projects.\nSpecialties: streaming, media, sports, automotive industries.\nHeadquarters: Europe \u2014 offices in Amsterdam, Valencia, Madrid.\nTeam has contributed to: Disney+, ESPN+, Eurosport, SiriusXM (major streaming services).\n\n## Senior Quality Engineer Role\n- Location: Europe \u2014 Fully remote OR hybrid (Amsterdam, Madrid, Valencia)\n- Compensation: 62,400 EUR/year mid-point (Madrid reference)\n- Team: Small, collaborative \u2014 focused on high-performance applications including TV platforms\n- Phase: \"Young QA division\" \u2014 driving-force opportunity\n\n## STRONGEST FIT for Noorman\n- TV platforms focus \u2190 Vidio TV device farm experience (Indonesia's first)\n- Streaming domain \u2190 Vidio 45M+ MAU streaming platform\n- Native mobile iOS/Android \u2190 GoPay 30M+ users\n- Python programming \u2190 Primary language\n- AI-based QA tooling \u2190 RAG pipelines, custom MCP servers, vector DBs\n- Software dev background \u2190 FullStack career start (PHP/Yii, React.js, Vue.js)\n- Multi-device, screen size, OS version \u2190 Vidio TV device farm\n- Senior + driving force \u2190 Vidio Test Engineer Team Lead\n\n## Visa Options\n- Spain Digital Nomad Visa (823/2022) \u2014 relatively accessible for tech workers\n- Netherlands Highly Skilled Migrant visa \u2014 needs employer sponsorship\n- Remote-first gives flexibility \u2014 may accept contractor setup initially\n",
       "size": 1583,
-      "modified_at": "2026-11-10T07:14:58.531053"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "category": "research",
@@ -721,7 +799,7 @@
       "source_path": "download/noormanyulizarp@gmail.com/Profile/research/shine_motivation.md",
       "content": "# Shine QA Analyst \u2014 \"Tell us why you want to join Shine \u2728\"\n\n**Question:** Tell us why you want to join Shine\n**Application:** Product & Technology \u00b7 Porto \u2014 Quality Assurance Analyst\n**Date:** 2026-11-09\n\n---\n\n## Raw Motivation (User's Original, Preserved for Reference)\n\n> I want to be more relevant in AI development and need challenge in more modern tech, right now I saw some established company they do not want to adopt on AI or adapting to new approach such modern testing like shift-left testing auto and self healing automation testing, which make me find really interesting which part is the hassle one, with all my experience from manuals to automation testing I hope I can be enabled to solve complex issues related to my field, hence I really seek new opportunity.\n\n**Key themes extracted:**\n1. Want to be more relevant in AI development\n2. Need challenge in modern tech\n3. Established companies resist AI adoption / modern testing approaches\n4. Specifically interested in: shift-left testing, automation, self-healing automation testing\n5. Want to use full experience (manual \u2192 automation) to solve complex issues\n6. Seeking new opportunity\n\n---\n\n## Polished Answer (Ready to Paste into Form)\n\n### Option A \u2014 Direct & Personal (Recommended)\n\n> After 10 years in QA across fintech, edtech, and streaming platforms \u2014 most recently owning end-to-end quality for GoPay's financial features serving 30M+ users \u2014 I've watched established companies move slowly on modern testing practices. Many still resist shift-left testing, AI-augmented automation, and self-healing test infrastructure, even when these approaches demonstrably reduce release risk.\n>\n> What draws me to Shine is the opposite: a tech-forward fintech that has scaled to 450,000+ businesses across Europe using a modern stack (Stripe, Cloudflare, Intercom) \u2014 clearly an engineering culture that adopts new approaches when they make sense. As QA Analyst in the Porto Product & Technology team, I want to bring my full experience \u2014 from manual exploratory testing depth to automation platform authorship (Playwright low-code platform adopted by 50+ engineers at Ruangguru) to AI/LLM tooling (RAG pipelines, custom MCP servers) \u2014 to help solve the complex testing challenges that come with scaling a fintech product across multiple European markets.\n>\n> Specifically: I want to help build the kind of shift-left, self-healing automation infrastructure that lets a small QA team punch above its weight as Shine grows from 450K to millions of businesses. That's the challenge I'm looking for.\n\n---\n\n### Option B \u2014 Shorter, Punchier (if form has character limit)\n\n> I want to join Shine because it's a fintech that has clearly embraced modern engineering practices \u2014 scaling to 450,000+ businesses with a Stripe/Cloudflare-grade stack \u2014 and I want to bring modern QA practices to match. After 10 years across GoPay (30M+ users), Bank Indonesia's QRIS pilot, and Ruangguru (53M+ students, where I architected a low-code Playwright platform adopted by 50+ engineers), I've seen too many established companies resist shift-left testing and AI-augmented automation. Shine's tech-forward culture is exactly where I want to apply the full range of my experience \u2014 from manual exploratory depth to self-healing automation infrastructure \u2014 to help solve the complex testing challenges of scaling a fintech across European markets.\n\n---\n\n### Option C \u2014 Bulleted (if form supports structure)\n\n> I want to join Shine for three reasons:\n>\n> **1. A tech-forward fintech culture that adopts modern practices.** After 10 years in QA \u2014 most recently owning quality for GoPay's financial features serving 30M+ users \u2014 I've seen established companies resist shift-left testing, AI-augmented automation, and self-healing infrastructure. Shine's stack (Stripe, Cloudflare, modern SaaS at 450K+ businesses) signals the opposite: an engineering culture that moves forward.\n>\n> **2. The QA challenge at Shine's scale.** Scaling a fintech product across Germany, Netherlands, France, Denmark, and Spain \u2014 with invoicing, bookkeeping, banking integrations, and tax submissions \u2014 is a rich testing surface. I want to bring my full experience (manual exploratory depth, automation platform authorship at Ruangguru, AI/LLM tooling with RAG and custom MCP servers) to help solve the complex testing problems that come with that scale.\n>\n> **3. The Porto Product & Technology team specifically.** I'm drawn to engineering-led orgs where QA is a peer to engineering, not a downstream gate. I want to build the kind of shift-left, self-healing automation infrastructure that lets a small QA team punch above its weight as Shine grows.\n\n---\n\n## Why This Answer Works\n\n| Element | Why it lands |\n|---------|--------------|\n| Names Shine's actual context (450K businesses, EU markets, Stripe/Cloudflare stack) | Shows you researched them, not copy-paste |\n| Connects to your GoPay fintech experience (30M+ users) | Direct domain relevance \u2014 you've done this at scale |\n| Mentions Ruangguru low-code platform (50+ engineers adopted) | Concrete proof of building modern automation infrastructure |\n| Mentions AI/LLM tooling (RAG, MCP servers) | Shows the \"AI development relevance\" you wanted |\n| References \"shift-left testing, self-healing automation\" | Uses your own vocabulary \u2014 authentic |\n| Acknowledges the \"established companies resist\" frustration | Honest motivation, not flattering fluff |\n| Ends with concrete value-add (help Shine scale QA as they grow) | Forward-looking, not backward-looking |\n\n## Tone Notes\n\n- Honest but constructive \u2014 don't trash established companies, just observe their slowness\n- Specific to Shine (EU fintech, modern stack, scaling stage)\n- Forward-looking (what you want to build, not just what you've done)\n- Uses your genuine vocabulary (shift-left, self-healing) \u2014 sounds like you, not a copywriter\n\n## Pre-Submission Checklist\n\n- [ ] Pick Option A, B, or C based on form's character limit\n- [ ] Verify Shine's portal accepts the answer length\n- [ ] If form asks for portfolio/GitHub \u2014 include linkedin.com/in/noormanyulizarp\n- [ ] Submit application\n- [ ] After submission, update tracker: `python3 scripts/apply_tracker.py update --id 6 --status applied`\n",
       "size": 6283,
-      "modified_at": "2026-11-10T07:14:58.531053"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "category": "research",
@@ -730,7 +808,7 @@
       "source_path": "download/noormanyulizarp@gmail.com/Profile/research/shine_research.md",
       "content": "# Shine.co \u2014 Company Research\n\n**Researched:** 2026-11-09\n**Source:** https://www.shine.co + web research\n\n## What is Shine?\n\nShine is a **fintech company** that serves as \"the financial co-pilot for small businesses.\" It's an all-in-one platform that helps business owners manage financial tasks including:\n\n- Invoicing\n- Bookkeeping\n- Expense categorization\n- Quote creation\n- Tax submissions\n- Banking integrations\n\n## Mission\n\n> \"Free your time and energy from admin and run your business with confidence\"\n\nShine provides intuitive tools and automations that work behind the scenes, allowing business owners to focus on their actual work rather than administrative tasks.\n\n## Industry & Customers\n\n- **Industry:** Fintech / SaaS\n- **Customers:** 450,000+ businesses across Europe\n- **Markets:** Germany, Netherlands, France, Denmark, Spain, and globally\n- **Target segments:**\n  - Starters (those starting a business)\n  - Freelancers (needing help with invoices and VAT)\n  - Small businesses (wanting to offload financial admin)\n\n## Tech Stack\n\n- Cloudflare\n- Stripe (payments integration)\n- Microsoft Clarity (analytics)\n- Google Analytics\n- Typeform\n- Intercom (customer support)\n- Didomi (consent management)\n\n## Engineering Hubs\n\n- Porto, Portugal \u2014 \"Product & Technology \u00b7 Porto\" (the role location)\n- Also operates in France and other EU markets\n\n## Why This Matters for Noorman's Application\n\n| Noorman's Strength | Shine's Need |\n|--------------------|--------------|\n| Financial industry experience (GoPay 30M+ users, Bank Indonesia QRIS pilot, Jenius digital bank) | Fintech QA at scale \u2014 directly transferable |\n| 10 years across manual \u2192 automation \u2192 modern testing | Likely scaling QA as company grows from 450K to millions of users |\n| Hands-on with shift-left, automation, AI tooling (RAG, MCP servers) | Modern testing adoption \u2014 Shine is a tech-forward fintech |\n| Experience with regulated financial compliance (CFX/Bappebti, QRIS, Bank Indonesia) | Fintech compliance is critical \u2014 direct relevance |\n| Multi-platform testing (Web, iOS, Android, Smart TV) | Shine has web + mobile apps (banking integrations) |\n\n## Notes for Application\n\n- **European company** \u2014 work visa for Portugal needed (Portugal has D7/D8 tech visa programs, relatively accessible for tech workers)\n- **Modern tech-forward culture** \u2014 Shine's stack suggests they adopt modern practices (Stripe, Cloudflare, Intercom, etc.) \u2014 aligns with Noorman's motivation toward modern testing approaches\n- **Fintech scale** \u2014 450K customers is mid-stage scale, growing toward enterprise \u2014 interesting phase where modern QA practices can shape culture\n- **Product & Technology org in Porto** \u2014 engineering-led culture, not just IT services\n",
       "size": 2750,
-      "modified_at": "2026-11-10T07:14:58.531053"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "category": "motivation",
@@ -739,7 +817,7 @@
       "source_path": "download/noormanyulizarp@gmail.com/general/motivation/general_motivation.md",
       "content": "# General Motivation \u2014 Noorman Yulizar Prabowo\n\n> **Purpose:** Reusable motivation text for job applications. This is a general-purpose statement of why I'm seeking new opportunities and what I'm looking for. Adapt per company by adding company-specific details.\n\n---\n\n## Why I'm Seeking a New Opportunity (General Statement)\n\nAfter 10 years in QA across fintech, edtech, and streaming platforms, I have watched established companies move slowly on modern testing practices. Most recently, I managed end-to-end quality for GoPay's financial features serving over 30 million users. In my experience, many companies still resist adopting early-stage testing and smart automation, even when these approaches clearly reduce release risks.\n\nWhat draws me to Shine is the exact opposite. Shine is a tech-forward fintech that has scaled to over 450,000 businesses across Europe using modern tools, which shows an engineering culture that readily adopts new and effective approaches. As a QA Analyst in the Porto Product & Technology team, I want to bring my full experience to help solve the testing challenges of scaling a fintech product across multiple European markets. My background ranges from deep manual testing to building automation platforms adopted by over 50 engineers at Ruangguru, as well as integrating AI tools to streamline testing workflows.\n\nSpecifically, I want to help build efficient, highly automated testing systems that allow a small QA team to achieve massive results. As Shine grows from 450,000 to millions of businesses, this is exactly the challenge I am looking for.\n\n---\n\n## How to Use This Text\n\n1. **As-is for Shine application** \u2014 paste into \"Tell us why you want to join Shine\" form field\n2. **As template for other applications** \u2014 replace \"Shine\" with company name, adjust the company-specific facts (scale, market, tech stack) based on research\n\n## Key Themes (for adapting to other companies)\n\n- 10 years QA experience across fintech, edtech, streaming\n- Most recent: GoPay end-to-end quality (30M+ users)\n- Frustration with established companies resistant to modern testing (shift-left, AI-augmented, self-healing)\n- Looking for: tech-forward culture that adopts new approaches\n- Bring full experience: manual testing depth + automation platform authorship + AI/LLM tooling\n- Goal: build efficient, highly automated testing systems for small QA team to achieve massive results\n\n## Source\n\n- Originally composed for: Shine QA Analyst application (Porto, Portugal)\n- Date composed: 2026-11-09\n- Author: Noorman Yulizar Prabowo\n",
       "size": 2566,
-      "modified_at": "2026-11-10T07:14:58.531626"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "category": "motivation",
@@ -748,7 +826,43 @@
       "source_path": "download/noormanyulizarp@gmail.com/general/motivation/shine_motivation_final.md",
       "content": "# Shine QA Analyst \u2014 Final Motivation Answer\n\n**Question:** Tell us why you want to join Shine \u2728\n**Application:** Product & Technology \u00b7 Porto \u2014 Quality Assurance Analyst\n**Date:** 2026-11-09\n**Status:** Final version, ready to paste into Shine application form\n\n---\n\n## Final Answer (Ready to Paste)\n\nAfter 10 years in QA across fintech, edtech, and streaming platforms, I have watched established companies move slowly on modern testing practices. Most recently, I managed end-to-end quality for GoPay's financial features serving over 30 million users. In my experience, many companies still resist adopting early-stage testing and smart automation, even when these approaches clearly reduce release risks.\n\nWhat draws me to Shine is the exact opposite. Shine is a tech-forward fintech that has scaled to over 450,000 businesses across Europe using modern tools, which shows an engineering culture that readily adopts new and effective approaches. As a QA Analyst in the Porto Product & Technology team, I want to bring my full experience to help solve the testing challenges of scaling a fintech product across multiple European markets. My background ranges from deep manual testing to building automation platforms adopted by over 50 engineers at Ruangguru, as well as integrating AI tools to streamline testing workflows.\n\nSpecifically, I want to help build efficient, highly automated testing systems that allow a small QA team to achieve massive results. As Shine grows from 450,000 to millions of businesses, this is exactly the challenge I am looking for.\n",
       "size": 1574,
-      "modified_at": "2026-11-10T07:14:58.532039"
+      "modified_at": "2026-11-10T07:14:47"
+    },
+    {
+      "category": "reports",
+      "title": "\ud83d\udcbc Full Applications Report",
+      "filename": "applications_full",
+      "source_path": "download/noormanyulizarp@gmail.com/general/reports/applications_full.md",
+      "content": "# \ud83d\udcbc Full Applications Report\n\n> **Auto-generated** from `knowledge/apply_tracker.csv`.\n> Generated: **Nov 10, 2026 14:03** \u00b7 Total applications: **9**\n\n---\n\n## \ud83d\udcca Summary Statistics\n\n| Metric | Value |\n|--------|-------|\n| Total applications | **9** |\n| Drafting | **7** |\n| Applied (pending) | **2** |\n| Interview stage | **0** |\n| Offers received | **0** |\n| Rejected | **0** |\n| Ghosted | **0** |\n| Withdrawn | **0** |\n\n---\n\n## \ud83d\udccb All Applications\n\n| # | Company | Role | Platform | Status | Applied | Follow-up | Link | Notes |\n|---|---------|------|----------|--------|---------|-----------|------|-------|\n| 1 | **Lokki Henkil\u00f6st\u00f6palvelut Oy** | QA Engineer | `company_site` | \ud83d\udd35 applied | 2026-11-09 | 2026-11-16 | [Open](https://lokki.likeit.fi/jsp/duuni/responsiveapplication/ResponsiveApplication.jsp?id=0&register=1&advertId=27038535) | Banking sector client project \u2014 mobile/web UI modernization. Ref 27038535. Co... |\n| 2 | **Hitachi eBworx** | QA Analyst | `company_site` | \ud83d\udd35 applied | 2026-11-09 | 2026-11-16 | [Open](https://www.hitachi-ebworx.com/careers/experienced-professional/quality-assurance-analyst) | Malaysia location. 4+ yrs QA exp required (Noorman has 10). Financial industr... |\n| 3 | **TEKsystems Tokyo** | Mobile QA Tester | `email` | \ud83d\udfe6 drafting | 2026-11-09 | 2026-11-16 | [Open](https://www.linkedin.com/posts/ellen-page-tek-tokyo/) | Recruiter: Ellen Page (ellen.page@teksystems.com). Tokyo, Japan. MUST reside ... |\n| 4 | **TEKsystems Tokyo** | Automation QA Engineer (Python) | `email` | \ud83d\udfe6 drafting | 2026-11-09 | 2026-11-16 | [Open](https://www.linkedin.com/posts/ellen-page-tek-tokyo/) | Recruiter: Ellen Page. Tokyo, Japan. MUST reside in Japan + valid work visa. ... |\n| 5 | **TEKsystems Tokyo** | Automation QA Engineer (Selenium/Playwright) | `email` | \ud83d\udfe6 drafting | 2026-11-09 | 2026-11-16 | [Open](https://www.linkedin.com/posts/ellen-page-tek-tokyo/) | Recruiter: Ellen Page. Tokyo, Japan. MUST reside in Japan + valid work visa. ... |\n| 6 | **Shine** | QA Analyst | `company_site` | \ud83d\udfe6 drafting | 2026-11-09 | 2026-11-16 | [Open](https://www.shine.co/careers) | Porto, Portugal. Fintech for SMBs (450K+ businesses across EU). Modern stack ... |\n| 7 | **DNA.inc** | Senior Quality Engineer | `company_site` | \ud83d\udfe6 drafting | 2026-11-09 | 2026-11-16 | [Open](https://careers.dna.inc/o/senior-quality-engineer/c/new?source=LinkedIn+Basic+Jobs) | Europe remote or hybrid (Amsterdam/Madrid/Valencia). Digital consultancy for ... |\n| 8 | **Ajaib** | SDET | `referral` | \ud83d\udfe6 drafting | 2026-11-10 | 2026-11-17 | [Open](https://www.linkedin.com/company/ajaib-id) | Inbound recruiter outreach by Maria Odelia Meidaxia (People Partner, Ajaib). ... |\n| 9 | **Bonapolia (client: Baltic Amadeus)** | QA Automation Engineer | `company_site` | \ud83d\udfe6 drafting | 2026-11-10 | 2026-11-17 | [Open](https://jobs.bonapolia.com/jobs/8629865-qa-automation-engineer) | Baltic states (Latvia/Lithuania/Estonia) fully remote. Banking client Baltic ... |\n\n\n---\n\n## \ud83d\udcca Applications by Company\n\n| Company | Count | Roles |\n|---------|-------|-------|\n| **TEKsystems Tokyo** | 3 | Automation QA Engineer (Python), Automation QA Engineer (Selenium/Playwright), Mobile QA Tester |\n| **Lokki Henkil\u00f6st\u00f6palvelut Oy** | 1 | QA Engineer |\n| **Hitachi eBworx** | 1 | QA Analyst |\n| **Shine** | 1 | QA Analyst |\n| **DNA.inc** | 1 | Senior Quality Engineer |\n| **Ajaib** | 1 | SDET |\n| **Bonapolia (client: Baltic Amadeus)** | 1 | QA Automation Engineer |\n\n\n---\n\n## \ud83d\udcca Applications by Platform\n\n| Platform | Count | Percentage |\n|----------|-------|------------|\n| `company_site` | 5 | 56% |\n| `email` | 3 | 33% |\n| `referral` | 1 | 11% |\n\n\n---\n\n*\ud83c\udfe0 [Back to Homepage](../index.html) \u00b7 \ud83d\udcc5 [Weekly Summary](weekly_summary.html) \u00b7 \ud83d\udcc4 [CV Inventory](cv_inventory_full.html) \u00b7 \ud83d\udd04 [Pipeline Status](pipeline_status.html)*\n",
+      "size": 3869,
+      "modified_at": "2026-11-10T14:03:44.652461"
+    },
+    {
+      "category": "reports",
+      "title": "\ud83d\udcc4 CV / Cover Letter Inventory Report",
+      "filename": "cv_inventory_full",
+      "source_path": "download/noormanyulizarp@gmail.com/general/reports/cv_inventory_full.md",
+      "content": "# \ud83d\udcc4 CV / Cover Letter Inventory Report\n\n> **Auto-generated** from `download/noormanyulizarp@gmail.com/` folder scan.\n> Generated: **Nov 10, 2026 14:03** \u00b7 Total files: **62**\n\n---\n\n## \ud83d\udcca Inventory Summary\n\n| Type | Count | Total Size |\n|------|-------|------------|\n| Master Cv | 2 | 103.6 KB |\n| Cv | 22 | 1.1 MB |\n| Cover Letter | 22 | 832.8 KB |\n| Qa Answers | 2 | 84.8 KB |\n| Email | 6 | 271.2 KB |\n| Form Answers | 2 | 99.8 KB |\n| Answer | 2 | 119.1 KB |\n| Summary | 4 | 5.8 KB |\n| **Total** | **62** | **2.6 MB** |\n\n---\n\n## \ud83d\udcda Master CV\n\n| Label | Format | Modified | Size | Path |\n|-------|--------|----------|------|------|\n| Master CV (comprehensive) | `DOCX` | Nov 10, 2026 07:14 | 39.6 KB | `download/noormanyulizarp@gmail.com/Profile/Master_CV.docx` |\n| Master CV (comprehensive) | `PDF` | Nov 10, 2026 07:14 | 64.0 KB | `download/noormanyulizarp@gmail.com/Profile/Master_CV.pdf` |\n\n---\n\n## \ud83d\udcc4 Role-Specific CVs\n\n| Label | Role | Format | Modified | Size | Path |\n|-------|------|--------|----------|------|------|\n| Backend Engineer | BackendEngineer | `DOCX` | Nov 10, 2026 07:14 | 39.2 KB | `download/noormanyulizarp@gmail.com/CV/BackendEngineer/CV_Noorman_BackendEngineer.docx` |\n| Backend Engineer | BackendEngineer | `PDF` | Nov 10, 2026 07:14 | 62.9 KB | `download/noormanyulizarp@gmail.com/CV/BackendEngineer/CV_Noorman_BackendEngineer.pdf` |\n| AI Engineer | AiEngineer | `DOCX` | Nov 10, 2026 07:14 | 38.8 KB | `download/noormanyulizarp@gmail.com/CV/AiEngineer/CV_Noorman_AiEngineer.docx` |\n| AI Engineer | AiEngineer | `PDF` | Nov 10, 2026 07:14 | 61.5 KB | `download/noormanyulizarp@gmail.com/CV/AiEngineer/CV_Noorman_AiEngineer.pdf` |\n| QA Engineer (TEKsystems Mobile QA) | QA | `DOCX` | Nov 10, 2026 07:14 | 39.0 KB | `download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_MobileQA_TEKsystems.docx` |\n| QA Engineer (TEKsystems Mobile QA) | QA | `PDF` | Nov 10, 2026 07:14 | 61.6 KB | `download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_MobileQA_TEKsystems.pdf` |\n| QA Engineer (TEKsystems Python Automation) | QA | `DOCX` | Nov 10, 2026 07:14 | 38.4 KB | `download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_PythonAutomation_TEKsystems.docx` |\n| QA Engineer (TEKsystems Python Automation) | QA | `PDF` | Nov 10, 2026 07:14 | 57.8 KB | `download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_PythonAutomation_TEKsystems.pdf` |\n| QA Engineer | QA | `DOCX` | Nov 10, 2026 07:14 | 39.4 KB | `download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_QA.docx` |\n| QA Engineer | QA | `PDF` | Nov 10, 2026 07:14 | 63.8 KB | `download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_QA.pdf` |\n| QA Engineer (Hitachi variant) | QA | `DOCX` | Nov 10, 2026 07:14 | 39.7 KB | `download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_QA_HitachiEbworx.docx` |\n| QA Engineer (Hitachi variant) | QA | `PDF` | Nov 10, 2026 07:14 | 65.1 KB | `download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_QA_HitachiEbworx.pdf` |\n| QA Engineer (Lokki variant) | QA | `DOCX` | Nov 10, 2026 07:14 | 39.2 KB | `download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_QA_Lokki.docx` |\n| QA Engineer (Lokki variant) | QA | `PDF` | Nov 10, 2026 07:14 | 62.6 KB | `download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_QA_Lokki.pdf` |\n| QA Engineer (TEKsystems Selenium/Playwright) | QA | `DOCX` | Nov 10, 2026 07:14 | 38.3 KB | `download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_SeleniumPlaywright_TEKsystems.docx` |\n| QA Engineer (TEKsystems Selenium/Playwright) | QA | `PDF` | Nov 10, 2026 07:14 | 57.1 KB | `download/noormanyulizarp@gmail.com/CV/QA/CV_Noorman_SeleniumPlaywright_TEKsystems.pdf` |\n| SDET | SDET | `DOCX` | Nov 10, 2026 07:14 | 38.9 KB | `download/noormanyulizarp@gmail.com/CV/SDET/CV_Noorman_SDET.docx` |\n| SDET | SDET | `PDF` | Nov 10, 2026 07:14 | 60.5 KB | `download/noormanyulizarp@gmail.com/CV/SDET/CV_Noorman_SDET.pdf` |\n| SDET (Bonapolia variant) | SDET | `DOCX` | Nov 10, 2026 07:14 | 39.5 KB | `download/noormanyulizarp@gmail.com/CV/SDET/CV_Noorman_SDET_Bonapolia.docx` |\n| SDET (Bonapolia variant) | SDET | `PDF` | Nov 10, 2026 07:14 | 64.2 KB | `download/noormanyulizarp@gmail.com/CV/SDET/CV_Noorman_SDET_Bonapolia.pdf` |\n| SDET (DNA.inc variant) | SDET | `DOCX` | Nov 10, 2026 07:14 | 39.5 KB | `download/noormanyulizarp@gmail.com/CV/SDET/CV_Noorman_SDET_DNAInc.docx` |\n| SDET (DNA.inc variant) | SDET | `PDF` | Nov 10, 2026 07:14 | 64.8 KB | `download/noormanyulizarp@gmail.com/CV/SDET/CV_Noorman_SDET_DNAInc.pdf` |\n\n---\n\n## \u2709\ufe0f Cover Letters\n\n| Label | Role | Format | Modified | Size | Path |\n|-------|------|--------|----------|------|------|\n| Cover Letter \u2014 Backend Engineer | BackendEngineer | `DOCX` | Nov 10, 2026 07:14 | 37.0 KB | `download/noormanyulizarp@gmail.com/CoverLetter/BackendEngineer/CL_Template_BackendEngineer.docx` |\n| Cover Letter \u2014 Backend Engineer | BackendEngineer | `PDF` | Nov 10, 2026 07:14 | 37.4 KB | `download/noormanyulizarp@gmail.com/CoverLetter/BackendEngineer/CL_Template_BackendEngineer.pdf` |\n| Cover Letter \u2014 AI Engineer | AiEngineer | `DOCX` | Nov 10, 2026 07:14 | 37.0 KB | `download/noormanyulizarp@gmail.com/CoverLetter/AiEngineer/CL_Template_AiEngineer.docx` |\n| Cover Letter \u2014 AI Engineer | AiEngineer | `PDF` | Nov 10, 2026 07:14 | 36.5 KB | `download/noormanyulizarp@gmail.com/CoverLetter/AiEngineer/CL_Template_AiEngineer.pdf` |\n| Cover Letter \u2014 QA Engineer | QA | `DOCX` | Nov 10, 2026 07:14 | 37.7 KB | `download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_HitachiEbworx_QAAnalyst.docx` |\n| Cover Letter \u2014 QA Engineer | QA | `PDF` | Nov 10, 2026 07:14 | 40.7 KB | `download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_HitachiEbworx_QAAnalyst.pdf` |\n| Cover Letter \u2014 QA Engineer (Lokki) | QA | `DOCX` | Nov 10, 2026 07:14 | 37.4 KB | `download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_Lokki_QAEngineer.docx` |\n| Cover Letter \u2014 QA Engineer (Lokki) | QA | `PDF` | Nov 10, 2026 07:14 | 42.3 KB | `download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_Lokki_QAEngineer.pdf` |\n| Cover Letter \u2014 QA Engineer | QA | `DOCX` | Nov 10, 2026 07:14 | 37.3 KB | `download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_TEKsystems_MobileQA.docx` |\n| Cover Letter \u2014 QA Engineer | QA | `PDF` | Nov 10, 2026 07:14 | 36.2 KB | `download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_TEKsystems_MobileQA.pdf` |\n| Cover Letter \u2014 QA Engineer | QA | `DOCX` | Nov 10, 2026 07:14 | 37.3 KB | `download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_TEKsystems_PythonAutomation.docx` |\n| Cover Letter \u2014 QA Engineer | QA | `PDF` | Nov 10, 2026 07:14 | 35.8 KB | `download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_TEKsystems_PythonAutomation.pdf` |\n| Cover Letter \u2014 QA Engineer | QA | `DOCX` | Nov 10, 2026 07:14 | 37.2 KB | `download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_TEKsystems_SeleniumPlaywright.docx` |\n| Cover Letter \u2014 QA Engineer | QA | `PDF` | Nov 10, 2026 07:14 | 36.2 KB | `download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_TEKsystems_SeleniumPlaywright.pdf` |\n| Cover Letter \u2014 QA Engineer | QA | `DOCX` | Nov 10, 2026 07:14 | 37.0 KB | `download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_Template_QA.docx` |\n| Cover Letter \u2014 QA Engineer | QA | `PDF` | Nov 10, 2026 07:14 | 37.4 KB | `download/noormanyulizarp@gmail.com/CoverLetter/QA/CL_Template_QA.pdf` |\n| Cover Letter \u2014 SDET | SDET | `DOCX` | Nov 10, 2026 07:14 | 37.9 KB | `download/noormanyulizarp@gmail.com/CoverLetter/SDET/CL_Bonapolia_QAAutomationEngineer.docx` |\n| Cover Letter \u2014 SDET | SDET | `PDF` | Nov 10, 2026 07:14 | 41.8 KB | `download/noormanyulizarp@gmail.com/CoverLetter/SDET/CL_Bonapolia_QAAutomationEngineer.pdf` |\n| Cover Letter \u2014 SDET | SDET | `DOCX` | Nov 10, 2026 07:14 | 37.7 KB | `download/noormanyulizarp@gmail.com/CoverLetter/SDET/CL_DNAInc_SeniorQualityEngineer.docx` |\n| Cover Letter \u2014 SDET | SDET | `PDF` | Nov 10, 2026 07:14 | 40.0 KB | `download/noormanyulizarp@gmail.com/CoverLetter/SDET/CL_DNAInc_SeniorQualityEngineer.pdf` |\n| Cover Letter \u2014 SDET | SDET | `DOCX` | Nov 10, 2026 07:14 | 37.0 KB | `download/noormanyulizarp@gmail.com/CoverLetter/SDET/CL_Template_SDET.docx` |\n| Cover Letter \u2014 SDET | SDET | `PDF` | Nov 10, 2026 07:14 | 38.0 KB | `download/noormanyulizarp@gmail.com/CoverLetter/SDET/CL_Template_SDET.pdf` |\n\n---\n\n## \u2753 Mandatory Question Answers\n\n| Label | Role | Format | Modified | Size | Path |\n|-------|------|--------|----------|------|------|\n| Lokki QA \u2014 5 Mandatory Question Answers | QA | `DOCX` | Nov 10, 2026 07:14 | 37.9 KB | `download/noormanyulizarp@gmail.com/CoverLetter/QA/Lokki_QA_Mandatory_Questions.docx` |\n| Lokki QA \u2014 5 Mandatory Question Answers | QA | `PDF` | Nov 10, 2026 07:14 | 46.9 KB | `download/noormanyulizarp@gmail.com/CoverLetter/QA/Lokki_QA_Mandatory_Questions.pdf` |\n\n---\n\n## \ud83d\udce7 Email Templates\n\n| Label | Role | Format | Modified | Size | Path |\n|-------|------|--------|----------|------|------|\n| Email \u2014 QA Engineer | QA | `DOCX` | Nov 10, 2026 07:14 | 38.0 KB | `download/noormanyulizarp@gmail.com/CoverLetter/QA/Email_HitachiEbworx_QAAnalyst.docx` |\n| Email \u2014 QA Engineer | QA | `PDF` | Nov 10, 2026 07:14 | 52.6 KB | `download/noormanyulizarp@gmail.com/CoverLetter/QA/Email_HitachiEbworx_QAAnalyst.pdf` |\n| Email \u2014 QA Engineer | QA | `DOCX` | Nov 10, 2026 07:14 | 37.8 KB | `download/noormanyulizarp@gmail.com/CoverLetter/QA/Email_TEKsystems_MultipleQARoles.docx` |\n| Email \u2014 QA Engineer | QA | `PDF` | Nov 10, 2026 07:14 | 53.0 KB | `download/noormanyulizarp@gmail.com/CoverLetter/QA/Email_TEKsystems_MultipleQARoles.pdf` |\n| Email \u2014 SDET | SDET | `DOCX` | Nov 10, 2026 07:14 | 37.8 KB | `download/noormanyulizarp@gmail.com/CoverLetter/SDET/Email_DNAInc_SeniorQualityEngineer.docx` |\n| Email \u2014 SDET | SDET | `PDF` | Nov 10, 2026 07:14 | 52.0 KB | `download/noormanyulizarp@gmail.com/CoverLetter/SDET/Email_DNAInc_SeniorQualityEngineer.pdf` |\n\n---\n\n## \ud83d\udccb Form Answers References\n\n| Label | Role | Format | Modified | Size | Path |\n|-------|------|--------|----------|------|------|\n| Form Answers \u2014 SDET | SDET | `DOCX` | Nov 10, 2026 07:14 | 37.5 KB | `download/noormanyulizarp@gmail.com/CoverLetter/SDET/FormAnswers_Bonapolia_QAAutomationEngineer.docx` |\n| Form Answers \u2014 SDET | SDET | `PDF` | Nov 10, 2026 07:14 | 62.3 KB | `download/noormanyulizarp@gmail.com/CoverLetter/SDET/FormAnswers_Bonapolia_QAAutomationEngineer.pdf` |\n\n---\n\n## \ud83d\udcac Motivation Answer Docs\n\n| Label | Role | Format | Modified | Size | Path |\n|-------|------|--------|----------|------|------|\n| Answer \u2014 QA Engineer | QA | `DOCX` | Nov 10, 2026 07:14 | 38.8 KB | `download/noormanyulizarp@gmail.com/CoverLetter/QA/Answer_Shine_MotivationQuestion.docx` |\n| Answer \u2014 QA Engineer | QA | `PDF` | Nov 10, 2026 07:14 | 80.3 KB | `download/noormanyulizarp@gmail.com/CoverLetter/QA/Answer_Shine_MotivationQuestion.pdf` |\n\n---\n\n## \ud83d\udcdd LinkedIn Summaries\n\n| Label | Role | Format | Modified | Size | Path |\n|-------|------|--------|----------|------|------|\n| LinkedIn Summary \u2014 Backend Engineer | BackendEngineer | `MD` | Nov 10, 2026 07:14 | 1.3 KB | `download/noormanyulizarp@gmail.com/Summary/BackendEngineer/LinkedIn_Summary_BackendEngineer.md` |\n| LinkedIn Summary \u2014 AI Engineer | AiEngineer | `MD` | Nov 10, 2026 07:14 | 1.3 KB | `download/noormanyulizarp@gmail.com/Summary/AiEngineer/LinkedIn_Summary_AiEngineer.md` |\n| LinkedIn Summary \u2014 QA Engineer | QA | `MD` | Nov 10, 2026 07:14 | 1.5 KB | `download/noormanyulizarp@gmail.com/Summary/QA/LinkedIn_Summary_QA.md` |\n| LinkedIn Summary \u2014 SDET | SDET | `MD` | Nov 10, 2026 07:14 | 1.8 KB | `download/noormanyulizarp@gmail.com/Summary/SDET/LinkedIn_Summary_SDET.md` |\n\n---\n\n## \ud83d\udce5 Download Instructions\n\nAll files are in the private GitHub repo: [`noormanyulizarp/aplicator`](https://github.com/noormanyulizarp/aplicator)\n\n**To download:**\n1. Visit the [private repo](https://github.com/noormanyulizarp/aplicator) (login required)\n2. Navigate to the file path shown above\n3. Click the \"Download\" button (downward arrow icon)\n\n---\n\n*\ud83c\udfe0 [Back to Homepage](../index.html) \u00b7 \ud83d\udcc5 [Weekly Summary](weekly_summary.html) \u00b7 \ud83d\udcbc [Full Applications](applications_full.html) \u00b7 \ud83d\udd04 [Pipeline Status](pipeline_status.html)*\n",
+      "size": 12123,
+      "modified_at": "2026-11-10T14:03:44.652461"
+    },
+    {
+      "category": "reports",
+      "title": "\ud83d\udd04 Pipeline Status Tracker",
+      "filename": "pipeline_status",
+      "source_path": "download/noormanyulizarp@gmail.com/general/reports/pipeline_status.md",
+      "content": "# \ud83d\udd04 Pipeline Status Tracker\n\n> **Auto-generated** from repo state.\n> Generated: **Nov 10, 2026 14:03** \u00b7 Last commit: [`777b524`](https://github.com/noormanyulizarp/aplicator/commit/777b524)\n\n---\n\n## \ud83c\udf10 Live Deployments\n\n| # | Provider | URL | Status | Source | Auto-Update |\n|---|----------|-----|--------|--------|-------------|\n| 1 | **GitHub Pages (public mirror)** \u2b50 | [noormanyulizarp.github.io/aplicator-public](https://noormanyulizarp.github.io/aplicator-public/) | \u2705 **LIVE** | Public mirror repo (`aplicator-public`) | \u2705 On push via GitHub Action |\n| 2 | Cloudflare Pages | `https://aplicator.pages.dev` | \u2b1c Pending setup | Private repo (auto-detect `wrangler.toml`) | \u2705 On push (after setup) |\n| 3 | Vercel | `https://aplicator.vercel.app` | \u2b1c Pending setup | Private repo (auto-detect `vercel.json`) | \u2705 On push (after setup) |\n| 4 | Local preview | `http://localhost:8888` | \u2705 Ready | `cd docs && python3 -m http.server 8888` | Manual run |\n\n---\n\n## \ud83d\udd04 CI/CD Pipeline Flow\n\n```\nYou edit (CV / tracker / .md file)\n  \u2193 git push origin main\nPrivate repo: noormanyulizarp/aplicator (commit: 777b524)\n  \u2193 triggers\nGitHub Action #1: \"Sync Static Report\"\n  - generate_static_site.py (multi-page HTML)\n  - generate_reports.py (4 report .md files) \u2190 NEW\n  - generate_static_site.py (re-render with new reports)\n  - generate_markdown_report.py (streamlined README)\n  - patch_readme_deployments.py (append Pipeline Tracker)\n  \u2193 auto-commits \"auto: sync static report\"\nGitHub Action #2: \"Deploy to Public Mirror\"\n  - Copies docs/ to aplicator-public repo\n  \u2193\nGitHub Pages (PUBLIC)\n  URL: https://noormanyulizarp.github.io/aplicator-public/\n  Status: \u2705 LIVE (HTTPS enforced)\n  Pages: 21+ HTML + 2 assets\n```\n\n---\n\n## \ud83d\udce6 Pipeline Components\n\n| Component | File / Location | Purpose | Status |\n|-----------|-----------------|---------|--------|\n| Static site generator | `scripts/generate_static_site.py` | Renders 21+ HTML pages from .md files + tracker data | \u2705 Active |\n| Markdown report generator | `scripts/generate_markdown_report.py` | Generates README.md base | \u2705 Active |\n| Reports generator (NEW) | `scripts/generate_reports.py` | Generates 4 report .md files | \u2705 Active |\n| README patcher | `scripts/patch_readme_deployments.py` | Appends Live Deployments + Pipeline Tracker to README | \u2705 Active |\n| GitHub Action: sync-static-report | `.github/workflows/sync-static-report.yml` | Auto-regenerate on push | \u2705 Active |\n| GitHub Action: deploy-public-mirror | `.github/workflows/deploy-public-mirror.yml` | Mirror docs/ to public repo | \u2705 Active (PAT set) |\n| Public mirror repo | [`noormanyulizarp/aplicator-public`](https://github.com/noormanyulizarp/aplicator-public) | Public-facing repo | \u2705 Live |\n| GitHub Pages config | Public repo Settings \u2192 Pages | Serves public repo as website | \u2705 Enabled |\n| Cloudflare Pages config | `wrangler.toml` | Auto-deploy to Cloudflare on push | \u2b1c Pending signup |\n| Vercel config | `vercel.json` | Auto-deploy to Vercel on push | \u2b1c Pending signup |\n\n---\n\n## \ud83d\udccb Setup Checklist (Cloudflare + Vercel \u2014 manual one-time)\n\n### Cloudflare Pages (~5 min)\n- [ ] Sign up at https://pages.cloudflare.com (GitHub login)\n- [ ] Connect repo `noormanyulizarp/aplicator`\n- [ ] Build command: `python3 scripts/generate_static_site.py`\n- [ ] Output dir: `docs`\n- [ ] Env var: `PYTHON_VERSION=3.12`\n- [ ] Deploy \u2192 URL: `https://aplicator.pages.dev`\n- [ ] (Optional) Cloudflare Access: email-based auth for `noormanyulizarp@gmail.com`\n\n### Vercel (~3 min)\n- [ ] Sign up at https://vercel.com (GitHub login)\n- [ ] Import repo `noormanyulizarp/aplicator`\n- [ ] Vercel auto-detects `vercel.json`\n- [ ] Deploy \u2192 URL: `https://aplicator.vercel.app`\n\n---\n\n## \ud83d\udd27 Maintenance Commands\n\n| Action | Command |\n|--------|---------|\n| Generate site locally | `python3 scripts/generate_static_site.py` |\n| Generate reports locally | `python3 scripts/generate_reports.py` |\n| Generate README locally | `python3 scripts/generate_markdown_report.py && python3 scripts/patch_readme_deployments.py` |\n| Preview locally | `cd docs && python3 -m http.server 8888` |\n| Force sync via GitHub Action | Go to Actions \u2192 \"Sync Static Report\" \u2192 Run workflow |\n| Force deploy to public mirror | Go to Actions \u2192 \"Deploy to Public Mirror\" \u2192 Run workflow |\n\n---\n\n*\ud83c\udfe0 [Back to Homepage](../index.html) \u00b7 \ud83d\udcc5 [Weekly Summary](weekly_summary.html) \u00b7 \ud83d\udcbc [Full Applications](applications_full.html) \u00b7 \ud83d\udcc4 [CV Inventory](cv_inventory_full.html)*\n",
+      "size": 4522,
+      "modified_at": "2026-11-10T14:03:44.652461"
+    },
+    {
+      "category": "reports",
+      "title": "\ud83d\udcc5 Weekly Summary Report",
+      "filename": "weekly_summary",
+      "source_path": "download/noormanyulizarp@gmail.com/general/reports/weekly_summary.md",
+      "content": "# \ud83d\udcc5 Weekly Summary Report\n\n> **Auto-generated** from `apply_tracker.csv` and `download/` folder inventory.\n> Generated: **Nov 10, 2026 14:03** \u00b7 Source: `noormanyulizarp/aplicator` (private repo)\n\n---\n\n## \ud83d\udcca This Week's Snapshot\n\n| Metric | Value | Detail |\n|--------|-------|--------|\n| \ud83d\udcc5 Period | Last 7 days | Nov 03, 2026 \u2192 Nov 10, 2026 |\n| \ud83c\udd95 New applications | **9** | Submitted in last 7 days |\n| \ud83d\udcc4 Files modified | **62** | CVs/CLs/summaries updated in last 7 days |\n| \u23f0 Follow-ups due | **9** | Within next 7 days |\n\n---\n\n## \ud83d\udcc8 Status Breakdown (All Time)\n\n| Status | Count | Percentage |\n|--------|-------|------------|\n| \ud83d\udfe6 drafting | 7 | 78% |\n| \ud83d\udd35 applied | 2 | 22% |\n| \ud83d\udfe1 screening | 0 | 0% |\n| \ud83d\udfe2 interview | 0 | 0% |\n| \ud83c\udf1f offer | 0 | 0% |\n| \ud83d\udd34 rejected | 0 | 0% |\n| \u26ab ghosted | 0 | 0% |\n| \u26aa withdrawn | 0 | 0% |\n| **Total** | **9** | 100% |\n\n---\n\n## \ud83c\udd95 Recent Applications (Last 7 Days)\n\n| # | Company | Role | Status | Applied | Follow-up |\n|---|---------|------|--------|---------|----------|\n| 1 | **Lokki Henkil\u00f6st\u00f6palvelut Oy** | QA Engineer | \ud83d\udd35 applied | 2026-11-09 | 2026-11-16 |\n| 2 | **Hitachi eBworx** | QA Analyst | \ud83d\udd35 applied | 2026-11-09 | 2026-11-16 |\n| 3 | **TEKsystems Tokyo** | Mobile QA Tester | \ud83d\udfe6 drafting | 2026-11-09 | 2026-11-16 |\n| 4 | **TEKsystems Tokyo** | Automation QA Engineer (Python) | \ud83d\udfe6 drafting | 2026-11-09 | 2026-11-16 |\n| 5 | **TEKsystems Tokyo** | Automation QA Engineer (Selenium/Playwright) | \ud83d\udfe6 drafting | 2026-11-09 | 2026-11-16 |\n| 6 | **Shine** | QA Analyst | \ud83d\udfe6 drafting | 2026-11-09 | 2026-11-16 |\n| 7 | **DNA.inc** | Senior Quality Engineer | \ud83d\udfe6 drafting | 2026-11-09 | 2026-11-16 |\n| 8 | **Ajaib** | SDET | \ud83d\udfe6 drafting | 2026-11-10 | 2026-11-17 |\n| 9 | **Bonapolia (client: Baltic Amadeus)** | QA Automation Engineer | \ud83d\udfe6 drafting | 2026-11-10 | 2026-11-17 |\n\n\n---\n\n## \u23f0 Follow-ups Due (Next 7 Days)\n\n| # | Company | Role | Status | Follow-up Date | Days Until |\n|---|---------|------|--------|-----------------|------------|\n| 1 | **Lokki Henkil\u00f6st\u00f6palvelut Oy** | QA Engineer | \ud83d\udd35 applied | 2026-11-16 | \ud83d\udfe2 6 day(s) |\n| 2 | **Hitachi eBworx** | QA Analyst | \ud83d\udd35 applied | 2026-11-16 | \ud83d\udfe2 6 day(s) |\n| 3 | **TEKsystems Tokyo** | Mobile QA Tester | \ud83d\udfe6 drafting | 2026-11-16 | \ud83d\udfe2 6 day(s) |\n| 4 | **TEKsystems Tokyo** | Automation QA Engineer (Python) | \ud83d\udfe6 drafting | 2026-11-16 | \ud83d\udfe2 6 day(s) |\n| 5 | **TEKsystems Tokyo** | Automation QA Engineer (Selenium/Playwright) | \ud83d\udfe6 drafting | 2026-11-16 | \ud83d\udfe2 6 day(s) |\n| 6 | **Shine** | QA Analyst | \ud83d\udfe6 drafting | 2026-11-16 | \ud83d\udfe2 6 day(s) |\n| 7 | **DNA.inc** | Senior Quality Engineer | \ud83d\udfe6 drafting | 2026-11-16 | \ud83d\udfe2 6 day(s) |\n| 8 | **Ajaib** | SDET | \ud83d\udfe6 drafting | 2026-11-17 | \ud83d\udfe2 7 day(s) |\n| 9 | **Bonapolia (client: Baltic Amadeus)** | QA Automation Engineer | \ud83d\udfe6 drafting | 2026-11-17 | \ud83d\udfe2 7 day(s) |\n\n\n---\n\n## \ud83d\udcc4 Files Modified (Last 7 Days)\n\n| File | Type | Format | Modified | Size |\n|------|------|--------|----------|------|\n| Master CV (comprehensive) | master_cv | `DOCX` | Nov 10, 2026 07:14 | 39.6 KB |\n| Master CV (comprehensive) | master_cv | `PDF` | Nov 10, 2026 07:14 | 64.0 KB |\n| Cover Letter \u2014 Backend Engineer | cover_letter | `DOCX` | Nov 10, 2026 07:14 | 37.0 KB |\n| Cover Letter \u2014 Backend Engineer | cover_letter | `PDF` | Nov 10, 2026 07:14 | 37.4 KB |\n| LinkedIn Summary \u2014 Backend Engineer | summary | `MD` | Nov 10, 2026 07:14 | 1.3 KB |\n| Cover Letter \u2014 AI Engineer | cover_letter | `DOCX` | Nov 10, 2026 07:14 | 37.0 KB |\n| Cover Letter \u2014 AI Engineer | cover_letter | `PDF` | Nov 10, 2026 07:14 | 36.5 KB |\n| LinkedIn Summary \u2014 AI Engineer | summary | `MD` | Nov 10, 2026 07:14 | 1.3 KB |\n| QA Engineer (Hitachi variant) | cv | `DOCX` | Nov 10, 2026 07:14 | 39.7 KB |\n| QA Engineer (Hitachi variant) | cv | `PDF` | Nov 10, 2026 07:14 | 65.1 KB |\n| QA Engineer (Lokki variant) | cv | `DOCX` | Nov 10, 2026 07:14 | 39.2 KB |\n| QA Engineer (Lokki variant) | cv | `PDF` | Nov 10, 2026 07:14 | 62.6 KB |\n| QA Engineer (TEKsystems Selenium/Playwright) | cv | `DOCX` | Nov 10, 2026 07:14 | 38.3 KB |\n| QA Engineer (TEKsystems Selenium/Playwright) | cv | `PDF` | Nov 10, 2026 07:14 | 57.1 KB |\n| Answer \u2014 QA Engineer | answer | `DOCX` | Nov 10, 2026 07:14 | 38.8 KB |\n| Answer \u2014 QA Engineer | answer | `PDF` | Nov 10, 2026 07:14 | 80.3 KB |\n| Cover Letter \u2014 QA Engineer | cover_letter | `DOCX` | Nov 10, 2026 07:14 | 37.7 KB |\n| Cover Letter \u2014 QA Engineer | cover_letter | `PDF` | Nov 10, 2026 07:14 | 40.7 KB |\n| Cover Letter \u2014 QA Engineer (Lokki) | cover_letter | `DOCX` | Nov 10, 2026 07:14 | 37.4 KB |\n| Cover Letter \u2014 QA Engineer (Lokki) | cover_letter | `PDF` | Nov 10, 2026 07:14 | 42.3 KB |\n\n\n---\n\n## \ud83c\udfaf Recommended Actions\n\n1. **Send follow-up emails** to 9 applications with due dates (see table above)\n2. **Submit 7 drafted applications** (currently in 'drafting' status)\n\n\n---\n\n*\ud83d\udcca [View Full Applications Report](applications_full.html) \u00b7 \ud83d\udcc4 [View CV Inventory](cv_inventory_full.html) \u00b7 \ud83d\udd04 [View Pipeline Status](pipeline_status.html)*\n\n*\ud83c\udfe0 [Back to Homepage](../index.html)*\n",
+      "size": 5155,
+      "modified_at": "2026-11-10T14:03:44.652461"
     },
     {
       "category": "knowledge",
@@ -757,7 +871,7 @@
       "source_path": "knowledge/ATS_keywords.md",
       "content": "# ATS Keywords \u2014 Per Role\n\nATS (Applicant Tracking Systems) parse your CV for keyword matches against the JD.\nBelow: high-frequency keywords per role to weave into your CV (when truthful).\n\n## How to use\n- Don't stuff keywords \u2014 ATS also penalize obvious stuffing.\n- Match phrasing from the JD: if JD says \"REST APIs\", write \"REST APIs\" not \"RESTful services\".\n- Use both spelled-out and acronym forms: \"Continuous Integration (CI)\".\n- For tools: write the brand name exactly (e.g. \"Playwright\", not \"Playwright JS\").\n\n---\n\n## Backend Engineer\n\n**Must-have (high ATS weight):**\n- REST API, gRPC, GraphQL, microservices, distributed systems\n- Python, Java, Go, Node.js, TypeScript\n- PostgreSQL, MySQL, Redis, MongoDB\n- Docker, Kubernetes, AWS (EC2, S3, RDS, Lambda), GCP\n- CI/CD, Jenkins, GitHub Actions, GitLab CI, ArgoCD\n- Agile, Scrum, code review\n\n**Nice-to-have:**\n- Kafka, RabbitMQ, SQS, event-driven architecture\n- Elasticsearch, OpenSearch\n- Terraform, Pulumi, Infrastructure as Code\n- Spring Boot, Django, FastAPI, Express\n- TDD, BDD, integration testing, unit testing\n- Observability: Grafana, Prometheus, Datadog, OpenTelemetry\n- Domain-Driven Design (DDD), Clean Architecture\n\n---\n\n## AI Engineer\n\n**Must-have:**\n- LLM, RAG (Retrieval-Augmented Generation), embeddings\n- Python, PyTorch, TensorFlow, Hugging Face Transformers\n- Vector database: Chroma, Qdrant, Pinecone, Weaviate, pgvector\n- LangChain, LlamaIndex, MCP (Model Context Protocol)\n- Prompt engineering, fine-tuning, RAG evaluation\n- OpenAI API, Anthropic Claude API, local LLMs (Ollama, vLLM)\n- MLOps, model deployment, model evaluation\n\n**Nice-to-have:**\n- Multi-agent orchestration, function calling, tool use\n- Inference optimization: quantization, distillation, ONNX\n- MLflow, Weights & Biases, experiment tracking\n- Distributed training: Ray, DeepSpeed\n- Vector search: ANN, HNSW, FAISS\n- Evaluation frameworks: Ragas, DeepEval, Promptfoo\n- Embedding models: OpenAI ada, BGE, GTE\n\n---\n\n## QA Engineer\n\n**Must-have:**\n- Manual testing, exploratory testing, regression testing\n- Test plan, test case design, test strategy\n- Bug tracking: Jira, Linear, YouTrack\n- API testing: Postman, RestAssured, Insomnia\n- Mobile testing: Android, iOS, Appium\n- Web testing: Chrome DevTools, cross-browser\n- Agile, Scrum, sprint planning\n\n**Nice-to-have:**\n- UAT (User Acceptance Testing), acceptance criteria\n- Performance testing: JMeter, Locust, k6, Gatling\n- Accessibility testing: axe, WAVE, WCAG\n- Security testing: OWASP, ZAP, Burp Suite\n- Test management: TestRail, Zephyr, Xray\n- Compliance testing: GDPR, PCI-DSS, ISO 27001\n- SQL, data validation, ETL testing\n\n---\n\n## SDET\n\n**Must-have:**\n- Test automation, automation framework, automation infrastructure\n- Programming: Python, Java, JavaScript/TypeScript\n- Selenium, Playwright, Cypress, Appium\n- TestNG, JUnit, PyTest, Jest, Mocha\n- CI/CD: Jenkins, GitHub Actions, GitLab CI, ArgoCD\n- Docker, Kubernetes\n- API automation: RestAssured, gRPC testing\n- BDD: Cucumber, Behave, SpecFlow\n\n**Nice-to-have:**\n- Performance engineering: Gatling, Locust, k6\n- Test orchestration platforms\n- Device farms: BrowserStack, SauceLabs, AWS Device Farm\n- Custom library development\n- Embedded / IoT testing\n- Mobile automation: Espresso, XCUITest\n- Visual regression testing: Percy, Applitools\n- Code coverage: JaCoCo, Istanbul, Coverage.py\n- Shift-left testing, TDD\n\n---\n\n## Cross-cutting keywords (all roles)\n\n**Soft skills (often weighted by ATS for culture-fit JDs):**\n- Cross-functional collaboration\n- Stakeholder management\n- Mentorship, technical leadership\n- Ownership, end-to-end responsibility\n- Communication, presentation\n\n**Seniority signals:**\n- Architecture, design, technical lead\n- Cross-team impact, org-wide adoption\n- Mentoring junior engineers\n- Hiring, interview panel\n- Roadmap planning, technical strategy\n\n---\n\n## Checklist when tailoring a CV\n\n- [ ] Did I read the JD top-to-bottom?\n- [ ] Did I identify 5-10 keywords that appear in the JD?\n- [ ] Did I naturally include those keywords in my CV (when truthful)?\n- [ ] Did I check the phrasing matches exactly (REST APIs vs RESTful APIs)?\n- [ ] Did I avoid keyword stuffing (same word 5+ times)?\n- [ ] Did I keep my CV in a single column (ATS-friendly)?\n- [ ] Did I avoid tables, columns, text boxes for key content?\n- [ ] Did I save as .docx or .pdf (text-based, not scanned)?\n",
       "size": 4368,
-      "modified_at": "2026-11-10T07:14:58.532452"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "category": "knowledge",
@@ -766,7 +880,7 @@
       "source_path": "knowledge/apply_playbook.md",
       "content": "# Apply Playbook \u2014 End-to-End Job Search SOP\n\nA repeatable workflow for each job application. Goal: maximize signal per application, minimize wasted effort.\n\n---\n\n## Phase 0: Setup (one-time, already done)\n\n- [x] Folder structure created under `noormanyulizarp@gmail.com/`\n- [x] 4 role-targeted CVs generated (Backend, AI, QA, SDET)\n- [x] 4 cover letter templates ready\n- [x] 4 LinkedIn summaries ready\n- [x] Apply tracker script installed (`scripts/apply_tracker.py`)\n- [x] MCP server ready (`mcp_server/server.py`) \u2014 see `mcp_server/README.md` for install\n- [x] Skill `noorman-jobsearch` ready for assistant context loading\n\n### Two ways to run the workflow\n\n**Option A \u2014 CLI scripts** (this assistant or terminal):\n```bash\npython3 scripts/jd_parser.py --file jd.txt\npython3 scripts/tailor_cv.py --jd-file jd.txt --role sdet\npython3 scripts/apply_tracker.py add --company \"X\" --role \"SDET\" --platform greenhouse --link \"...\"\n```\n\n**Option B \u2014 MCP server** (Claude Desktop / Cursor / Cline / Continue):\nConnect the MCP server (see `mcp_server/README.md`), then ask your AI client in natural language:\n> \"Parse this JD: [paste]. Then tailor my CV for the recommended role.\"\n> \"Add this application to my tracker: Gojek SDET, Greenhouse, https://...\"\n\nThe MCP server wraps the same logic \u2014 same outputs, different interface.\nUse Option A when chatting with this assistant (Z.ai).\nUse Option B when working in Claude Desktop / Cursor / etc.\n\n---\n\n## Phase 1: Discover (per opportunity)\n\n### Sources to monitor\n- **LinkedIn** \u2014 job feed + Easy Apply filter\n- **Greenhouse** / **Lever** direct company pages (often not posted on LinkedIn)\n- **Company career pages** \u2014 bookmark target companies (see `companies_target.md`)\n- **Referrals** \u2014 your strongest lever; ask your network BEFORE applying cold\n- **Communities** \u2014 Indonesia tech Discord/Telegram groups, r/cscareerquestions\n\n### Decision: should I apply?\n\nFilter out before applying:\n- [ ] Salary range visible and matches your floor?\n- [ ] Years of experience required \u2264 your years? (or within 2 years gap)\n- [ ] Stack matches \u2265 60% of your skills?\n- [ ] Location / remote OK for you?\n- [ ] Company stage = a place you'd actually work? (not just desperate apply)\n\nIf \u22653 boxes ticked \u2192 apply. If <3 \u2192 skip, don't waste cycles.\n\n---\n\n## Phase 2: Tailor (per opportunity, ~10-15 min)\n\n### Step-by-step\n\n1. **Save the JD**: copy JD text \u2192 save to `knowledge/jds/<company>_<role>.txt`\n2. **Parse it**: `python3 scripts/jd_parser.py --file knowledge/jds/<company>_<role>.txt`\n3. **Plan tailoring**: `python3 scripts/tailor_cv.py --file knowledge/jds/<company>_<role>.txt --role sdet`\n4. **Pick the right CV variant**: based on the parser output (Backend/AI/QA/SDET)\n5. **Edit the CV** (10 min max): swap 2-3 bullets to match JD keywords, update Profile Summary if needed\n6. **Save as**: `CV/<Role>/CV_Noorman_<Role>_<Company>.docx` (variant for this specific app)\n7. **Personalize cover letter**: copy `CoverLetter/<Role>/CL_Template_<Role>.docx` \u2192 fill in:\n   - `[Date]`, `[Hiring Manager]`, `[Company Name]`, `[specific reason]`\n   - Save as: `CL_<Company>_<Role>.docx`\n8. **Export both to PDF**: `soffice --headless --convert-to pdf file.docx`\n\n### When NOT to tailor\n\n- Easy Apply with no JD-specific required fields \u2192 use the role-appropriate CV as-is\n- Volume-based application rounds (you're short on time) \u2192 use base CV, batch apply\n\n---\n\n## Phase 3: Submit\n\n### Per platform workflow\n\n**LinkedIn Easy Apply** (see `hacking_ways/linkedin_easy_apply.md`):\n- Use Easy Apply filter\n- Pre-fill answers: years of experience, work authorization, salary expectation\n- Attach CV + cover letter (if allowed)\n- Track in `apply_tracker.py add --platform linkedin`\n\n**Greenhouse** (see `hacking_ways/greenhouse_tips.md`):\n- Manual form, repeat across companies\n- Pre-fill with browser autofill / extension (Bitwarden, Autofill)\n- Usually requires a few custom questions \u2014 answer once, save to `knowledge/answers/`\n\n**Lever** (see `hacking_ways/lever_tips.md`):\n- Simplest flow \u2014 usually just CV + 1-2 questions\n- Often auto-acknowledges with confirmation email\n\n**Company site / Workday** (see `hacking_ways/workday_tips.md`):\n- Most painful; pre-fill where possible\n- Often asks for the same info as your CV (work history) \u2192 keep a plain-text version ready\n\n**Referral**:\n- Message your referrer BEFORE submitting\n- Share: role title, link, your tailored CV\n- They submit on their end \u2192 flag in tracker as `--platform referral`\n\n### Always do after submit\n\n```bash\npython3 scripts/apply_tracker.py add \\\n  --company \"Gojek\" \\\n  --role \"SDET\" \\\n  --platform greenhouse \\\n  --link \"https://boards.greenhouse.io/gojek/jobs/12345\" \\\n  --notes \"Applied via referral from @john.doe\"\n```\n\n---\n\n## Phase 4: Follow-up\n\n### Schedule\n\n- **Day 0**: Apply\n- **Day 7**: If no response \u2192 gentle follow-up email (if you have recruiter contact) OR LinkedIn message\n- **Day 14**: If still nothing \u2192 mark as `ghosted` in tracker, move on\n- **Day 30**: Re-engagement check \u2014 sometimes companies re-open roles\n\n### Follow-up message template\n\n```\nSubject: Following up on my application \u2014 <Role>, <Company>\n\nHi [Recruiter],\n\nI applied for the <Role> position at <Company> on <date> and wanted to follow up.\nI'm still very interested \u2014 my background in <1-line relevant skill> lines up well with the\nrole, and I'd be glad to walk through any specifics.\n\nPlease let me know if there's any update or additional info I can provide.\n\nBest,\nNoorman\nnoormanyulizarp@gmail.com | +62 896 3411 2503\n```\n\n### Track follow-ups\n\n```bash\n# See what's overdue\npython3 scripts/apply_tracker.py stats\n\n# Update status when you hear back\npython3 scripts/apply_tracker.py update --id 3 --status interview --notes \"HR call scheduled\"\n```\n\n---\n\n## Phase 5: Interview Prep\n\nOnce you get an interview:\n\n1. **Read the JD again** \u2014 highlight the 3 must-have skills they'll definitely ask about\n2. **Pull relevant experience bullets** from your CV \u2014 prepare STAR-format stories\n3. **Research the company**: recent news, tech blog, engineering team on LinkedIn\n4. **Mock-interview yourself** or with a friend: behavioral + technical\n5. **Prepare 2-3 questions** to ask them (signal: you're evaluating them too)\n\n### STAR format (Situation, Task, Action, Result)\n\nFor each bullet on your CV, be able to expand into a 90-second STAR answer:\n\n> **S**: \"At GoPay, the Crypto QA function was unstaffed.\"\n> **T**: \"I needed to build the entire function from zero in 11 months for CFX/Bappebti certification.\"\n> **A**: \"I established quality standards, wrote automation processes, owned ArgoCD-based release pipelines.\"\n> **R**: \"GoPay became one of only seven licensed crypto operators in Indonesia, delivered in 11 months vs multi-year industry norm.\"\n\n---\n\n## Phase 6: Offer & Negotiation\n\nWhen you get an offer:\n\n1. **Don't accept immediately** \u2014 say \"thank you, I'll review and get back to you in X days\"\n2. **Compare with market**: Glassdoor, Levels.fyi, Indonesian tech salary surveys\n3. **Negotiate**: total comp (base, bonus, equity, signing bonus), benefits, PTO, remote flexibility\n4. **Once accepted**: update tracker `--status offer` then `--status withdrawn` for other active apps\n\n---\n\n## Weekly cadence\n\n- **Mon**: Review tracker `stats` \u2014 what's due for follow-up this week?\n- **Tue-Thu**: Apply to 3-5 high-quality roles\n- **Fri**: Update tracker, prepare for any upcoming interviews next week\n\n## Monthly cadence\n\n- Review `companies_target.md` \u2014 any new targets to add?\n- Review your CVs \u2014 anything to refresh based on new skills / projects?\n- Review your cover letters \u2014 any reusable answers worth saving?\n\n---\n\n## Anti-patterns to avoid\n\n- \u274c Applying to 50 roles per day with the same CV (ATS picks up duplicates, low quality)\n- \u274c Skipping the JD parse step (you miss keyword matches)\n- \u274c Forgetting to track applications (you lose follow-up timing)\n- \u274c Ghosting recruiters who reach out (always respond, even to decline)\n- \u274c Not prepping for interviews because \"you have many applications out\"\n- \u274c Accepting the first offer without negotiation\n",
       "size": 8136,
-      "modified_at": "2026-11-10T07:14:58.532562"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "category": "knowledge",
@@ -775,7 +889,7 @@
       "source_path": "knowledge/companies_target.md",
       "content": "# Target Companies\n\nMaintain a list of companies you'd want to work at, with notes on why and how to apply.\n\n## Format\n\n```\n### <Company Name>\n- **Why**: <1-2 sentences on why you want to work here>\n- **Tech stack**: <if known>\n- **Apply channel**: <referral? LinkedIn? Greenhouse? Company site?>\n- **Referral contact**: <name, LinkedIn, last contacted>\n- **Status**: <researching / applied / interviewing / rejected / offer>\n- **Notes**: <anything else>\n```\n\n---\n\n## Tier 1 \u2014 Dream companies (high effort, high referral focus)\n\n### GoTo / Gojek / Tokopedia\n- **Why**: Already inside GoPay. Could lateral to SDET/Backend in another BU. Best leverage via internal referral.\n- **Tech stack**: Java, Kotlin, Go, Python, microservices, Kubernetes\n- **Apply channel**: Internal referral first\n- **Status**: researching internal moves\n\n### Ruangguru\n- **Why**: Previous employer, strong network. AI initiatives are interesting.\n- **Tech stack**: Python, Node.js, gRPC, Kubernetes\n- **Apply channel**: Referral from former teammates\n- **Status**: warm lead\n\n### Vidio\n- **Why**: Previous employer, leading streaming platform\n- **Tech stack**: Python, FastAPI, Robot Framework\n- **Apply channel**: Referral\n- **Status**: warm lead\n\n### Jenius (SMBC Bank)\n- **Why**: Previous employer, first Indonesian digital bank\n- **Tech stack**: React.js, OpenShift, Java\n- **Apply channel**: Referral\n- **Status**: warm lead\n\n---\n\n## Tier 2 \u2014 Strong targets (selective apply)\n\n### Sea Group / Garena / Shopee\n- **Why**: Regional scale, strong engineering culture\n- **Tech stack**: Go, Java, Python, Kubernetes\n- **Apply channel**: LinkedIn / Greenhouse\n- **Status**: researching\n\n### Grab\n- **Why**: Regional super-app, fintech side (GrabPay) relevant\n- **Tech stack**: Go, Java, Kotlin\n- **Apply channel**: Greenhouse\n- **Status**: researching\n\n### Traveloka\n- **Why**: Indonesian tech leader, fintech side (Paylater) relevant\n- **Tech stack**: Go, Java, Node.js\n- **Apply channel**: Company site + LinkedIn\n- **Status**: researching\n\n### Xendit\n- **Why**: Payments infrastructure, modern stack\n- **Tech stack**: Node.js, TypeScript, Go\n- **Apply channel**: Company site\n- **Status**: researching\n\n### ALAMI / Investree / Asetku\n- **Why**: Islamic / P2P fintech, growing segment\n- **Apply channel**: LinkedIn\n- **Status**: researching\n\n---\n\n## Tier 3 \u2014 Global remote (apply when have time)\n\n### Remote-first AI startups\n- Companies like: Modal, Vercel, Supabase, Hugging Face, LangChain (check their careers page quarterly)\n- **Apply channel**: Company site + reach out to engineers on Twitter/X or LinkedIn\n- **Why**: AI tooling stack matches your profile\n- **Status**: monitoring\n\n### YC-backed startups\n- Check workatastartup.com \u2014 filter for backend / SDET / AI roles\n- **Apply channel**: Their portal\n- **Status**: monitoring\n\n---\n\n## Singapore / Regional (consider if open to relocate or remote)\n\n### Stripe\n- **Why**: Payments infrastructure, world-class engineering\n- **Apply channel**: Greenhouse\n- **Status**: researching\n\n### ByteDance / TikTok\n- **Why**: Scale, AI applications\n- **Apply channel**: Greenhouse\n- **Status**: researching\n\n### Shopee SG\n- **Why**: Regional scale, strong comp\n- **Apply channel**: Greenhouse\n- **Status**: researching\n\n---\n\n## Notes & reminders\n\n- Re-evaluate this list monthly\n- Add new companies as you discover them (Twitter, podcasts, dev communities)\n- Remove companies that ghosted you twice \u2014 don't waste cycles\n- Track referral contacts here too \u2014 your strongest lever\n",
       "size": 3512,
-      "modified_at": "2026-11-10T07:14:58.532562"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "category": "knowledge",
@@ -784,7 +898,7 @@
       "source_path": "knowledge/hacking_ways/greenhouse_tips.md",
       "content": "# Greenhouse Apply \u2014 Workflow & Tips\n\nGreenhouse is the most common ATS in tech (used by Stripe, Notion, GitLab, etc.). Forms are usually consistent across companies \u2014 once you learn the pattern, applications take 3-5 min.\n\n## Why Greenhouse matters\n- Many Tier 1 companies use it (Stripe, Airbnb, Coinbase, Doordash, etc.)\n- Forms are usually identical \u2014 autofill works great\n- Often requires custom questions (work authorization, salary, referral source)\n\n## Setup (one-time)\n\n### 1. Browser autofill\n- **Chrome**: Settings \u2192 Autofill \u2192 add your name, email, phone, address\n- **Or use a password manager** (Bitwarden, 1Password) that auto-fills forms\n- **Or install Simplify extension** \u2014 purpose-built for job applications\n\n### 2. Pre-write common answers\nSave these in `knowledge/answers/` so you can copy-paste:\n\n- **Work authorization**: \"I am an Indonesian citizen authorized to work in Indonesia. I do not require sponsorship for Indonesia-based roles.\"\n- **Salary expectation**: \"Open to discussion. Based on market research, my expected range is IDR XX-XX M / month for [role].\"\n- **Why this company?**: keep a template; personalize per app\n- **Referral source**: \"Referred by [Name], [Title] at [Company]\"\n- **Years of experience**: \"10 years in software engineering, with focus on [role]\"\n\n### 3. CV file naming\nKeep a clean filename for upload \u2014 recruiters see it:\n- `CV_Noorman_SDET.pdf` (good)\n- `Resume_v3_FINAL.pdf` (bad)\n\n## Greenhouse workflow\n\n### Step-by-step (target: 3-5 min per app)\n\n1. **Open the role** on the company's Greenhouse page (often `<company>.greenhouse.io`)\n2. **Click \"Apply\"** \u2014 opens the multi-step form\n3. **Step 1: Personal info** \u2014 autofill (name, email, phone, LinkedIn)\n4. **Step 2: CV upload** \u2014 drag your tailored PDF\n5. **Step 3: Cover letter** (if required) \u2014 paste from `CL_Template_<Role>.docx` (already personalized)\n6. **Step 4: Custom questions** \u2014 copy-paste from `knowledge/answers/`\n7. **Step 5: Referral source** \u2014 if referral, name the person; else \"LinkedIn\" / \"Company website\"\n8. **Step 6: Diversity survey** \u2014 optional, your choice\n9. **Submit** \u2014 you'll get an email confirmation\n\n### Custom question patterns to expect\n\n| Question type | Example | How to answer |\n|---------------|---------|---------------|\n| Years of experience | \"How many years of Python experience?\" | Round down (honest), e.g. \"8 years\" |\n| Work authorization | \"Are you authorized to work in [country]?\" | Yes/No with brief explanation |\n| Salary expectation | \"What's your expected salary?\" | Range, currency, period |\n| Why this company? | \"Why do you want to work at [Company]?\" | 2-3 sentences, mention a specific product/feature/news |\n| Referral source | \"How did you hear about this role?\" | Name + relationship if referral |\n| Availability | \"When can you start?\" | \"Available from [date]\" or \"X weeks notice\" |\n\n## Greenhouse-specific tips\n\n- **\"My Applications\" page**: every Greenhouse-hosted company has one at `<company>.greenhouse.io` \u2014 track your status\n- **Status meanings**:\n  - \"Application Submitted\" \u2192 in queue, not yet reviewed\n  - \"Application Review\" \u2192 recruiter is reading\n  - \"Interview\" \u2192 moved to next stage\n  - \"Hired\" / \"Rejected\" \u2192 terminal states\n- **Custom questions are mandatory** \u2014 leaving blank = auto-reject\n- **Referral source** is weighted heavily \u2014 if you have a referral, ALWAYS name them\n- **Some companies add \"additional questions\" after the first screen** \u2014 check email\n\n## Referral flow on Greenhouse\n\nIf you have a referral:\n1. **Referrer submits you via internal portal** \u2014 they fill a brief form\n2. **You receive an email** with a personalized apply link\n3. **Apply via that link** \u2014 your application is tagged as referral (priority queue)\n4. **Always thank your referrer** \u2014 even if rejected\n\n## Common gotchas\n\n- \u274c Submitting without a cover letter when it's \"optional but recommended\" \u2192 submit one anyway for Tier 1\n- \u274c Forgetting to swap your CV variant (applied Backend role with QA CV)\n- \u274c Salary expectations too high (auto-reject) or too low (anchor low for negotiation)\n- \u274c Applying to multiple roles at the same company simultaneously (looks unfocused)\n\n## Tracking\n\n```bash\npython3 scripts/apply_tracker.py add \\\n  --company \"Stripe\" \\\n  --role \"Backend Engineer\" \\\n  --platform greenhouse \\\n  --link \"https://boards.greenhouse.io/stripe/jobs/XXXX\" \\\n  --notes \"Referral from @jane.doe\"\n```\n",
       "size": 4452,
-      "modified_at": "2026-11-10T07:14:58.532562"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "category": "knowledge",
@@ -793,7 +907,7 @@
       "source_path": "knowledge/hacking_ways/lever_tips.md",
       "content": "# Lever Apply \u2014 Workflow & Tips\n\nLever is the second most common ATS in tech (used by Notion, Ramp, Plaid, etc.). Simpler than Greenhouse \u2014 usually just CV + 1-2 questions.\n\n## Why Lever is great\n\n- \u2705 Fastest apply flow of any ATS (often <2 min)\n- \u2705 Almost always auto-acknowledges with confirmation email\n- \u2705 Often has a single form across all roles at the company\n- \u2705 Mobile-friendly \u2014 you can apply on the go\n\n## Lever workflow\n\n### Step-by-step (target: 2 min per app)\n\n1. Open the role on the company's Lever page (often `jobs.lever.co/<company>`)\n2. Click \"Apply for this job\"\n3. **Personal info**: name, email, phone \u2014 autofill from browser\n4. **CV upload**: drag your tailored PDF\n5. **Optional: cover letter** \u2014 paste from `CL_Template_<Role>.docx`\n6. **Custom questions** (if any): usually 1-2 \u2014 salary expectation, work authorization\n7. **Links**: paste LinkedIn + GitHub + portfolio\n8. **Submit**\n\n## Lever-specific tips\n\n- **\"My Applications\" page**: `jobs.lever.co/me/applications` \u2014 track all your Lever apps in one place\n- **Status feedback is faster** than Greenhouse \u2014 usually within 2-5 days\n- **Email confirmation always comes** \u2014 if you don't get one in 5 min, check spam or re-submit\n- **Custom questions are minimal** \u2014 Lever's philosophy is \"let the CV speak\"\n- **Many Lever companies don't require cover letters** \u2014 submit anyway if Tier 1\n\n## When Lever asks custom questions\n\nCommon patterns:\n- \"Are you legally authorized to work in [country]?\" \u2192 Yes/No\n- \"Will you now or in the future require visa sponsorship?\" \u2192 Yes/No\n- \"What's your expected salary?\" \u2192 range in local currency\n- \"How did you hear about this role?\" \u2192 referral name if any\n\n## Gotchas\n\n- \u274c Lever's \"My Applications\" page sometimes doesn't sync statuses \u2014 keep your own tracker\n- \u274c Some companies add a screening question with a hidden \"right answer\" (e.g. \"What HTTP status code means...\") \u2014 answer carefully\n- \u274c If you apply twice to the same company in 30 days, the second usually overwrites the first (not always \u2014 varies)\n\n## Tracking\n\n```bash\npython3 scripts/apply_tracker.py add \\\n  --company \"Notion\" \\\n  --role \"AI Engineer\" \\\n  --platform lever \\\n  --link \"https://jobs.lever.co/notion/XXXX\"\n```\n",
       "size": 2253,
-      "modified_at": "2026-11-10T07:14:58.532787"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "category": "knowledge",
@@ -802,7 +916,7 @@
       "source_path": "knowledge/hacking_ways/linkedin_easy_apply.md",
       "content": "# LinkedIn Easy Apply \u2014 Workflow & Tips\n\n## What is Easy Apply?\nLinkedIn Easy Apply lets you apply with 1-3 clicks using a pre-saved profile + CV. Lower friction, but also lower signal \u2014 recruiters see these as lower quality than direct Greenhouse/Lever applications.\n\n## When to use Easy Apply\n- \u2705 Quick volume applications when you have a tailored CV ready\n- \u2705 Companies you don't have a referral to (otherwise go referral route)\n- \u2705 Exploring market / testing CV response rates\n\n## When NOT to use Easy Apply\n- \u274c For Tier 1 dream companies \u2014 apply directly via their site or referral\n- \u274c When the JD specifically asks for a cover letter / portfolio link\n- \u274c When the form asks questions your profile can't auto-fill\n\n## Setup (one-time)\n\n### 1. Profile completeness\nLinkedIn weights Easy Apply results by profile completeness. Fill in:\n- [ ] Headline (use your role-targeted tagline, e.g. \"Senior SDET | Test Infrastructure @ GoPay | Ex-Ruangguru, Vidio\")\n- [ ] About section (paste from `Summary/<Role>/LinkedIn_Summary_<Role>.md`)\n- [ ] Work experience \u2014 fill ALL 10 years\n- [ ] Skills section \u2014 add 30+ (matches ATS keyword list)\n- [ ] Featured section \u2014 pin a project / GitHub / article\n- [ ] Open to work \u2014 set to \"Recruiters only\" (not the green frame)\n\n### 2. CV upload\n- Upload 4 CV variants (Backend, AI, QA, SDET) to LinkedIn\n- Set the most relevant one as default for the role you're targeting this week\n- **Tip**: rename files like `CV_Noorman_SDET_GoPay.pdf` \u2014 recruiters see the filename\n\n### 3. Easy Apply pre-fill\nWhen you click Easy Apply for the first time, LinkedIn asks:\n- Years of experience \u2192 fill in 10\n- Work authorization \u2192 Yes (Indonesia citizen, no sponsorship needed for ID roles)\n- Willing to relocate \u2192 Yes / No depending on your preference\n- Salary expectation \u2192 set realistic range (research Glassdoor first)\n\nSave these \u2014 they pre-fill future Easy Apply apps.\n\n## Easy Apply workflow\n\n### Per-app (target: 60 seconds)\n\n1. Open JD \u2014 read the **first 3 lines** of \"Requirements\"\n2. Decide: backend / AI / QA / SDET CV?\n3. Click \"Easy Apply\"\n4. Verify the right CV is attached (swap if needed)\n5. Answer any custom questions (pre-fill if asked before)\n6. Click submit\n7. **Copy the JD URL** \u2014 paste into `apply_tracker.py add --link`\n\n### Custom question pre-fill\n\nLinkedIn saves your last answer. Common questions to expect:\n- \"How many years of experience with [skill]?\" \u2192 answer conservatively (round down)\n- \"Are you authorized to work in [country]?\" \u2192 Yes\n- \"Will you now or in the future require sponsorship?\" \u2192 No (for Indonesia roles)\n- \"What's your expected salary?\" \u2192 research first; for ID tech roles, typical range:\n  - Senior SDET: IDR 25-45M/month\n  - Senior Backend: IDR 30-50M/month\n  - Senior AI Engineer: IDR 35-60M/month\n\n## Hidden gotchas\n\n- **Don't apply to 100+ in a day** \u2014 LinkedIn may flag as spam and limit your account\n- **Easy Apply responses go to the same ATS as direct applications** \u2014 quality > quantity\n- **Some \"Easy Apply\" buttons route to company site anyway** \u2014 check the form before submitting\n- **Update your default CV when you tailor it** \u2014 or you'll apply with the wrong variant\n\n## Tools to make Easy Apply faster\n\n- **LinkedIn Premium**: not strictly needed for Easy Apply, but InMail credits help for recruiter outreach\n- **Browser extension: SimplifyJobs / LazyApply**: auto-fills beyond LinkedIn (use with caution)\n- **Bookmark your search URLs**: `https://www.linkedin.com/jobs/search/?f_AL=true&keywords=sdet&location=Indonesia&f_WT=2` (Easy Apply filter = `f_AL=true`)\n\n## Tracking\n\nAfter every Easy Apply session:\n\n```bash\npython3 scripts/apply_tracker.py add \\\n  --company \"Company\" \\\n  --role \"SDET\" \\\n  --platform linkedin \\\n  --link \"https://linkedin.com/jobs/view/XXXX\"\n```\n",
       "size": 3821,
-      "modified_at": "2026-11-10T07:14:58.532787"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "category": "knowledge",
@@ -811,7 +925,7 @@
       "source_path": "knowledge/hacking_ways/referral_strategy.md",
       "content": "# Referral Strategy \u2014 Your Strongest Apply Lever\n\nA referral increases your interview chance by 5-10x compared to cold application. Most engineers underuse this.\n\n## Why referrals work\n\n- Recruiters triage referral apps first (they're pre-vetted)\n- Often skip ATS keyword filtering entirely\n- Internal recruiter incentives: many companies pay $2-5k referral bonuses\n- Even a weak referral (someone you met once) > cold application\n\n## Where to find referrals\n\n### Tier 1 \u2014 Strong (current/former close colleagues)\n- Former Ruangguru teammates\n- Former Vidio teammates\n- Current GoTo colleagues (for other BUs)\n- Former Jenius colleagues\n- Reach out: WhatsApp/Telegram, brief message, ask politely\n\n### Tier 2 \u2014 Medium (LinkedIn 2nd-degree connections)\n- Search LinkedIn for: `<Company>` + `engineer` + `Indonesia`\n- Filter by mutual connections\n- Ask mutual connection to introduce you\n\n### Tier 3 \u2014 Cold outreach (cold LinkedIn DM)\n- Find engineers or recruiters at the company\n- Send a brief, value-first message\n- Expect ~10% response rate; that's fine\n\n## How to ask for a referral\n\n### Template \u2014 close colleague\n\n```\nHi [Name]! \ud83d\udc4b\n\nSaw that [Company] is hiring for [Role] \u2014 looks like a strong match for me given my\n[1-sentence relevant skill/background].\n\nWould you be open to referring me? Totally fine if not \u2014 no pressure either way.\n\nJD link: [URL]\nMy CV: [Google Drive link or attached]\n\nEither way, let's catch up soon \u2014 coffee on me next time!\nNoorman\n```\n\n### Template \u2014 LinkedIn 2nd-degree (mutual intro)\n\n```\nHi [Mutual Connection],\n\nHope you're well! I noticed you're connected with [Name] at [Company]. I'm exploring\n[Role] opportunities there \u2014 my background is [1-line]. Would you feel comfortable\nintroducing me? Totally fine if you'd rather not.\n\nEither way, thanks for keeping in touch!\nNoorman\n```\n\n### Template \u2014 cold LinkedIn DM to engineer at target company\n\n```\nHi [Name],\n\nI came across your profile via [mutual connection / shared group / company's eng blog].\nI'm a Senior SDET at GoPay with 10 years across fintech/edtech \u2014 saw [Company] is hiring\nfor [Role] and it looks like a strong match.\n\nWould you be open to a brief chat (15 min) about what the team is like? No pressure to\nrefer \u2014 I'd value the perspective either way.\n\nThanks for your time,\nNoorman\nnoormanyulizarp@gmail.com\n```\n\n## Etiquette\n\n- \u2705 Always personalize \u2014 no copy-paste to 10 people at once\n- \u2705 Include the JD link \u2014 saves them time\n- \u2705 Make it easy to say no \u2014 \"no pressure\" disarms awkwardness\n- \u2705 Thank them regardless of outcome\n- \u2705 If you get hired via their referral, send a thank-you gift (lunch, coffee, small token)\n\n- \u274c Don't spam multiple people at the same company simultaneously \u2014 they'll talk\n- \u274c Don't ask someone you've never talked to for a referral \u2014 build rapport first\n- \u274c Don't expect a yes \u2014 referrals are a favor, not a transaction\n- \u274c Don't go silent after they refer you \u2014 keep them posted on status\n\n## Tracking referrals\n\nIn `apply_tracker.py add`:\n```bash\npython3 scripts/apply_tracker.py add \\\n  --company \"Stripe\" \\\n  --role \"Backend Engineer\" \\\n  --platform referral \\\n  --link \"https://...\" \\\n  --notes \"Referred by @jane.doe (ex-Ruangguru teammate, connected 2024-01-15)\"\n```\n\n## Referral pipeline \u2014 long-term play\n\nBuild your referral network BEFORE you need it:\n\n- **Quarterly**: message 5 ex-colleagues, ask how they're doing\n- **Annually**: write a LinkedIn post sharing something you learned \u2014 strengthens your network\n- **Always**: when someone reaches out to YOU for referral, take it seriously \u2014 karma compounds\n",
       "size": 3623,
-      "modified_at": "2026-11-10T07:14:58.532787"
+      "modified_at": "2026-11-10T07:14:47"
     },
     {
       "category": "knowledge",
@@ -820,11 +934,11 @@
       "source_path": "knowledge/hacking_ways/workday_tips.md",
       "content": "# Workday / Company Site Apply \u2014 Workflow & Tips\n\nWorkday is the most painful ATS in tech (used by many large enterprises \u2014 banks, telcos, Fortune 500). Plan 15-30 min per application.\n\n## Why Workday is painful\n\n- \u274c Re-asks for everything already in your CV (work history, education, etc.)\n- \u274c Often requires manual account creation with a password\n- \u274c Multi-page form with mandatory fields\n- \u274c No autofill extension works perfectly\n- \u274c Often errors out without saving progress\n\n## When to use Workday\n\n- Only for Tier 1 dream companies that use it (rare in tech, common in banking/enterprise)\n- Otherwise: avoid \u2014 high effort, low signal\n\n## Setup before applying\n\n### 1. Create a plain-text work history file\nSave as `knowledge/work_history.txt`:\n\n```\n=== GoTo Financial (GoPay) ===\nTitle: Software Engineer in Test\nPeriod: Jan 2023 \u2014 Present\nLocation: Jakarta, Indonesia\nSalary: [leave blank or \"competitive\"]\nManager: [Name if you want to share]\nReason for leaving: N/A (current)\nDuties:\n- [bullets from your CV]\n\n=== Ruangguru ===\n... etc.\n```\n\nWorkday will ask for this \u2014 having it pre-written saves 5+ minutes per app.\n\n### 2. Education file\n```\n=== Jenderal Soedirman University ===\nDegree: Bachelor of Software Engineering\nPeriod: 2012 \u2014 2016\nGPA: 3.51\nLocation: Purwokerto, Indonesia\n```\n\n### 3. References\nSome Workday apps ask for 2-3 references upfront. Prepare:\n- Name, title, company, email, phone, relationship\n- Ask permission before listing anyone\n\n## Workday workflow\n\n### Per-app (target: 15-30 min)\n\n1. **Create account** if first time at this company\n2. **Save password** in password manager\n3. **Section 1: Personal info** \u2014 autofill if possible, otherwise copy-paste\n4. **Section 2: Work experience** \u2014 paste from `work_history.txt`\n5. **Section 3: Education** \u2014 paste from above\n6. **Section 4: Skills** \u2014 paste from ATS keywords list\n7. **Section 5: CV upload** \u2014 attach tailored PDF\n8. **Section 6: Custom questions** \u2014 usually diversity survey, work authorization\n9. **Section 7: References** \u2014 fill if asked\n10. **Section 8: Review & submit** \u2014 check carefully, often errors at this step\n\n## Pro tips\n\n- **Save often** \u2014 Workday sometimes times out and loses everything\n- **Use a dedicated email** \u2014 Workday sends a LOT of follow-up emails\n- **One account per company** \u2014 different companies have different Workday instances\n- **Take screenshots** of confirmation pages \u2014 sometimes the email never comes\n- **Apply on desktop** \u2014 Workday mobile is unusable\n\n## Alternative: skip Workday entirely\n\nIf the company also accepts applications via:\n- LinkedIn (apply via Easy Apply + link back)\n- Email to recruiter (find recruiter on LinkedIn, send direct)\n- Referral (your strongest lever for Workday-using companies)\n\n\u2192 Use the alternative. Workday is rarely worth the time unless it's a Tier 1 company.\n\n## Tracking\n\n```bash\npython3 scripts/apply_tracker.py add \\\n  --company \"Bank Mandiri\" \\\n  --role \"QA Engineer\" \\\n  --platform workday \\\n  --link \"https://...\" \\\n  --notes \"15 min application; account: noorman@...\"\n```\n",
       "size": 3100,
-      "modified_at": "2026-11-10T07:14:58.532787"
+      "modified_at": "2026-11-10T07:14:47"
     }
   ],
   "repo_info": {
-    "last_commit": "e1fc05a3ea4622c25ba0acd0c5a690f4217052e7|2026-11-10 07:14:47 +0000|Multi-page static site + 3 deployment options (Cloudflare + Vercel + GitHub Pages mirror)",
+    "last_commit": "777b524c2bc92f61508e5843be325978b999bf87|2026-11-10 12:39:44 +0000|auto: sync static report [skip ci] - push 6b5faf9e06addb31f4ea4a5a98f306d5b01faee9",
     "branch": "main",
     "remote_url": null
   }

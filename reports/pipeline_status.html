@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🔄 Pipeline Status Tracker — Noorman Job Search</title>
+<meta name="description" content="🔄 Pipeline Status Tracker — auto-generated from aplicator repo">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<nav class="navbar">
+  <a class="navbar-brand" href="../index.html">🧑‍💻 Noorman Job Search</a>
+  <input type="text" class="navbar-search" id="searchInput" placeholder="Search pages... (e.g. 'ajaib', 'motivation', 'ATS')" autocomplete="off">
+  <div class="navbar-search-results" id="searchResults"></div>
+</nav>
+<div class="container">
+
+<div class="breadcrumb">
+  <a href="../index.html">🏠 Home</a>
+  <span class="breadcrumb-sep">/</span>
+  <span>Reports</span>
+  <span class="breadcrumb-sep">/</span>
+  <span>🔄 Pipeline Status Tracker</span>
+</div>
+
+
+<div style="margin-bottom: 16px; padding: 12px 14px; background: var(--surface-2); border-radius: 8px; font-size: 12px; color: var(--text-muted);">
+  <strong style="color: var(--accent);">🔄 Pipeline Status Tracker</strong><br>
+  Source: <code>download/noormanyulizarp@gmail.com/general/reports/pipeline_status.md</code> · Size: 4.4 KB · Modified: Nov 10, 2026 14:03
+</div>
+<div class="markdown-body"><h1 id="pipeline-status-tracker">🔄 Pipeline Status Tracker</h1>
+<blockquote>
+<p><strong>Auto-generated</strong> from repo state.
+Generated: <strong>Nov 10, 2026 14:03</strong> · Last commit: <a href="https://github.com/noormanyulizarp/aplicator/commit/777b524"><code>777b524</code></a></p>
+</blockquote>
+<hr />
+<h2 id="live-deployments">🌐 Live Deployments</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Provider</th>
+<th>URL</th>
+<th>Status</th>
+<th>Source</th>
+<th>Auto-Update</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>GitHub Pages (public mirror)</strong> ⭐</td>
+<td><a href="https://noormanyulizarp.github.io/aplicator-public/">noormanyulizarp.github.io/aplicator-public</a></td>
+<td>✅ <strong>LIVE</strong></td>
+<td>Public mirror repo (<code>aplicator-public</code>)</td>
+<td>✅ On push via GitHub Action</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Cloudflare Pages</td>
+<td><code>https://aplicator.pages.dev</code></td>
+<td>⬜ Pending setup</td>
+<td>Private repo (auto-detect <code>wrangler.toml</code>)</td>
+<td>✅ On push (after setup)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Vercel</td>
+<td><code>https://aplicator.vercel.app</code></td>
+<td>⬜ Pending setup</td>
+<td>Private repo (auto-detect <code>vercel.json</code>)</td>
+<td>✅ On push (after setup)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Local preview</td>
+<td><code>http://localhost:8888</code></td>
+<td>✅ Ready</td>
+<td><code>cd docs &amp;&amp; python3 -m http.server 8888</code></td>
+<td>Manual run</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="cicd-pipeline-flow">🔄 CI/CD Pipeline Flow</h2>
+<div class="highlight"><pre><span></span><code>You edit (CV / tracker / .md file)
+  ↓ git push origin main
+Private repo: noormanyulizarp/aplicator (commit: 777b524)
+  ↓ triggers
+GitHub Action #1: &quot;Sync Static Report&quot;
+  <span class="k">-</span> generate_static_site.py (multi-page HTML)
+  <span class="k">-</span> generate_reports.py (4 report .md files) ← NEW
+  <span class="k">-</span> generate_static_site.py (re-render with new reports)
+  <span class="k">-</span> generate_markdown_report.py (streamlined README)
+  <span class="k">-</span> patch_readme_deployments.py (append Pipeline Tracker)
+  ↓ auto-commits &quot;auto: sync static report&quot;
+GitHub Action #2: &quot;Deploy to Public Mirror&quot;
+  <span class="k">-</span> Copies docs/ to aplicator-public repo
+  ↓
+GitHub Pages (PUBLIC)
+  URL: https://noormanyulizarp.github.io/aplicator-public/
+  Status: ✅ LIVE (HTTPS enforced)
+  Pages: 21+ HTML + 2 assets
+</code></pre></div>
+
+<hr />
+<h2 id="pipeline-components">📦 Pipeline Components</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>File / Location</th>
+<th>Purpose</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Static site generator</td>
+<td><code>scripts/generate_static_site.py</code></td>
+<td>Renders 21+ HTML pages from .md files + tracker data</td>
+<td>✅ Active</td>
+</tr>
+<tr>
+<td>Markdown report generator</td>
+<td><code>scripts/generate_markdown_report.py</code></td>
+<td>Generates README.md base</td>
+<td>✅ Active</td>
+</tr>
+<tr>
+<td>Reports generator (NEW)</td>
+<td><code>scripts/generate_reports.py</code></td>
+<td>Generates 4 report .md files</td>
+<td>✅ Active</td>
+</tr>
+<tr>
+<td>README patcher</td>
+<td><code>scripts/patch_readme_deployments.py</code></td>
+<td>Appends Live Deployments + Pipeline Tracker to README</td>
+<td>✅ Active</td>
+</tr>
+<tr>
+<td>GitHub Action: sync-static-report</td>
+<td><code>.github/workflows/sync-static-report.yml</code></td>
+<td>Auto-regenerate on push</td>
+<td>✅ Active</td>
+</tr>
+<tr>
+<td>GitHub Action: deploy-public-mirror</td>
+<td><code>.github/workflows/deploy-public-mirror.yml</code></td>
+<td>Mirror docs/ to public repo</td>
+<td>✅ Active (PAT set)</td>
+</tr>
+<tr>
+<td>Public mirror repo</td>
+<td><a href="https://github.com/noormanyulizarp/aplicator-public"><code>noormanyulizarp/aplicator-public</code></a></td>
+<td>Public-facing repo</td>
+<td>✅ Live</td>
+</tr>
+<tr>
+<td>GitHub Pages config</td>
+<td>Public repo Settings → Pages</td>
+<td>Serves public repo as website</td>
+<td>✅ Enabled</td>
+</tr>
+<tr>
+<td>Cloudflare Pages config</td>
+<td><code>wrangler.toml</code></td>
+<td>Auto-deploy to Cloudflare on push</td>
+<td>⬜ Pending signup</td>
+</tr>
+<tr>
+<td>Vercel config</td>
+<td><code>vercel.json</code></td>
+<td>Auto-deploy to Vercel on push</td>
+<td>⬜ Pending signup</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="setup-checklist-cloudflare-vercel-manual-one-time">📋 Setup Checklist (Cloudflare + Vercel — manual one-time)</h2>
+<h3 id="cloudflare-pages-5-min">Cloudflare Pages (~5 min)</h3>
+<ul>
+<li>[ ] Sign up at https://pages.cloudflare.com (GitHub login)</li>
+<li>[ ] Connect repo <code>noormanyulizarp/aplicator</code></li>
+<li>[ ] Build command: <code>python3 scripts/generate_static_site.py</code></li>
+<li>[ ] Output dir: <code>docs</code></li>
+<li>[ ] Env var: <code>PYTHON_VERSION=3.12</code></li>
+<li>[ ] Deploy → URL: <code>https://aplicator.pages.dev</code></li>
+<li>[ ] (Optional) Cloudflare Access: email-based auth for <code>noormanyulizarp@gmail.com</code></li>
+</ul>
+<h3 id="vercel-3-min">Vercel (~3 min)</h3>
+<ul>
+<li>[ ] Sign up at https://vercel.com (GitHub login)</li>
+<li>[ ] Import repo <code>noormanyulizarp/aplicator</code></li>
+<li>[ ] Vercel auto-detects <code>vercel.json</code></li>
+<li>[ ] Deploy → URL: <code>https://aplicator.vercel.app</code></li>
+</ul>
+<hr />
+<h2 id="maintenance-commands">🔧 Maintenance Commands</h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generate site locally</td>
+<td><code>python3 scripts/generate_static_site.py</code></td>
+</tr>
+<tr>
+<td>Generate reports locally</td>
+<td><code>python3 scripts/generate_reports.py</code></td>
+</tr>
+<tr>
+<td>Generate README locally</td>
+<td><code>python3 scripts/generate_markdown_report.py &amp;&amp; python3 scripts/patch_readme_deployments.py</code></td>
+</tr>
+<tr>
+<td>Preview locally</td>
+<td><code>cd docs &amp;&amp; python3 -m http.server 8888</code></td>
+</tr>
+<tr>
+<td>Force sync via GitHub Action</td>
+<td>Go to Actions → "Sync Static Report" → Run workflow</td>
+</tr>
+<tr>
+<td>Force deploy to public mirror</td>
+<td>Go to Actions → "Deploy to Public Mirror" → Run workflow</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>🏠 <a href="../index.html">Back to Homepage</a> · 📅 <a href="weekly_summary.html">Weekly Summary</a> · 💼 <a href="applications_full.html">Full Applications</a> · 📄 <a href="cv_inventory_full.html">CV Inventory</a></em></p></div>
+</div>
+<footer>
+  <p>Static site auto-generated from <code>noormanyulizarp/aplicator</code> repo · Last updated: 2026-11-10T14:03:44.723458</p>
+  <p style="margin-top: 8px;">
+    <a href="../index.html">🏠 Home</a> ·
+    <a href="https://github.com/noormanyulizarp/aplicator" target="_blank">📦 Source (private)</a>
+  </p>
+</footer>
+<script src="../assets/search.js"></script>
+</body>
+</html>
