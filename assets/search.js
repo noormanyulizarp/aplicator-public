@@ -7,6 +7,12 @@ const SEARCH_INDEX = [
 "snippet": "# ajaib \u2014 company research\n\n**researched:** 2026-11-10\n**source:** https://ajaib.co.id/tentang-kami + linkedin + web search\n\n## what is ajaib?\n\najaib is indonesia's leading digital investment platform..."
 },
 {
+"title": "BeED \u2014 Senior Software QA Engineer (Automation & AI-Powered Testing) Classification",
+"category": "research",
+"url": "research/beed_outreach_classification.html",
+"snippet": "# beed \u2014 senior software qa engineer (automation & ai-powered testing) classification\n\n**date:** 2026-11-10\n**source:** linkedin posting (closed) + maukerja.my alternative apply channel\n**recruiter:**..."
+},
+{
 "title": "Bonapolia + Baltic Amadeus \u2014 Company Research",
 "category": "research",
 "url": "research/bonapolia_research.html",
@@ -23,6 +29,12 @@ const SEARCH_INDEX = [
 "category": "research",
 "url": "research/dnainc_research.html",
 "snippet": "# dna.inc \u2014 company research\n\n**researched:** 2026-11-09\n**source:** https://www.dna.inc + https://careers.dna.inc/o/senior-quality-engineer\n\n## what is dna.inc?\n\ndigital consultancy that helps client..."
+},
+{
+"title": "Glenn \u2014 Senior SDET Outreach Classification",
+"category": "research",
+"url": "research/glenn_outreach_classification.html",
+"snippet": "# glenn \u2014 senior sdet outreach classification\n\n**date received:** 2026-11-10\n**recruiter:** glenn\n**linkedin profile:** linkedin.com/in/acoaaaapdlsb88yk_2muerljjepbsyj3aze6gpy/ (private, member id for..."
 },
 {
 "title": "Shine QA Analyst \u2014 \"Tell us why you want to join Shine \u2728\"",
@@ -52,25 +64,25 @@ const SEARCH_INDEX = [
 "title": "\ud83d\udcbc Full Applications Report",
 "category": "reports",
 "url": "reports/applications_full.html",
-"snippet": "# \ud83d\udcbc full applications report\n\n> **auto-generated** from `knowledge/apply_tracker.csv`.\n> generated: **nov 10, 2026 14:04** \u00b7 total applications: **9**\n\n---\n\n## \ud83d\udcca summary statistics\n\n| metric | value |..."
+"snippet": "# \ud83d\udcbc full applications report\n\n> **auto-generated** from `knowledge/apply_tracker.csv`.\n> generated: **nov 11, 2026 04:12** \u00b7 total applications: **11**\n\n---\n\n## \ud83d\udcca summary statistics\n\n| metric | value ..."
 },
 {
 "title": "\ud83d\udcc4 CV / Cover Letter Inventory Report",
 "category": "reports",
 "url": "reports/cv_inventory_full.html",
-"snippet": "# \ud83d\udcc4 cv / cover letter inventory report\n\n> **auto-generated** from `download/noormanyulizarp@gmail.com/` folder scan.\n> generated: **nov 10, 2026 14:04** \u00b7 total files: **62**\n\n---\n\n## \ud83d\udcca inventory summ..."
+"snippet": "# \ud83d\udcc4 cv / cover letter inventory report\n\n> **auto-generated** from `download/noormanyulizarp@gmail.com/` folder scan.\n> generated: **nov 11, 2026 04:12** \u00b7 total files: **66**\n\n---\n\n## \ud83d\udcca inventory summ..."
 },
 {
 "title": "\ud83d\udd04 Pipeline Status Tracker",
 "category": "reports",
 "url": "reports/pipeline_status.html",
-"snippet": "# \ud83d\udd04 pipeline status tracker\n\n> **auto-generated** from repo state.\n> generated: **nov 10, 2026 14:04** \u00b7 last commit: [`e1ad98a`](https://github.com/noormanyulizarp/aplicator/commit/e1ad98a)\n\n---\n\n## ..."
+"snippet": "# \ud83d\udd04 pipeline status tracker\n\n> **auto-generated** from repo state.\n> generated: **nov 11, 2026 04:12** \u00b7 last commit: [`947abf3`](https://github.com/noormanyulizarp/aplicator/commit/947abf3)\n\n---\n\n## ..."
 },
 {
 "title": "\ud83d\udcc5 Weekly Summary Report",
 "category": "reports",
 "url": "reports/weekly_summary.html",
-"snippet": "# \ud83d\udcc5 weekly summary report\n\n> **auto-generated** from `apply_tracker.csv` and `download/` folder inventory.\n> generated: **nov 10, 2026 14:04** \u00b7 source: `noormanyulizarp/aplicator` (private repo)\n\n---..."
+"snippet": "# \ud83d\udcc5 weekly summary report\n\n> **auto-generated** from `apply_tracker.csv` and `download/` folder inventory.\n> generated: **nov 11, 2026 04:12** \u00b7 source: `noormanyulizarp/aplicator` (private repo)\n\n---..."
 },
 {
 "title": "ATS Keywords \u2014 Per Role",
@@ -119,6 +131,12 @@ const SEARCH_INDEX = [
 "category": "knowledge",
 "url": "knowledge/workday_tips.html",
 "snippet": "# workday / company site apply \u2014 workflow & tips\n\nworkday is the most painful ats in tech (used by many large enterprises \u2014 banks, telcos, fortune 500). plan 15-30 min per application.\n\n## why workday..."
+},
+{
+"title": "Recruiter Outreach Classification System",
+"category": "knowledge",
+"url": "knowledge/recruiter_outreach_classification.html",
+"snippet": "# recruiter outreach classification system\n\n> **purpose:** standardize how we evaluate and respond to inbound recruiter approaches.\n> each outreach gets classified across 8 dimensions, scored 1-5 each..."
 }
 ];
 
