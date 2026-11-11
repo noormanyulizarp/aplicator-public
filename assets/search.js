@@ -64,25 +64,25 @@ const SEARCH_INDEX = [
 "title": "\ud83d\udcbc Full Applications Report",
 "category": "reports",
 "url": "reports/applications_full.html",
-"snippet": "# \ud83d\udcbc full applications report\n\n> **auto-generated** from `knowledge/apply_tracker.csv`.\n> generated: **nov 11, 2026 04:12** \u00b7 total applications: **11**\n\n---\n\n## \ud83d\udcca summary statistics\n\n| metric | value ..."
+"snippet": "# \ud83d\udcbc full applications report\n\n> **auto-generated** from `knowledge/apply_tracker.csv`.\n> generated: **nov 11, 2026 04:22** \u00b7 total applications: **11**\n\n---\n\n## \ud83d\udcca summary statistics\n\n| metric | value ..."
 },
 {
 "title": "\ud83d\udcc4 CV / Cover Letter Inventory Report",
 "category": "reports",
 "url": "reports/cv_inventory_full.html",
-"snippet": "# \ud83d\udcc4 cv / cover letter inventory report\n\n> **auto-generated** from `download/noormanyulizarp@gmail.com/` folder scan.\n> generated: **nov 11, 2026 04:12** \u00b7 total files: **66**\n\n---\n\n## \ud83d\udcca inventory summ..."
+"snippet": "# \ud83d\udcc4 cv / cover letter inventory report\n\n> **auto-generated** from `download/noormanyulizarp@gmail.com/` folder scan.\n> generated: **nov 11, 2026 04:22** \u00b7 total files: **66**\n\n---\n\n## \ud83d\udcca inventory summ..."
 },
 {
 "title": "\ud83d\udd04 Pipeline Status Tracker",
 "category": "reports",
 "url": "reports/pipeline_status.html",
-"snippet": "# \ud83d\udd04 pipeline status tracker\n\n> **auto-generated** from repo state.\n> generated: **nov 11, 2026 04:12** \u00b7 last commit: [`947abf3`](https://github.com/noormanyulizarp/aplicator/commit/947abf3)\n\n---\n\n## ..."
+"snippet": "# \ud83d\udd04 pipeline status tracker\n\n> **auto-generated** from repo state.\n> generated: **nov 11, 2026 04:22** \u00b7 last commit: [`2dd143e`](https://github.com/noormanyulizarp/aplicator/commit/2dd143e)\n\n---\n\n## ..."
 },
 {
 "title": "\ud83d\udcc5 Weekly Summary Report",
 "category": "reports",
 "url": "reports/weekly_summary.html",
-"snippet": "# \ud83d\udcc5 weekly summary report\n\n> **auto-generated** from `apply_tracker.csv` and `download/` folder inventory.\n> generated: **nov 11, 2026 04:12** \u00b7 source: `noormanyulizarp/aplicator` (private repo)\n\n---..."
+"snippet": "# \ud83d\udcc5 weekly summary report\n\n> **auto-generated** from `apply_tracker.csv` and `download/` folder inventory.\n> generated: **nov 11, 2026 04:22** \u00b7 source: `noormanyulizarp/aplicator` (private repo)\n\n---..."
 },
 {
 "title": "ATS Keywords \u2014 Per Role",
