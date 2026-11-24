@@ -26,13 +26,14 @@
 
 <div style="margin-bottom: 16px; padding: 12px 14px; background: var(--surface-2); border-radius: 8px; font-size: 12px; color: var(--text-muted);">
   <strong style="color: var(--accent);">Apply Pipeline — End-to-End Job Application Automation</strong><br>
-  Source: <code>knowledge/hacking_ways/apply_pipeline.md</code> · Size: 7.1 KB · Modified: Nov 24, 2026 17:39
+  Source: <code>knowledge/hacking_ways/apply_pipeline.md</code> · Size: 8.6 KB · Modified: Nov 24, 2026 17:49
 </div>
 <div class="markdown-body"><h1 id="apply-pipeline-end-to-end-job-application-automation">Apply Pipeline — End-to-End Job Application Automation</h1>
 <blockquote>
-<p><strong>Strategy</strong> (per Bang's spec): scrape with <strong>secondary LinkedIn account</strong> → analyze
-ATS page → generate CV/CL → fill form + screenshot → conditional submit (if safe)
-→ update tracker. Use <strong>primary LinkedIn account</strong> only after sandbox proves reliable.</p>
+<p><strong>Strategy</strong> (per Bang's spec, updated 2026-11-24): <strong>2-phase flow</strong> —
+<code>run</code> (fill + screenshot → STOP for review) → Bang reviews → <code>submit</code> (explicit).
+PAKAI CV LAMA yang sudah teruji (per-company variant kalau ada, fallback base).
+CL: isi langsung ke text field (jangan upload PDF).</p>
 </blockquote>
 <h2 id="architecture">Architecture</h2>
 <pre class="highlight"><code>┌──────────────────────────────────────────────────────────────────┐
@@ -41,176 +42,197 @@ ATS page → generate CV/CL → fill form + screenshot → conditional submit (i
         │
         ▼
 ┌──────────────────────────────────────────────────────────────────┐
-│  scripts/apply_pipeline.py  (orchestrator)                       │
-│                                                                  │
+│  PHASE 1: `run`  (sandbox, default)                              │
 │  1. SCAN      →  scripts/li_scan_jobs.py  (LinkedIn guest API)    │
-│  2. ENRICH    →  scripts/li_job_detail.py (JD + fit score)        │
-│  3. ANALYZE   →  fetch_jd()  (per-portal: GH/Lever/LinkedIn)      │
-│  4. GENERATE  →  generate_cv_cl()  (tailored CV + CL)            │
-│  5. FILL      →  fill_form()  (Playwright + screenshot)           │
-│  6. SUBMIT    →  decide_submit()  (safe-portals only, else skip)  │
-│  7. TRACK     →  append_tracker()  (status: drafting|applied|blocked) │
+│  2. ANALYZE   →  fetch_jd()  (per-portal: GH/Lever/LinkedIn)      │
+│  3. PREPARE   →  select_cv()  (CV LAMA: per-company or base)      │
+│               →  generate_cl_text()  (CL as markdown record)      │
+│  4. FILL      →  fill_form()  (Playwright + screenshot)           │
+│                  CL: fill_cover_letter_text() — text field only   │
+│                  CL file input → SKIP (per Bang's spec)          │
+│  5. STOP      →  status='review', save pipeline_state.json        │
 └──────────────────────────────────────────────────────────────────┘
-        │
+        │ (Bang reviews screenshots + JD)
         ▼
 ┌──────────────────────────────────────────────────────────────────┐
-│  download/.../applications/{slug}/                                 │
-│    ├── materials/JD.md, CV_Noorman_*.pdf, CL_*.md                  │
-│    └── screenshots/01_before_fill.png, 02_after_fill.png           │
-│                                                                   │
-│  knowledge/apply_tracker.csv  (29+ rows, status updated)          │
+│  PHASE 2: `submit --slug X --yes`  (sandbox, explicit)            │
+│  1. Re-open apply_url                                             │
+│  2. Re-fill form (state lost between sessions)                    │
+│  3. Click Submit button                                           │
+│  4. Screenshot pre/post → 03_pre_submit, 04_post_submit           │
+│  5. status='applied' (sukses) | 'blocked' (gagal/captcha)         │
 └──────────────────────────────────────────────────────────────────┘
 </code></pre>
 
-<h2 id="portal-support-per-portalsyml">Portal support (per <code>portals.yml</code>)</h2>
+<h2 id="cv-strategy-per-bangs-spec-2026-11-24">CV strategy (per Bang's spec 2026-11-24)</h2>
+<ul>
+<li><strong>Pakai CV LAMA</strong> yang sudah teruji — jangan generate baru</li>
+<li>Priority:</li>
+<li><code>CV_Noorman_SDET_{Company}.pdf</code> (per-company variant, jika ada di <code>CV/SDET/</code>)</li>
+<li><code>CV_Noorman_SDET.pdf</code> (base, paling sering dipakai Bang)</li>
+<li>Function: <code>select_cv(company, app_dir)</code> di <code>apply_pipeline.py</code></li>
+<li>Existing per-company variants: Bybit, BVNK, BeED, Bonapolia, Capco_Banking,
+  DNAInc, Dotmatics, Figma_Tokyo, FxPro, Helsing, MariaDB, Okta, Pleased, Prolific,
+  Xebia_TSAI, Xebia_Automation</li>
+</ul>
+<h2 id="cl-strategy-per-bangs-spec-2026-11-24">CL strategy (per Bang's spec 2026-11-24)</h2>
+<ul>
+<li><strong>JANGAN upload CL sebagai PDF attachment</strong></li>
+<li>Function: <code>fill_cover_letter_text(page, cl_text)</code> — cari text field dengan label
+  "Cover Letter", isi langsung dengan CL text (plain, stripped dari markdown)</li>
+<li>Kalau cuma ada file input untuk CL → <strong>SKIP entirely</strong> (jangan upload apa-apa)</li>
+<li>CL tetap di-generate sebagai markdown record di <code>materials/CL_*.md</code> (untuk history)</li>
+</ul>
+<h2 id="commands">Commands</h2>
+<pre class="highlight"><code class="language-bash"># Show pipeline state
+python scripts/apply_pipeline.py status
+
+# List all dossiers + their phase status
+python scripts/apply_pipeline.py list
+
+# PHASE 1: Run pipeline (analyze + fill + screenshot) → STOP for review
+python scripts/apply_pipeline.py run --job-url &quot;https://job-boards.greenhouse.io/bybit/jobs/5026957101&quot;
+python scripts/apply_pipeline.py run --top 5 --min-score 80
+
+# Opt-in auto-submit (rare — only for batch processing when Bang trusts the flow)
+python scripts/apply_pipeline.py run --top 3 --auto-submit
+
+# PHASE 2: Submit a reviewed dossier (Bang's explicit command)
+python scripts/apply_pipeline.py submit --slug bybit --yes
+</code></pre>
+
+<h2 id="flow-per-job-end-to-end">Flow per job (end-to-end)</h2>
+<pre class="highlight"><code>[1/5] PORTAL DETECTION: greenhouse
+[2/5] ANALYZE: fetch JD from Greenhouse public API
+[3/5] PREPARE: CV (existing CV_Noorman_SDET_Bybit.pdf) + CL (markdown record)
+[4/5] FILL FORM + SCREENSHOT
+  → detected 6 fillable fields
+  → filled 6/6 standard fields
+  → CL: no CL field detected (form has no CL question)
+  → screenshots: 01_before_fill.png, 02_after_fill.png
+[5/5] STOP FOR REVIEW (status='review')
+  📸 Bang: review screenshots in applications/bybit/screenshots
+  📋 Review JD: applications/bybit/materials/JD.md
+  ▶️  To submit: python scripts/apply_pipeline.py submit --slug bybit
+
+[TRACK] tracker row #30: status=review
+</code></pre>
+
+<h2 id="submit-policy-per-bangs-spec-2026-11-24">Submit policy (per Bang's spec 2026-11-24)</h2>
+<ul>
+<li><strong>NEVER auto-submit by default</strong> — flow always stops at <code>status='review'</code></li>
+<li>Auto-submit hanya aktif jika:</li>
+<li><code>--auto-submit</code> flag diberikan ke <code>run</code> command, ATAU</li>
+<li><code>auto_submit: true</code> di <code>portals.yml</code> (default: false)</li>
+<li><code>safe_portals_for_auto_submit: []</code> — empty by default (no portal auto-submit safe)</li>
+<li><code>submit --slug X</code> butuh <code>--yes</code> flag untuk konfirmasi explicit</li>
+</ul>
+<h2 id="dossier-structure">Dossier structure</h2>
+<pre class="highlight"><code>download/.../applications/{slug}/
+├── materials/
+│   ├── JD.md                          # Job description (markdown)
+│   └── CL_{company}.md                # Cover letter (markdown record, text-only)
+├── screenshots/
+│   ├── 01_before_fill.png             # Phase 1: blank form
+│   ├── 02_after_fill.png              # Phase 1: filled form (Bang review)
+│   ├── 03_pre_submit.png              # Phase 2: filled form sebelum submit
+│   └── 04_post_submit.png             # Phase 2: confirmation page
+└── pipeline_state.json                # {slug, company, link, apply_url, portal, cv_path, cl_text, phase}
+</code></pre>
+
+<h2 id="portal-support">Portal support</h2>
 <table>
 <thead>
 <tr>
 <th>Portal</th>
-<th>Detection</th>
 <th>JD source</th>
+<th>Form fill</th>
 <th>Auto-submit safe?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Greenhouse</td>
-<td><code>job-boards.greenhouse.io</code></td>
 <td>public API <code>boards-api.greenhouse.io</code></td>
-<td>❌ reCAPTCHA manual</td>
+<td>standard fields + question_XXXXX</td>
+<td>❌ reCAPTCHA (manual)</td>
 </tr>
 <tr>
 <td>Lever</td>
-<td><code>jobs.lever.co</code></td>
 <td>public API <code>api.lever.co/v0</code></td>
-<td>✅ safe</td>
+<td>standard fields</td>
+<td>❌ per Bang's spec</td>
 </tr>
 <tr>
 <td>Ashby</td>
-<td><code>ashbyhq.com</code></td>
 <td>scrape</td>
-<td>✅ safe</td>
+<td>standard fields</td>
+<td>❌ per Bang's spec</td>
 </tr>
 <tr>
 <td>Workday</td>
-<td><code>myworkdayjobs.com</code></td>
 <td>scrape</td>
-<td>❌ iframe complex</td>
+<td>iframe complex</td>
+<td>❌</td>
 </tr>
 <tr>
 <td>Breezy.hr</td>
-<td><code>*.breezy.hr</code></td>
 <td>scrape</td>
-<td>✅ safe</td>
+<td>runtime-detect</td>
+<td>❌ per Bang's spec</td>
 </tr>
 <tr>
 <td>LinkedIn Easy Apply</td>
-<td><code>linkedin.com/jobs/view/</code></td>
 <td>guest API</td>
+<td>modal</td>
 <td>❌ needs primary cookie</td>
 </tr>
 <tr>
-<td>LinkedIn redirect</td>
-<td><code>linkedin.com/jobs/view/</code></td>
-<td>guest API + cookie</td>
-<td>❌ needs secondary cookie</td>
-</tr>
-<tr>
 <td>Custom</td>
-<td>(fallback)</td>
 <td>Playwright scrape</td>
+<td>generic</td>
 <td>❌ unknown</td>
 </tr>
 </tbody>
 </table>
-<h2 id="linkedin-strategy-bangs-two-account-setup">LinkedIn strategy (Bang's two-account setup)</h2>
-<ul>
-<li><strong>Secondary account</strong> — used for scanning, redirect detection, job analysis. Cookie
-  saved in <code>.li_session.json</code> (gitignored). Blocked OK — just make a new account.</li>
-<li><strong>Primary account</strong> — reserved for Easy Apply + recruiter messages. Cookie saved in
-  <code>.li_session_primary.json</code> (gitignored, set up later). Never burn this.</li>
-</ul>
-<h2 id="commands">Commands</h2>
-<pre class="highlight"><code class="language-bash"># Show pipeline state
-python scripts/apply_pipeline.py status
+<h2 id="end-to-end-test-verified-2026-11-24-bybit">End-to-end test (verified 2026-11-24, Bybit)</h2>
+<pre class="highlight"><code>PHASE 1 (run):
+  ✓ CV per-company detected: CV_Noorman_SDET_Bybit.pdf (CV LAMA, bukan generated)
+  ✓ 6/6 standard fields filled (first_name, last_name, email, phone, location, resume)
+  ✓ CL: no CL field detected (form has no CL question) — SKIP, no PDF upload
+  ✓ STOP for review, status='review'
+  ✓ Screenshots saved (458KB, non-white ratio 0.994 = form filled)
 
-# Run on 1 job (URL — auto-detect portal, fetch JD, generate CV/CL, fill + screenshot)
-python scripts/apply_pipeline.py run --job-url &quot;https://job-boards.greenhouse.io/bybit/jobs/5026957101&quot;
-
-# Run on top 5 from latest enriched leads
-python scripts/apply_pipeline.py run --top 5 --min-score 80
-
-# Dry-run (fill + screenshot, NO submit — default for unsafe portals)
-python scripts/apply_pipeline.py run --job-url &lt;URL&gt; --dry-run
+PHASE 2 (submit --slug bybit --yes):
+  → re-open URL, re-fill form, click Submit
+  → screenshot 03_pre_submit.png + 04_post_submit.png
+  → status='applied' (jika form berhasil) | 'blocked' (jika gagal/captcha)
 </code></pre>
 
-<h2 id="fit-score-thresholds-per-portalsyml">Fit score thresholds (per <code>portals.yml</code>)</h2>
-<ul>
-<li><strong>≥80</strong> → auto-apply candidate (will submit if portal is safe)</li>
-<li><strong>60-79</strong> → analyze-only (fill + screenshot, manual review)</li>
-<li><strong>50-59</strong> → log + skip</li>
-<li><strong>&lt;50</strong> → drop from leads</li>
-</ul>
-<h2 id="submit-policy">Submit policy</h2>
-<ul>
-<li><strong>Safe portals</strong> (auto-submit if score ≥ threshold): Lever, Ashby, Breezy.hr</li>
-<li><strong>Unsafe portals</strong> (always require Bang's review): Greenhouse (reCAPTCHA), Workday,
-  LinkedIn Easy Apply, Custom</li>
-<li>For unsafe portals, pipeline stops after fill+screenshot. Bang reviews screenshots
-  in <code>applications/{slug}/screenshots/</code> and clicks Submit manually.</li>
-</ul>
-<h2 id="end-to-end-test-verified-2026-11-24">End-to-end test (verified 2026-11-24)</h2>
-<p>Test job: Bybit Test Engineer (Greenhouse, job #5026957101)</p>
-<pre class="highlight"><code>[1/5] PORTAL DETECTION: greenhouse
-[2/5] ANALYZE: fetch JD + form fields
-  ✓ JD saved: applications/bybit/materials/JD.md (7091 bytes from GH API)
-[3/5] GENERATE: CV + CL tailored
-  ✓ materials: CV_Noorman_.pdf (62KB), CL_.md (1682 bytes)
-[4/5] FILL FORM + SCREENSHOT
-  → detected 6 fillable fields (first_name, last_name, email, phone, location, resume)
-  → filled 6/6 fields
-  → screenshot: 02_after_fill.png (458KB, non-white ratio 0.994)
-[5/5] SUBMIT: SKIPPED (dry-run + greenhouse is unsafe portal)
-[TRACK] tracker row #30: status=drafting
-</code></pre>
-
-<p>All artifacts in <code>download/noormanyulizarp@gmail.com/applications/bybit/</code>.</p>
-<h2 id="linkedin-easy-apply-setup-when-ready-to-use-primary-account">LinkedIn Easy Apply setup (when ready to use primary account)</h2>
-<pre class="highlight"><code class="language-bash"># 1. Log in to LinkedIn on your laptop
-# 2. DevTools → Application → Cookies → li_at → copy value
-# 3. Paste to tool:
-python scripts/li_easy_apply.py --set-cookie &lt;PASTE_HERE&gt;
-
-# 4. Then dry-run to verify session:
-python scripts/li_easy_apply.py --dry-run --limit 3
-
-# 5. Live apply (top 5 jobs, score ≥70):
-python scripts/li_easy_apply.py --min-score 70 --limit 5
-</code></pre>
-
-<h2 id="known-limitations-sandbox-reality">Known limitations (sandbox reality)</h2>
+<h2 id="known-limitations">Known limitations</h2>
 <ol>
-<li><strong>LinkedIn guest API</strong> does NOT expose external Apply URL — only the JD. To detect
-   the redirect URL for non-Easy-Apply jobs, you need a logged-in cookie.</li>
-<li><strong>Greenhouse auto-submit</strong> is blocked by reCAPTCHA — even with valid cookie, the
-   final Submit click needs human captcha solve.</li>
-<li><strong>Rate limiting</strong>: LinkedIn guest API returns 429 after ~6-8 requests in quick
-   succession. The scanner sleeps 1.2-1.5s between requests to be gentle.</li>
-<li><strong>Custom questions</strong> (Greenhouse <code>question_XXXXX</code> fields) are dynamically detected
-   and filled from <code>portals.yml</code> <code>apply.*</code> defaults; verify before submit.</li>
+<li><strong>LinkedIn guest API</strong> tidak expose external Apply URL — butuh cookie secondary account</li>
+<li><strong>Greenhouse reCAPTCHA</strong> block auto-submit — final Submit click butuh human solve captcha</li>
+<li><strong>CL maxLength=255</strong> (Greenhouse custom question) — kalau CL text &gt; 255 chars,
+   akan di-truncate browser. Saat ini <code>fill_cover_letter_text</code> tetap isi full text;
+   Bang perlu konfirmasi: truncate / skip / cari field lain (TODO list)</li>
+<li><strong>Re-fill saat submit</strong> — state form hilang antar session, jadi submit phase
+   re-fill lagi sebelum click Submit. Untuk form dengan captcha, captcha mungkin
+   muncul di phase 1 (screenshot) tapi perlu solve di phase 2 (manual).</li>
 </ol>
-<h2 id="whats-next-todo">What's next (TODO)</h2>
+<h2 id="todo-per-bangs-spec-butuh-konfirmasi">TODO (per Bang's spec, butuh konfirmasi)</h2>
 <ul>
-<li>[ ] Integrate fill + submit in single Playwright session (so submit sees the filled
-  form state)</li>
-<li>[ ] CV/CL tailoring: keyword extraction from JD → reorder Master_CV bullets per job</li>
-<li>[ ] LinkedIn secondary cookie integration for redirect detection on non-Easy-Apply</li>
-<li>[ ] Batch mode: process top 10 jobs in one run with proper rate limiting</li>
-<li>[ ] Email alerts when submit fails (so Bang knows to review manually)</li>
+<li>[ ] <strong>CV strategy</strong>: base saja / per-company fallback / pilih manual per job?
+      (default sekarang: per-company fallback ke base)</li>
+<li>[ ] <strong>CL maxLength=255</strong>: truncate / skip / cari field lain?
+      (default sekarang: tetap isi full text, browser truncate)</li>
+<li>[ ] CV generation per-JD (kalau Bang mau) — extract keywords, reorder Master_CV bullets</li>
+<li>[ ] LinkedIn secondary cookie integration untuk redirect detection</li>
+<li>[ ] Batch mode dengan proper rate limiting (top 10 jobs in one run)</li>
 </ul></div>
 </div>
 <footer>
-  <p>Static site auto-generated from <code>noormanyulizarp/aplicator</code> repo · Last updated: 2026-11-24T17:39:33.348844</p>
+  <p>Static site auto-generated from <code>noormanyulizarp/aplicator</code> repo · Last updated: 2026-11-24T17:49:09.325527</p>
   <p style="margin-top: 8px;">
     <a href="../index.html">🏠 Home</a> ·
     <a href="https://github.com/noormanyulizarp/aplicator" target="_blank">📦 Source (private)</a>

@@ -112,7 +112,7 @@ const SEARCH_INDEX = [
 "title": "Apply Pipeline \u2014 End-to-End Job Application Automation",
 "category": "knowledge",
 "url": "knowledge/apply_pipeline.html",
-"snippet": "# apply pipeline \u2014 end-to-end job application automation\n\n> **strategy** (per bang's spec): scrape with **secondary linkedin account** \u2192 analyze\n> ats page \u2192 generate cv/cl \u2192 fill form + screenshot \u2192 ..."
+"snippet": "# apply pipeline \u2014 end-to-end job application automation\n\n> **strategy** (per bang's spec, updated 2026-11-24): **2-phase flow** \u2014\n> `run` (fill + screenshot \u2192 stop for review) \u2192 bang reviews \u2192 `submi..."
 },
 {
 "title": "Greenhouse Apply \u2014 Workflow & Tips",
