@@ -26,7 +26,7 @@
 
 <div style="margin-bottom: 16px; padding: 12px 14px; background: var(--surface-2); border-radius: 8px; font-size: 12px; color: var(--text-muted);">
   <strong style="color: var(--accent);">Apply Pipeline — End-to-End Job Application Automation</strong><br>
-  Source: <code>knowledge/hacking_ways/apply_pipeline.md</code> · Size: 8.6 KB · Modified: Nov 24, 2026 17:49
+  Source: <code>knowledge/hacking_ways/apply_pipeline.md</code> · Size: 11.2 KB · Modified: Nov 24, 2026 18:01
 </div>
 <div class="markdown-body"><h1 id="apply-pipeline-end-to-end-job-application-automation">Apply Pipeline — End-to-End Job Application Automation</h1>
 <blockquote>
@@ -127,6 +127,56 @@ python scripts/apply_pipeline.py submit --slug bybit --yes
 <li><code>safe_portals_for_auto_submit: []</code> — empty by default (no portal auto-submit safe)</li>
 <li><code>submit --slug X</code> butuh <code>--yes</code> flag untuk konfirmasi explicit</li>
 </ul>
+<h2 id="cvcl-generation-per-bangs-spec-2026-11-24-updated">CV/CL generation (per Bang's spec 2026-11-24, updated)</h2>
+<p>Bang upload reference CV (<code>upload/noormanyulizarp@gmail.com (1).pdf</code>, Aileron font,
+2-page A4). Style default CV yang di-generate harness sebelumnya SAMPAH karena
+pakai Carlito/Liberation (beda jauh dari Aileron). Fix:</p>
+<ul>
+<li><strong>Generator</strong>: <code>scripts/generate_cv_html.py</code> (WeasyPrint + Aileron OTF)</li>
+<li><strong>CL generator</strong>: <code>scripts/generate_cl_html.py</code> (same Aileron font, formal letter)</li>
+<li><strong>Layout match</strong>: verified via PyMuPDF span extraction — semua posisi &lt;6pt offset:</li>
+<li>Name 20pt Bold (y=27.4 ref vs 26.0 gen)</li>
+<li>Contact block 10pt Bold right-aligned (y=31 ref vs 27 gen)</li>
+<li>Title 10pt Bold (y=56 ref vs 57.5 gen)</li>
+<li>Summary 10pt Regular (y=86 ref vs 88.5 gen)</li>
+<li>Section headers 14pt Bold (y=156 ref vs 157.6 gen)</li>
+<li>Job: company 10pt Bold + role/date 10pt BoldItalic right-aligned</li>
+<li>Bullets 10pt Regular indent x=76.5 (ref) vs x=77.0 (gen)</li>
+<li>Skills: label 9.5pt BoldItalic + value 9.5pt Regular</li>
+</ul>
+<h3 id="bangs-spec-create-aja-tapi-jangan-dipake-dulu">Bang's spec: "create aja tapi jangan dipake dulu"</h3>
+<p>Default behavior:
+- <strong>Always generate</strong> CV + CL PDF (matching template) → simpan ke <code>materials/</code> sebagai record
+- <strong>Pakai CV LAMA</strong> Bang untuk upload ke form (per-company variant kalau ada, fallback base)
+- <code>--generate-cv</code> flag → pakai CV yang baru di-generate (matching template) instead of CV lama</p>
+<pre class="highlight"><code class="language-bash"># Default: CV lama Bang dipakai, CV+CL generated sebagai record
+python scripts/apply_pipeline.py run --job-url &quot;...&quot;
+
+# Opt-in: pakai CV generated (matching template)
+python scripts/apply_pipeline.py run --job-url &quot;...&quot; --generate-cv
+</code></pre>
+
+<h3 id="standalone-cvcl-generation-without-pipeline">Standalone CV/CL generation (without pipeline)</h3>
+<pre class="highlight"><code class="language-bash"># Generate CV matching template
+python scripts/generate_cv_html.py --out /tmp/CV_test.pdf --variant default
+python scripts/generate_cv_html.py --out download/.../CV_FxPro.pdf --variant fxpro
+
+# Generate CL matching template
+python scripts/generate_cl_html.py --out /tmp/CL_test.pdf \
+  --company &quot;FxPro&quot; --title &quot;Senior QA Engineer&quot; --location &quot;Cyprus (remote)&quot; \
+  --fit-reasons &quot;+40 title; +15 senior; +20 fintech&quot;
+</code></pre>
+
+<h3 id="dossier-materials-setelah-run">Dossier materials (setelah run)</h3>
+<pre class="highlight"><code>materials/
+├── JD.md                                  # Job description
+├── CL_fxpro.md                             # Cover letter (markdown record)
+├── CL_fxpro.pdf                            # Cover letter (PDF, template-matched, Aileron)
+└── CV_Noorman_SDET_fxpro_generated.pdf    # CV (PDF, template-matched, Aileron) — record
+</code></pre>
+
+<p>Yang dipakai untuk upload: <code>CV_Noorman_SDET_FxPro.pdf</code> (CV LAMA Bang, dari CV/SDET/).
+Yang di-upload ke form: CV via file input + CL via text field (jika ada).</p>
 <h2 id="dossier-structure">Dossier structure</h2>
 <pre class="highlight"><code>download/.../applications/{slug}/
 ├── materials/
@@ -232,7 +282,7 @@ PHASE 2 (submit --slug bybit --yes):
 </ul></div>
 </div>
 <footer>
-  <p>Static site auto-generated from <code>noormanyulizarp/aplicator</code> repo · Last updated: 2026-11-24T17:49:09.325527</p>
+  <p>Static site auto-generated from <code>noormanyulizarp/aplicator</code> repo · Last updated: 2026-11-24T18:01:47.170516</p>
   <p style="margin-top: 8px;">
     <a href="../index.html">🏠 Home</a> ·
     <a href="https://github.com/noormanyulizarp/aplicator" target="_blank">📦 Source (private)</a>
