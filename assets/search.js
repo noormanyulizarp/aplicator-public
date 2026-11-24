@@ -109,6 +109,12 @@ const SEARCH_INDEX = [
 "snippet": "# target companies\n\nmaintain a list of companies you'd want to work at, with notes on why and how to apply.\n\n## format\n\n```\n### <company name>\n- **why**: <1-2 sentences on why you want to work here>\n-..."
 },
 {
+"title": "Apply Pipeline \u2014 End-to-End Job Application Automation",
+"category": "knowledge",
+"url": "knowledge/apply_pipeline.html",
+"snippet": "# apply pipeline \u2014 end-to-end job application automation\n\n> **strategy** (per bang's spec): scrape with **secondary linkedin account** \u2192 analyze\n> ats page \u2192 generate cv/cl \u2192 fill form + screenshot \u2192 ..."
+},
+{
 "title": "Greenhouse Apply \u2014 Workflow & Tips",
 "category": "knowledge",
 "url": "knowledge/greenhouse_tips.html",

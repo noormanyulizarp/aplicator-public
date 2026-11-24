@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apply Pipeline — End-to-End Job Application Automation — Noorman Job Search</title>
+<meta name="description" content="Apply Pipeline — End-to-End Job Application Automation — auto-generated from aplicator repo">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<nav class="navbar">
+  <a class="navbar-brand" href="../index.html">🧑‍💻 Noorman Job Search</a>
+  <input type="text" class="navbar-search" id="searchInput" placeholder="Search pages... (e.g. 'ajaib', 'motivation', 'ATS')" autocomplete="off">
+  <div class="navbar-search-results" id="searchResults"></div>
+</nav>
+<div class="container">
+
+<div class="breadcrumb">
+  <a href="../index.html">🏠 Home</a>
+  <span class="breadcrumb-sep">/</span>
+  <span>Knowledge</span>
+  <span class="breadcrumb-sep">/</span>
+  <span>Apply Pipeline — End-to-End Job Application Automation</span>
+</div>
+
+
+<div style="margin-bottom: 16px; padding: 12px 14px; background: var(--surface-2); border-radius: 8px; font-size: 12px; color: var(--text-muted);">
+  <strong style="color: var(--accent);">Apply Pipeline — End-to-End Job Application Automation</strong><br>
+  Source: <code>knowledge/hacking_ways/apply_pipeline.md</code> · Size: 7.1 KB · Modified: Nov 24, 2026 17:39
+</div>
+<div class="markdown-body"><h1 id="apply-pipeline-end-to-end-job-application-automation">Apply Pipeline — End-to-End Job Application Automation</h1>
+<blockquote>
+<p><strong>Strategy</strong> (per Bang's spec): scrape with <strong>secondary LinkedIn account</strong> → analyze
+ATS page → generate CV/CL → fill form + screenshot → conditional submit (if safe)
+→ update tracker. Use <strong>primary LinkedIn account</strong> only after sandbox proves reliable.</p>
+</blockquote>
+<h2 id="architecture">Architecture</h2>
+<pre class="highlight"><code>┌──────────────────────────────────────────────────────────────────┐
+│  portals.yml  (config: portals, thresholds, profile data)        │
+└──────────────────────────────────────────────────────────────────┘
+        │
+        ▼
+┌──────────────────────────────────────────────────────────────────┐
+│  scripts/apply_pipeline.py  (orchestrator)                       │
+│                                                                  │
+│  1. SCAN      →  scripts/li_scan_jobs.py  (LinkedIn guest API)    │
+│  2. ENRICH    →  scripts/li_job_detail.py (JD + fit score)        │
+│  3. ANALYZE   →  fetch_jd()  (per-portal: GH/Lever/LinkedIn)      │
+│  4. GENERATE  →  generate_cv_cl()  (tailored CV + CL)            │
+│  5. FILL      →  fill_form()  (Playwright + screenshot)           │
+│  6. SUBMIT    →  decide_submit()  (safe-portals only, else skip)  │
+│  7. TRACK     →  append_tracker()  (status: drafting|applied|blocked) │
+└──────────────────────────────────────────────────────────────────┘
+        │
+        ▼
+┌──────────────────────────────────────────────────────────────────┐
+│  download/.../applications/{slug}/                                 │
+│    ├── materials/JD.md, CV_Noorman_*.pdf, CL_*.md                  │
+│    └── screenshots/01_before_fill.png, 02_after_fill.png           │
+│                                                                   │
+│  knowledge/apply_tracker.csv  (29+ rows, status updated)          │
+└──────────────────────────────────────────────────────────────────┘
+</code></pre>
+
+<h2 id="portal-support-per-portalsyml">Portal support (per <code>portals.yml</code>)</h2>
+<table>
+<thead>
+<tr>
+<th>Portal</th>
+<th>Detection</th>
+<th>JD source</th>
+<th>Auto-submit safe?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Greenhouse</td>
+<td><code>job-boards.greenhouse.io</code></td>
+<td>public API <code>boards-api.greenhouse.io</code></td>
+<td>❌ reCAPTCHA manual</td>
+</tr>
+<tr>
+<td>Lever</td>
+<td><code>jobs.lever.co</code></td>
+<td>public API <code>api.lever.co/v0</code></td>
+<td>✅ safe</td>
+</tr>
+<tr>
+<td>Ashby</td>
+<td><code>ashbyhq.com</code></td>
+<td>scrape</td>
+<td>✅ safe</td>
+</tr>
+<tr>
+<td>Workday</td>
+<td><code>myworkdayjobs.com</code></td>
+<td>scrape</td>
+<td>❌ iframe complex</td>
+</tr>
+<tr>
+<td>Breezy.hr</td>
+<td><code>*.breezy.hr</code></td>
+<td>scrape</td>
+<td>✅ safe</td>
+</tr>
+<tr>
+<td>LinkedIn Easy Apply</td>
+<td><code>linkedin.com/jobs/view/</code></td>
+<td>guest API</td>
+<td>❌ needs primary cookie</td>
+</tr>
+<tr>
+<td>LinkedIn redirect</td>
+<td><code>linkedin.com/jobs/view/</code></td>
+<td>guest API + cookie</td>
+<td>❌ needs secondary cookie</td>
+</tr>
+<tr>
+<td>Custom</td>
+<td>(fallback)</td>
+<td>Playwright scrape</td>
+<td>❌ unknown</td>
+</tr>
+</tbody>
+</table>
+<h2 id="linkedin-strategy-bangs-two-account-setup">LinkedIn strategy (Bang's two-account setup)</h2>
+<ul>
+<li><strong>Secondary account</strong> — used for scanning, redirect detection, job analysis. Cookie
+  saved in <code>.li_session.json</code> (gitignored). Blocked OK — just make a new account.</li>
+<li><strong>Primary account</strong> — reserved for Easy Apply + recruiter messages. Cookie saved in
+  <code>.li_session_primary.json</code> (gitignored, set up later). Never burn this.</li>
+</ul>
+<h2 id="commands">Commands</h2>
+<pre class="highlight"><code class="language-bash"># Show pipeline state
+python scripts/apply_pipeline.py status
+
+# Run on 1 job (URL — auto-detect portal, fetch JD, generate CV/CL, fill + screenshot)
+python scripts/apply_pipeline.py run --job-url &quot;https://job-boards.greenhouse.io/bybit/jobs/5026957101&quot;
+
+# Run on top 5 from latest enriched leads
+python scripts/apply_pipeline.py run --top 5 --min-score 80
+
+# Dry-run (fill + screenshot, NO submit — default for unsafe portals)
+python scripts/apply_pipeline.py run --job-url &lt;URL&gt; --dry-run
+</code></pre>
+
+<h2 id="fit-score-thresholds-per-portalsyml">Fit score thresholds (per <code>portals.yml</code>)</h2>
+<ul>
+<li><strong>≥80</strong> → auto-apply candidate (will submit if portal is safe)</li>
+<li><strong>60-79</strong> → analyze-only (fill + screenshot, manual review)</li>
+<li><strong>50-59</strong> → log + skip</li>
+<li><strong>&lt;50</strong> → drop from leads</li>
+</ul>
+<h2 id="submit-policy">Submit policy</h2>
+<ul>
+<li><strong>Safe portals</strong> (auto-submit if score ≥ threshold): Lever, Ashby, Breezy.hr</li>
+<li><strong>Unsafe portals</strong> (always require Bang's review): Greenhouse (reCAPTCHA), Workday,
+  LinkedIn Easy Apply, Custom</li>
+<li>For unsafe portals, pipeline stops after fill+screenshot. Bang reviews screenshots
+  in <code>applications/{slug}/screenshots/</code> and clicks Submit manually.</li>
+</ul>
+<h2 id="end-to-end-test-verified-2026-11-24">End-to-end test (verified 2026-11-24)</h2>
+<p>Test job: Bybit Test Engineer (Greenhouse, job #5026957101)</p>
+<pre class="highlight"><code>[1/5] PORTAL DETECTION: greenhouse
+[2/5] ANALYZE: fetch JD + form fields
+  ✓ JD saved: applications/bybit/materials/JD.md (7091 bytes from GH API)
+[3/5] GENERATE: CV + CL tailored
+  ✓ materials: CV_Noorman_.pdf (62KB), CL_.md (1682 bytes)
+[4/5] FILL FORM + SCREENSHOT
+  → detected 6 fillable fields (first_name, last_name, email, phone, location, resume)
+  → filled 6/6 fields
+  → screenshot: 02_after_fill.png (458KB, non-white ratio 0.994)
+[5/5] SUBMIT: SKIPPED (dry-run + greenhouse is unsafe portal)
+[TRACK] tracker row #30: status=drafting
+</code></pre>
+
+<p>All artifacts in <code>download/noormanyulizarp@gmail.com/applications/bybit/</code>.</p>
+<h2 id="linkedin-easy-apply-setup-when-ready-to-use-primary-account">LinkedIn Easy Apply setup (when ready to use primary account)</h2>
+<pre class="highlight"><code class="language-bash"># 1. Log in to LinkedIn on your laptop
+# 2. DevTools → Application → Cookies → li_at → copy value
+# 3. Paste to tool:
+python scripts/li_easy_apply.py --set-cookie &lt;PASTE_HERE&gt;
+
+# 4. Then dry-run to verify session:
+python scripts/li_easy_apply.py --dry-run --limit 3
+
+# 5. Live apply (top 5 jobs, score ≥70):
+python scripts/li_easy_apply.py --min-score 70 --limit 5
+</code></pre>
+
+<h2 id="known-limitations-sandbox-reality">Known limitations (sandbox reality)</h2>
+<ol>
+<li><strong>LinkedIn guest API</strong> does NOT expose external Apply URL — only the JD. To detect
+   the redirect URL for non-Easy-Apply jobs, you need a logged-in cookie.</li>
+<li><strong>Greenhouse auto-submit</strong> is blocked by reCAPTCHA — even with valid cookie, the
+   final Submit click needs human captcha solve.</li>
+<li><strong>Rate limiting</strong>: LinkedIn guest API returns 429 after ~6-8 requests in quick
+   succession. The scanner sleeps 1.2-1.5s between requests to be gentle.</li>
+<li><strong>Custom questions</strong> (Greenhouse <code>question_XXXXX</code> fields) are dynamically detected
+   and filled from <code>portals.yml</code> <code>apply.*</code> defaults; verify before submit.</li>
+</ol>
+<h2 id="whats-next-todo">What's next (TODO)</h2>
+<ul>
+<li>[ ] Integrate fill + submit in single Playwright session (so submit sees the filled
+  form state)</li>
+<li>[ ] CV/CL tailoring: keyword extraction from JD → reorder Master_CV bullets per job</li>
+<li>[ ] LinkedIn secondary cookie integration for redirect detection on non-Easy-Apply</li>
+<li>[ ] Batch mode: process top 10 jobs in one run with proper rate limiting</li>
+<li>[ ] Email alerts when submit fails (so Bang knows to review manually)</li>
+</ul></div>
+</div>
+<footer>
+  <p>Static site auto-generated from <code>noormanyulizarp/aplicator</code> repo · Last updated: 2026-11-24T17:39:33.348844</p>
+  <p style="margin-top: 8px;">
+    <a href="../index.html">🏠 Home</a> ·
+    <a href="https://github.com/noormanyulizarp/aplicator" target="_blank">📦 Source (private)</a>
+  </p>
+</footer>
+<script src="../assets/search.js"></script>
+</body>
+</html>
